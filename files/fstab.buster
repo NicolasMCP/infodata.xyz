@@ -1,0 +1,29 @@
+# iso-1 #
+/home/db/ISO/debian-testing-amd64-DVD-1.iso /mnt/iso-1 iso9660 loop,user,auto 0 0
+# iso-2 #
+/home/db/ISO/debian-testing-amd64-DVD-2.iso /mnt/iso-2 iso9660 loop,user,auto 0 0
+# iso-3 #
+/home/db/ISO/debian-testing-amd64-DVD-3.iso /mnt/iso-3 iso9660 loop,user,auto 0 0
+# iso-4 #
+/home/db/ISO/debian-testing-amd64-DVD-4.iso /mnt/iso-4 iso9660 loop,user,auto 0 0
+# iso-5 #
+/home/db/ISO/debian-testing-amd64-DVD-5.iso /mnt/iso-5 iso9660 loop,user,auto 0 0
+# iso-6 #
+/home/db/ISO/debian-testing-amd64-DVD-6.iso /mnt/iso-6 iso9660 loop,user,auto 0 0
+# iso-7 #
+/home/db/ISO/debian-testing-amd64-DVD-7.iso /mnt/iso-7 iso9660 loop,user,auto 0 0
+# iso-8 #
+/home/db/ISO/debian-testing-amd64-DVD-8.iso /mnt/iso-8 iso9660 loop,user,auto 0 0
+# iso-9 #
+/home/db/ISO/debian-testing-amd64-DVD-9.iso /mnt/iso-9 iso9660 loop,user,auto 0 0
+# iso-10 #
+/home/db/ISO/debian-testing-amd64-DVD-10.iso /mnt/iso-10 iso9660 loop,user,auto 0 0
+# iso-11 #
+/home/db/ISO/debian-testing-amd64-DVD-11.iso /mnt/iso-11 iso9660 loop,user,auto 0 0
+# iso-12 #
+/home/db/ISO/debian-testing-amd64-DVD-12.iso /mnt/iso-12 iso9660 loop,user,auto 0 0
+# iso-13 #
+/home/db/ISO/debian-testing-amd64-DVD-13.iso /mnt/iso-13 iso9660 loop,user,auto 0 0
+# iso-14 #
+/home/db/ISO/debian-testing-amd64-DVD-14.iso /mnt/iso-14 iso9660 loop,user,auto 0 0
+

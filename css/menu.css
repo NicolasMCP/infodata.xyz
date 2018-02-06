@@ -1,0 +1,104 @@
+/* latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans'), local('NotoSans'), url(http://fonts.gstatic.com/s/notosans/v7/LeFlHvsZjXu2c3ZRgBq9nFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    background-color: darkslategrey;
+    width: 200px;
+    float: right;
+    margin-right: -200px;
+    margin-top: 39px;
+    visibility: hidden;
+    opacity: 0;
+}
+/* aplica a todos os 'a' */
+.menu a, #lbl_browser, #lbl_linux, #lbl_java, #lbl_lamp, #lbl_sudo, #lbl_ide {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+    color: #FFFFFF;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    display: block;
+}
+.menu a:hover {
+    background-color: #3caec7;
+}
+.menu label:hover {
+    background-color: #3caec7;
+    cursor:  pointer;
+}
+/* aplica só ao 'a' interno */
+.menu ul>li>ul>li>a {
+
+}
+/* aplica a todos os ul */
+.menu ul {
+    list-style: none;
+    text-align: left;
+
+}
+/* aplica só ao segundo ul */
+.menu ul>li>ul {
+    visibility: hidden;
+    max-height: 0;
+    background-color: darkcyan;
+}
+/* aplica a todos los 'li' dentro de 'ul' */
+.menu ul li {
+    border-top: 1px solid #FFFFFF;
+}
+.menu ul li span {
+    padding-right: 10px;
+    font-size: 20px;
+}
+.menu ul li img {
+    padding-right: 10px;
+}
+.menu ul li i {
+    float: right;
+    padding-right: 5px;
+    /*background-color: darkslategrey;*/
+    color: #FFFFFF;
+    font-size: 22px;
+}
+#lbl_menu {
+    font-size: 28px;
+    padding: 4px 12px 0 12px;
+    background-color: darkslategrey;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 1px;
+    margin-right: 1px;
+    text-align: right;
+}
+#lbl_menu:hover {
+    background-color: #3caec7;
+    cursor:  pointer;
+}
+#chk_menu:checked ~ .menu {
+    transition: all 1s;
+    opacity: 1;
+    visibility: visible;
+}
+#chk_menu:checked ~ #lbl_menu {
+    width: 176px;
+}
+#chk_menu, #chk_browser, #chk_linux, #chk_java, #chk_lamp, #chk_sudo, #chk_ide {
+    display: none;
+}
+#chk_browser:checked ~ ul, #chk_linux:checked ~ ul, #chk_java:checked ~ ul, #chk_lamp:checked ~ ul, #chk_sudo:checked ~ ul, #chk_ide:checked ~ ul {
+    visibility: visible;
+    transition: all 1s;
+    opacity: 1;
+    max-height: none;
+}

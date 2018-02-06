@@ -1,0 +1,57 @@
+# ISO de los DVDs de debian
+ deb [trusted=yes] file:/mnt/iso-1 buster contrib main 
+ deb [trusted=yes] file:/mnt/iso-2 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-3 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-4 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-5 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-6 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-7 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-8 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-9 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-10 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-11 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-12 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-13 buster contrib main
+ deb [trusted=yes] file:/mnt/iso-14 buster contrib main
+
+# Oficiais de buster
+# deb http://ftp.us.debian.org/debian/ buster main contrib non-free
+# deb-src http://ftp.us.debian.org/debian/ buster main contrib non-free
+
+# Actualizações de segurança
+# deb http://security.debian.org/debian-security buster/updates main contrib non-free
+# deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
+
+#Multimidia testing
+## deb http://www.deb-multimedia.org buster main non-free
+#  http://www.deb-multimedia.org/
+#  apt-get update -oAcquire::AllowInsecureRepositories=true
+#  apt-get install deb-multimedia-keyring -oAcquire::AllowInsecureRepositories=true
+
+# MySQL colocar os repositórios escolher entre 5.6, 5.7, 8.0
+## deb [trusted=yes] http://repo.mysql.com/apt/debian/ stretch mysql-8.0
+## deb-src [trusted=yes] http://repo.mysql.com/apt/debian/ stretch mysql-8.0
+
+# PHP 7.1.13 e 7.2.0
+# deb https://packages.sury.org/php/ stretch main
+
+# buster-updates, previously known as 'volatile'
+## deb http://deb.debian.org/debian/ buster-updates main contrib
+## deb-src http://deb.debian.org/debian/ buster-updates main contrib
+
+# wine
+## deb https://dl.winehq.org/wine-builds/debian/ buster main
+
+# node.js
+## deb https://deb.nodesource.com/node_9.x buster main
+## deb-src https://deb.nodesource.com/node_9.x buster main
+# php nodesource
+## deb https://packages.sury.org/php/ buster maini
+
+# chrome
+## deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+
+### Repositório (buster) proposed-updates #####
+# deb http://deb.debian.org/debian/ buster-proposed-updates main contrib non-free
+# deb-src http://deb.debian.org/debian/ buster-proposed-updates main contrib non-free
+

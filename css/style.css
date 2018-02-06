@@ -1,0 +1,245 @@
+/*
+Autor  : Herley Ramos
+Data   : 28/06/2017, 12:36:20
+*/
+/* latin */
+@font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://fonts.gstatic.com/s/vollkorn/v8/idGKtgpe38okB6bfeHMsLPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans'), local('NotoSans'), url(http://fonts.gstatic.com/s/notosans/v7/LeFlHvsZjXu2c3ZRgBq9nFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Cousine';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cousine Regular'), local('Cousine-Regular'), url(http://fonts.gstatic.com/s/cousine/v12/0IpceuvDvCegpU9Mz8MQ_g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v12/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v12/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(http://fonts.gstatic.com/s/montserrat/v12/H8_7oktkjVeeX06kbAvc0Ary2jK1Y0oNyoF1xLf3zMQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color:#E6E6E6;
+    font-family: 'Vollkorn', serif;
+}
+h1 {
+    font-size: 42px;
+    font-weight: lighter;
+    color: #48D1CC;
+    text-shadow: 1px 1px 1px #191970;
+    /*position: relative;*/
+}
+h2 {
+    font-size: 28px;
+    font-weight: lighter;
+    text-shadow: 1px 1px 1px #A52A2A;
+    color: #ff6666;
+    margin-bottom: 12px;
+}
+h3 {
+    font-size: 16px;
+    font-family: 'Cousine', monospace;
+    color: #26294C;
+    margin-top: 6px;
+}
+h4 {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-top: 13px;
+    margin-bottom: 2px;
+}
+/* links */
+.a, .b {
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+.a:hover{
+    font-weight: bolder;
+    color: darkblue;
+    text-decoration: underline;
+}
+.justify {
+    text-align: justify;
+}
+.indent {
+    text-indent: 2em;
+}
+.right {
+    text-align: right;
+}
+.header {
+    width: 800px;
+    height: 80px;
+    background-color: #FFFFFF;
+    /*margin-left: 70px;*/
+}
+.titulo-header {
+    font-size: 62px;
+    font-weight: lighter;
+    color: #222222;
+    text-shadow: 2px 2px 2px #88DDFF;
+    position: absolute;
+    top: 0px;
+    left: 450px;
+    opacity: 0.5;
+    height: 78px;
+    width: 415px;
+    /*background-color: yellow;*/
+}
+.top {
+    text-align: right;
+}
+.line{
+    width: 800px;
+    height: 1px;
+    background: #9DACB4;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.lineIn{
+    width: 770px;
+    height: 1px;
+    background: #9DACB4;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.geral {
+    width: 800px;
+    margin: 0 auto auto auto;
+    border: transparent;
+    z-index: -1;
+}
+/* menu */
+/*.menu {*/
+    /*position: absolute;*/
+    /*!*width: 80px;*!*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*z-index: 10;*/
+/*}*/
+/*header li {*/
+    /*list-style: none;*/
+/*}*/
+header {
+    float: right;
+
+    /*top: 0;*/
+}
+section {
+    position: static;
+    width: 800px;
+}
+/* box com sombra */
+.box{
+    width: 800px;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    background: #FFF; /* Blanco */
+    margin: auto auto 25px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.quadro {
+    width: 800px;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    background: #E0E6E6;
+    margin: 15px auto 25px;
+    padding: 15px;
+    /*border: 1px #999999 solid;*/
+    border: 1px #9DACB4 solid;
+}
+.sombra {
+    position: relative;   /* Posición relativa que se refiere a antes y después */
+}
+.sombra:before, .sombra:after  /* Aplicar algunas propiedades mutuas antes y después de este elemento */
+{
+    z-index: -1;          /* Enviar este elemento hacia atrás */
+    position: absolute;   /* Posicionamiento absoluto que se refiere a effect2 */
+    content: "";          /* Solo necesario, no hay necesidad de poner nada dentro  */
+    bottom: 8px;         /* Alineación de la sombra inferior, menos está más cerca de la parte inferior */
+    left: 12px;           /* Considere esto como un margen izquierdo */
+    width: 50%;           /* Anchura del fondo del elemento sombra */
+    top: 10px;             /* 50% Considere esto como el borde superior del elemento sombra */
+    max-width: 387.5px;      /* Restringe el ancho máximo del elemento sombra  */
+    background: #E6E6E6;     /* #111 #E6E6E6 Da un color de fondo al elemento sombra  */
+    -webkit-box-shadow: 0 15px 10px #111; /* Aplicación por compatibilidad */
+    -moz-box-shadow: 0 15px 10px #111;    /* Aplicación por compatibilidad */
+    box-shadow: 0 15px 10px #111; /* Aplicado la propiedad básica de la caja-sombra */
+    /* Rotación de sombras / elementos da ese aspecto 3D a la caja */
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+.sombra:after
+{
+    -webkit-transform: rotate(2deg);  /* aligns the shadow right */
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    right: 12px;                  /* Considere esto como un margen derecho */
+    left: auto;                   /* leave this auto to automatically set the left */
+}
+.papel {
+    width: 800px;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid gray; /*  */
+    position: relative;
+}
+.papel:after {
+    content: " ";
+    width: 100%;
+    height: 10%;
+    background: red;
+    position: absolute;
+}
+

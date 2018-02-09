@@ -6,5 +6,10 @@
  * Time: 17:10
  */
 include('pre-rodape.php');
-echo '<br/>';
+echo '
+        <br/>
+    </div>
+</body>
+</html>
+';
 ?>

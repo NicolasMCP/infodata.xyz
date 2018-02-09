@@ -113,7 +113,10 @@ h4 {
     width: 800px;
     height: 80px;
     background-color: #FFFFFF;
-    /*margin-left: 70px;*/
+}
+.fix {
+    width: 800px;
+    position: absolute;
 }
 .titulo-header {
     font-size: 62px;
@@ -122,11 +125,10 @@ h4 {
     text-shadow: 2px 2px 2px #88DDFF;
     position: absolute;
     top: 0px;
-    left: 450px;
+    right: 10px;
     opacity: 0.5;
     height: 78px;
     width: 415px;
-    /*background-color: yellow;*/
 }
 .top {
     text-align: right;
@@ -151,21 +153,10 @@ h4 {
     border: transparent;
     z-index: -1;
 }
-/* menu */
-/*.menu {*/
-    /*position: absolute;*/
-    /*!*width: 80px;*!*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*z-index: 10;*/
-/*}*/
-/*header li {*/
-    /*list-style: none;*/
-/*}*/
 header {
-    float: right;
-
-    /*top: 0;*/
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 section {
     position: static;

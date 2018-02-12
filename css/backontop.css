@@ -11,7 +11,7 @@ body{
 	bottom:40px;
 	right:40px;
 	z-index:13;
-	opacity:.9;
+	/*opacity:.8;*/
 	position: fixed;
 }
 .totop:hover{

@@ -13,8 +13,8 @@ include("cabecalho.php");
     <section>
     <!--linux-->
 
-        <h1>Repositório Local em Linux Debian</h1>
-        <h1>Stretch 9.3 e Buster 10</h1>
+        <h1>Repositório Local em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span></h1>
+        <h1> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Usar os DVD ou BD como Repositório Local</h2>
         <h3>Primeiro baixe o ISO dos DVD</h3>

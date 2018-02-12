@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
+Autor  : Nicolas Ramos
 Data   : 22/12/2017
 Projeto: Dicas
 Meta   : Organizar as dicas do Linux (agora neste html, antes em OOo)
@@ -38,5 +38,6 @@ include("cabecalho.php");
     </section>
 
 <?php
+for($i=0; $i<20; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

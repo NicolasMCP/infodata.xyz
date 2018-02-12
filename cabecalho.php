@@ -23,8 +23,6 @@ echo '<html lang="pt-br">
 </head>
 <body class="geral">
 
-<a name="inicio"></a>
-
 <div id="top" class="header">
     <div class="fix">
         <img src="img/header.png">

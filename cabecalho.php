@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Herley Ramos
+ * User: Nicolas Ramos
  * Date: 3/01/18
  * Time: 12:11
  */
@@ -19,9 +19,7 @@ echo '<html lang="pt-br">
     <script src="backontop.js"></script>
     <title>Dicas InfoData</title>
     
-    <script>
-        window.addEventListener( "scroll", Scroll );
-    </script>
+    <script>window.addEventListener( "scroll", Scroll );</script>
 </head>
 <body class="geral">
 

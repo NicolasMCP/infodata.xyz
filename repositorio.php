@@ -13,31 +13,8 @@ include("cabecalho.php");
     <section>
     <!--linux-->
 
-        <h1>Dicas do Linux Debian Stretch 9.3</h1>
-
-        <h2>Dicas Diversas</h2>
-
-        <h2>Scaner de portas abertas</h2>
-        <h3>nmap IP</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
-            $ sudo nmap localhost<br/>
-            <h4>ou<br/></h4>
-            $ sudo nmap 127.0.0.1<br/>
-        </div>
-
-        <h3>Se o comando nmap não funcionar</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
-            $ sudo apt install nmap<br/>
-        </div>
-
-        <h3 class="justify">Quando usamos esse comando no localhost (ou 127.0.0.1) vemos os serviços ativos que usam portas, em nosso computador...</h3>
-
-
-        <?php
-        include("pre-rodape.php");
-        ?>
+        <h1>Repositório Local em Linux Debian</h1>
+        <h1>Stretch 9.3 e Buster 10</h1>
 
         <h2>Usar os DVD ou BD como Repositório Local</h2>
         <h3>Primeiro baixe o ISO dos DVD</h3>

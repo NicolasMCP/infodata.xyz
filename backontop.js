@@ -6,7 +6,7 @@ function Scroll() {
         setTimeout(function(){
             top.setAttribute( "class", "totop" );
         }  , 500);
-    }else {
+    } else {
         top = document.querySelector( ".totop" );
         top.setAttribute( "style", "animation-name:tutop;animation-duration:0.5s" );
         setTimeout(function(){

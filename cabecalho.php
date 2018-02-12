@@ -27,7 +27,7 @@ echo '<html lang="pt-br">
 
 <a name="inicio"></a>
 
-<div class="header">
+<div id="top" class="header">
     <div class="fix">
         <img src="img/header.png">
         <div class="titulo-header">Dicas InfoData</div>
@@ -111,5 +111,5 @@ echo '<html lang="pt-br">
         </nav>
     </header>
     <!-- Botão exibida conforme a rolagem, "backontop.js" -->
-    <a href="#inicio" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a>'
+    <a href="#top" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a>'
 ?>

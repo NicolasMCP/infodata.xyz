@@ -58,10 +58,10 @@ echo '<html lang="pt-br">
                     <label for="chk_linux" id="lbl_linux"><span class="icon-linux"></span>Linux<i class="icon-select-arrows"></i></label>
                     <ul>
                         <li><a href="repositorio.php"><span class="icon-vynil"></span>Repositorio ISO</a></li>
-                        <li><a href="#"><span class="icon-search"></span>Buscas</a></li>
-                        <li><a href="#"><span class="icon-language"></span>Idioma</a></li>
-                        <li><a href="#"><span class="icon-folders"></span>Samba</a></li>
-                        <li><a href="#"><span class="icon-user"></span>Usuários</a></li>
+                        <li><a href="buscas.php"><span class="icon-search"></span>Buscas</a></li>
+                        <li><a href="idioma.php"><span class="icon-language"></span>Idioma</a></li>
+                        <li><a href="samba.php"><span class="icon-folders"></span>Samba</a></li>
+                        <li><a href="usuarios.php"><span class="icon-user"></span>Usuários</a></li>
                     </ul>
                </li>
                 <li>
@@ -105,7 +105,8 @@ echo '<html lang="pt-br">
                         <li><a href="android.php"><span class="icon-android"></span>Android</a></li>
                         <li><a href="vim.php"><img src="img/vim.png" height="20px" width="28px">Vim</a></li>
                     </ul>
-                <li><a href="licencas.php"><span class="icon-IcoMoon"></span>Licenças</a></li>
+                <li><a href="icomoon.php"><span class="icon-IcoMoon"></span>IcoMoon</a></li>
+                <li><a href="licencas.php"><span class="icon-copyright"></span>Licenças</a></li>
             </ul>
         </nav>
     </header>

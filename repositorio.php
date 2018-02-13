@@ -158,10 +158,10 @@ include("cabecalho.php");
         <h3>Mais Referências</h3>
 
         <h3>Ultimas linhas do meu arquivo /etc/fstab COM 'buster' AGORA MUDOU PARA</h3>
-        <a href="files/fstab.buster" class="a">Arquivo /etc/fstab linhas finais</a>
+        <a href="files/fstab.buster" download="files/fstab.buster" class="a">Arquivo /etc/fstab linhas finais</a>
 
         <h3>TODO o meu arquivo /etc/apt/sources.list AGORA COM 'buster'</h3>
-        <a href="files/sources.list.buster" class="a">Arquivo /etc/apt/sources.list</a>
+        <a href="files/sources.list.buster" download="files/sources.list.buster" class="a">Arquivo /etc/apt/sources.list</a>
 
         <h3>Fontes de arquivos do Debian</h3>
         <a href="https://www.debian.org/CD/http-ftp/index.pt.html" target="_blank" class="a">https://www.debian.org/CD/http-ftp/index.pt.html</a>

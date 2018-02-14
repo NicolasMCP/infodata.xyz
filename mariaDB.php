@@ -12,8 +12,8 @@ include("cabecalho.php");
 
     <section>
 
-        <h1>MariaDB no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch</h1>
-        <h1>e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>MariaDB no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch<br/>
+            e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
     <!--MariaDB-->
         <h2>Instalando MariaDB em vez do MySQL</h2>
@@ -35,6 +35,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<21; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

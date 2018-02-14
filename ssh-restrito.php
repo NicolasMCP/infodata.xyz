@@ -12,8 +12,8 @@ include("cabecalho.php");
 
     <section>
 
-        <h1>SSH Restringindo o Acesso, para Linux </h1>
-        <h1>Debian Stretch 9.3</h1>
+        <h1>SSH Restringindo o Acesso, para Linux<br/>
+            Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>SSH Acesso restrito!</h2>
 

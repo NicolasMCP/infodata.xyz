@@ -13,8 +13,8 @@ include("cabecalho.php");
     <section>
     <!--linux-->
 
-        <h1>Idioma no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch</h1>
-        <h1>e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>Idioma no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch<br/>
+            e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Idioma dos Manuais</h2>
         <h3>Instalar mais manuais do comando 'man' em espanhol</h3>

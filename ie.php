@@ -11,7 +11,6 @@ include("cabecalho.php");
 ?>
 
     <section>
-
     <!--ie-->
 
         <h1>Dicas do Internet Explorer</h1>

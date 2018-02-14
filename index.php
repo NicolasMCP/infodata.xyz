@@ -48,8 +48,8 @@ include("cabecalho.php");
             </p><br/>
             <p class="justify indent">
                 Muitas destas dicas tenho usado há alguns anos já. Mas vou adaptando para a minha
-                distribuição atual que no momento é Debian Buster 10, mas estou testando no
-                Debian Stretch 9.3 também.
+                distribuição atual que no momento é Debian 9.3 Stretch, más estou testando  dentro do possível no
+                Debian 10 Buster também.
             </p><br/>
             <p class="indent">
                 Desde já agradeço por acessar o meu Blog.

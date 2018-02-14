@@ -13,8 +13,8 @@ include("cabecalho.php");
     <section>
     <!--samba-->
 
-        <h1>SAMBA em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e</h1>
-        <h1> no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>SAMBA em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e<br/>
+            no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Samba</h2>
         <h3>Mudar as configurações do SAMBA</h3>
@@ -27,6 +27,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<28; $i++) {echo'<br/>';}
+for($i=0; $i<29; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

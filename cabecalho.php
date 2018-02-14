@@ -16,7 +16,7 @@ echo '<html lang="pt-br">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/backontop.css"/>
     <!--    <link rel="shortcut icon" href="favicon.ico" />-->
-    <script src="backontop.js"></script>
+    <script src="js/backontop.js"></script>
     <title>Dicas InfoData</title>
     
     <script>window.addEventListener( "scroll", Scroll );</script>
@@ -65,9 +65,8 @@ echo '<html lang="pt-br">
         
                     <label for="chk_java" id="lbl_java"><span class="icon-local_cafe"></span>Java<i class="icon-select-arrows"></i></label>
                     <ul>
-                        <li><a href="#"><span class="icon-document-file-java"></span>Java JRE</a></li>
                         <li><a href="jdk.php"><span class="icon-mug"></span>Java JDK</a></li>
-                        <li><a href="#"><span class="icon-document-file-java2"></span>Painel Java</a></li>
+                        <li><a href="java-painel.php"><span class="icon-document-file-java2"></span>Painel Java</a></li>
                     </ul>
                 <li>
                     <input type="checkbox" id="chk_lamp">

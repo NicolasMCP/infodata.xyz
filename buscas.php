@@ -13,8 +13,8 @@ include("cabecalho.php");
     <section>
     <!--linux-->
 
-        <h1>Buscas no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e</h1>
-        <h1>Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>Buscas no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e<br/>
+            Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Buscas</h2>
         <h3>Localizar onde esta instalado um programa</h3>
@@ -32,6 +32,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<25; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

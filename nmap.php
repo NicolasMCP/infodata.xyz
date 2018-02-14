@@ -12,8 +12,8 @@ include("cabecalho.php");
 
     <section>
 
-        <h1>Usando nmap, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch</h1>
-        <h1> e Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>Usando nmap, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch<br/>
+            e Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Scaner de portas abertas</h2>
         <h3>nmap IP</h3>

@@ -34,6 +34,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<25; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

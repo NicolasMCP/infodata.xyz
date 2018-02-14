@@ -14,8 +14,9 @@ include("cabecalho.php");
 
     <!--InstalarJDK-->
 
-        <h1>JDK e Painel Java no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch</h1>
-        <h1>e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>Java JDK no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no<br/>
+            Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+
         <h2>Instalando JDK</h2>
 
         <h3>JDK Oracle 8 update 152</h3>
@@ -87,28 +88,6 @@ include("cabecalho.php");
             <a href="http://askubuntu.com/questions/20953/sudo-source-command-not-found" class="a" target="_blank">http://askubuntu.com/questions/20953/sudo-source-command-not-found</a><br/>
         </div>
 
-        <?php
-        include("pre-rodape.php");
-        ?>
-
-    <!--Panel Java-->
-
-        <h2>Instalando o Acesso ao Painel de Controle do Java</h2>
-        <h3>Criando atalhos dos menús</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
-            <span class="b">$ sudo tee /usr/share/applications/java-control.desktop <<</span><span class="b">ATALHO<br/>
-            [Desktop Entry]<br/>
-            Encoding=UTF-8<br/>
-            Name=Java<br/>
-            Comment=Java Control Panel<br/>
-            Exec=sh '/usr/lib/jvm/bin/jcontrol'<br/>
-            Icon=/usr/lib/jvm/jre/lib/desktop/icons/hicolor/48x48/apps/sun-jcontrol.png<br/>
-            Terminal=false<br/>
-            Type=Application<br/>
-            Categories=Development;Settings;Java;<br/>
-            ATALHO</span>
-        </div>
     </section>
 
 <?php

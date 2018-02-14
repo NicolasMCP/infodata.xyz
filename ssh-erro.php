@@ -3,9 +3,7 @@
 Autor  : Herley Ramos
 Data   : 22/12/2017
 Projeto: Dicas
-Meta   : Organizar as dicas do Sudo e SSH do Linux (agora neste html, antes em OOo)
-Defaults:ALL timestamp_timeout=-1 siempre
-Defaults:ALL timestamp_timeout=30 minutos
+Meta   : Organizar as dicas do SSH do Linux (agora neste html, antes em OOo)
 -->
 
 <?php
@@ -14,7 +12,8 @@ include("cabecalho.php");
 
     <section>
 
-        <h1>Erro no SSH, Linux Debian Stretch 9.3</h1>
+        <h1>Erro no SSH, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch <br/>
+            e Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>SSH, Erro broken pipe</h2>
 
@@ -38,6 +37,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<21; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

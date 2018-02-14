@@ -13,7 +13,7 @@ include("cabecalho.php");
     <section>
     <!--phpstorm-->
 
-        <h1>Dicas de Uso do PHPstrom</h1>
+        <h1>Dicas de Uso do PHPStorm</h1>
 
         <h2>Edição Multilinha</h2>
         <h3>Para quando queremos inserir os mesmos comandos em várias linhas...</h3>
@@ -38,7 +38,7 @@ include("cabecalho.php");
         include("pre-rodape.php");
         ?>
 
-        <h1>Usando PHP7.2</h1>
+        <h2>Usando PHP7.2 no PHPStorm</h2>
 
         <h2>Interpretador de comandos PHP7.2 no linux</h2>
         <h3>Configurando phpstorm Passo a passo,</h3>
@@ -67,7 +67,7 @@ include("cabecalho.php");
         include("pre-rodape.php");
         ?>
 
-        <h1>Dicionário em Português</h1>
+        <h2>Dicionário em Português no PHPStorm</h2>
 
         <h2>Como instalar o dicionário em Português...</h2>
         <h3>Primeiramente fazer o seguinte</h3>

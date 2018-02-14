@@ -13,7 +13,8 @@ include("cabecalho.php");
     <section>
     <!--sudo-->
 
-        <h1>Sudo, no Linux Debian Stretch 9.3</h1>
+        <h1>Sudo, no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no<br/>
+            Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Configurar sudo</h2>
         <h3>Você deve incluir o seu usuário no arquivo de configuração</h3>
@@ -39,6 +40,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<20; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

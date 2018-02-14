@@ -52,7 +52,7 @@ include("cabecalho.php");
     <a href="https://codigoadicto.com/usando-fonts-en-los-iconos-con-icomoon" target="_blank" class="a">https://codigoadicto.com/usando-fonts-en-los-iconos-con-icomoon</a>
 
     <?php
-    for($i=0; $i<2; $i++) {echo'<br/>';}
+    for($i=0; $i<11; $i++) {echo'<br/>';}
     include("rodape.php");
     ?>
 

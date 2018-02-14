@@ -13,8 +13,8 @@ include("cabecalho.php");
     <section>
     <!--linux-->
 
-        <h1>Dicas do Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e</h1>
-        <h1>Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>Dicas do Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e<br/>
+            Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Usuários e Grupos</h2>
 

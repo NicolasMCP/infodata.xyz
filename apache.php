@@ -13,8 +13,8 @@ include("cabecalho.php");
     <section>
     <!--apache-->
 
-        <h1>Apache no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch</h1>
-        <h1>e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+        <h1>Apache no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch<br/>
+            e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Instalar Apache 2.4.29</h2>
         <h3>Instalando o Apache 2.4.29</h3>

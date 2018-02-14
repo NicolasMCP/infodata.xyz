@@ -12,7 +12,8 @@ include("cabecalho.php");
 
     <section>
 
-        <h1>Porta SSH, Linux Debian Stretch 9.3</h1>
+        <h1>Porta SSH, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e<br/>
+            no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
 
         <h2>Mudando a porta SSH</h2>
 
@@ -37,6 +38,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<21; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

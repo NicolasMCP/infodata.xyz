@@ -66,22 +66,21 @@ h1 {
     font-weight: lighter;
     color: #48D1CC;
     text-shadow: 1px 1px 1px #191970;
-    /*position: relative;*/
 }
-h2 {
+h2, h3, h4 {
     font-size: 28px;
     font-weight: lighter;
     text-shadow: 1px 1px 1px #A52A2A;
     color: #ff6666;
     margin-bottom: 12px;
 }
-h3 {
+.comum {
     font-size: 16px;
     font-family: 'Cousine', monospace;
     color: #26294C;
     margin-top: 6px;
 }
-h4 {
+.miniatura {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

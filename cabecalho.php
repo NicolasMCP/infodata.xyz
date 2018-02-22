@@ -106,5 +106,7 @@ echo '<html lang="pt-br">
         </nav>
     </header>
     <!-- Botão exibida conforme a rolagem, "backontop.js" -->
-    <a href="#top" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a>'
+    <a class="tutop" onclick="up()"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a>
+    <!-- <a href="#top" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a> -->
+    '
 ?>

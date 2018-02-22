@@ -14,3 +14,11 @@ function Scroll() {
         }  , 500);
     }
 }
+function up() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+    // alert('click');
+}

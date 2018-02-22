@@ -123,7 +123,7 @@ h2, h3, h4 {
     color: #222222;
     text-shadow: 2px 2px 2px #88DDFF;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 10px;
     opacity: 0.5;
     height: 78px;
@@ -136,14 +136,14 @@ h2, h3, h4 {
     width: 800px;
     height: 1px;
     background: #9DACB4;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 15px;
 }
 .lineIn{
     width: 770px;
     height: 1px;
     background: #9DACB4;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 15px;
 }
 .geral {

@@ -14,7 +14,7 @@ include("cabecalho.php");
         <h1>Página Inicial...</h1>
 
         <h2>Nas Dicas InfoData, coloco dicas dos mais diversos tipos</h2>
-        <h3>
+        <div class="comum">
             <p class="justify indent">
                 Começei aderindo a mentalidade 'Clean', mas depois achei mais divertido colocar um
                 pouco mais de 'cor', para que não ficasse tâo P&B. <span class="icon-wink"></span>
@@ -65,9 +65,10 @@ include("cabecalho.php");
                 Nicolas Ramos<br/>
                 nicolas@infodata.xyz<br/>
             </p><br/><br/>
-        </h3>
+        </div>
     </section>
 
 <?php
+for($i=0; $i<8; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

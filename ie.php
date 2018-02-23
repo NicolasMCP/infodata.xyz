@@ -16,14 +16,14 @@ include("cabecalho.php");
         <h1>Dicas do Internet Explorer</h1>
 
         <h2>Acessar as Ferramentas de Desenvolvedor</h2>
-        <h3>Interessante para ver margens, padding e outros detalhes dos objetos da página</h3>
-        <h4>Procedimento</h4>
+        <p class="comum">Interessante para ver margens, padding e outros detalhes dos objetos da página</p>
+        <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             Pressione a tecla &lt;F12>
         </div>
     </section>
 
 <?php
-for($i=0; $i<32; $i++) {echo'<br/>';}
+for($i=0; $i<34; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

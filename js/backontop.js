@@ -1,6 +1,6 @@
 function Scroll() {
     var top;
-    if ( window.pageYOffset > 50 ) {     /* parametro de movimentação */
+    if ( window.pageYOffset > 70 ) {     /* parametro de movimentação */
         top = document.querySelector( ".tutop" );
         top.setAttribute( "style", "animation-name:totop;animation-duration:0.5s" );
         setTimeout(function(){

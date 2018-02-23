@@ -10,34 +10,34 @@ Meta   : Organizar as dicas do Linux (agora neste html, antes em OOo)
 include("cabecalho.php");
 ?>
 
-    <section>
-    <!--linux-->
+<section>
+<!--linux-->
 
-        <h1>Idioma no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch<br/>
-            e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>Idioma no Linux</h1>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-        <h2>Idioma dos Manuais</h2>
-        <h3>Instalar mais manuais do comando 'man' em espanhol</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
-            $ sudo apt install manpages-es manpages-es-extra<br/>
-        </div>
+    <h3>Idioma dos Manuais</h3>
+    <p class="comum">Instalar mais manuais do comando 'man' em espanhol</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        $ sudo apt install manpages-es manpages-es-extra<br/>
+    </div>
 
     <?php
     include("pre-rodape.php");
     ?>
 
-        <h2>Idioma do teclado</h2>
+    <h4>Idioma do teclado</h4>
 
-        <h3>Trocar o mapa do teclado no caso para brasileiro (espanhol seria 'es')</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
-            $ sudo setxkbmap br<br/>
-        </div>
+    <p class="comum">Trocar o mapa do teclado no caso para brasileiro (espanhol seria 'es')</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        $ sudo setxkbmap br<br/>
+    </div>
 
-    </section>
+</section>
 
 <?php
-for($i=0; $i<20; $i++) {echo'<br/>';}
+for($i=0; $i<22; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

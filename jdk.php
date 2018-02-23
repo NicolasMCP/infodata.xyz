@@ -11,32 +11,30 @@ include("cabecalho.php");
 ?>
 
 <section>
+<!--InstalarJDK-->
 
-	<!--InstalarJDK-->
+	<h1>Instalando o Java JDK</h1>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-	<h1>Java JDK no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no<br/>
-		Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
-
-	<h2>Instalando JDK</h2>
-
-	<h3>JDK Oracle 8 update 152</h3>
-	<h4>Procedimento</h4>
+	<h3>Instalação do JDK Oracle 8 update 152</h3>
+    <p class="comum">Acompanhe passo a passo a instalação...</p>
+	<p class="miniatura">Procedimento</p>
 	<div class="box sombra">
 		Faça download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" class="a">JDK8</a>
 		salvando em:<br/>
 		/home/$USER/Downloads/Desenvolvedor/jdk-oracle/jdk-8u152-linux-x64.tar.gz<br/>
 	</div>
 
-	<h3>Extrair o Java Developer Kit (JDK) e renomear</h3>
-	<h4>Código</h4>
+	<p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
+	<p class="miniatura">Código</p>
 	<div class="box sombra">
 		$ cd /home/$USER/Downloads/Desenvolvedor/jdk-oracle/<br/>
 		$ tar xvzf jdk-*.tar.gz<br/>
 		$ mv jdk1*/ jdk-oracle<br/>
 	</div>
 
-	<h3>Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</h3>
-	<h4>Código</h4>
+	<p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
+	<p class="miniatura">Código</p>
 	<div class="box sombra">
 		$ su<br/>
 		# cp -rp jdk-oracle /usr/lib/jvm && rm -r jdk-oracle/<br/>
@@ -46,8 +44,8 @@ include("cabecalho.php");
 		# update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/bin/javaws" 1<br/>
 	</div>
 
-	<h3>Definir o JDK 8 up.152 como padrão</h3>
-	<h4>Código</h4>
+	<p class="comum">Definir o JDK 8 up.152 como padrão</p>
+	<p class="miniatura">Código</p>
 	<div class="box sombra">
 		# update-alternatives --set java /usr/lib/jvm/bin/java<br/>
 		# update-alternatives --set javac /usr/lib/jvm/bin/javac<br/>
@@ -55,14 +53,14 @@ include("cabecalho.php");
 		# update-alternatives --set javaws /usr/lib/jvm/bin/javaws<br/>
 	</div>
 
-	<h3>Incluir as variáveis de ambiente</h3>
-	<h4>Código</h4>
+	<p class="comum">Incluir as variáveis de ambiente</p>
+	<p class="miniatura">Código</p>
 	<div class="box sombra">
 		# vim /etc/profile<br/>
 	</div>
 
-	<h3>Va até o final do arquivo e inclua as seguintes linhas</h3>
-	<h4>Incluir no arquivo</h4>
+	<p class="comum">Va até o final do arquivo e inclua as seguintes linhas</p>
+	<p class="miniatura">Incluir no arquivo</p>
 	<div class="box sombra">
 		JAVA_HOME=/usr/lib/jvm<br/>
 		PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
@@ -70,17 +68,18 @@ include("cabecalho.php");
 		export PATH<br/>
 	</div>
 
-	<h3>Reiniciar e testar</h3>
-	<h4>Código</h4>
+	<p class="comum">Reiniciar e testar</p>
+	<p class="miniatura">Código</p>
 	<div class="box sombra">
 		# reboot<br/>
 		$ java -version<br/>
 		$ javac -version<br/>
 	</div>
 
-	<h3>Referências</h3>
-	<h4>Links</h4>
-	<div>
+	<p class="reduzido">Referências</p>
+    <p class="comum">Algumas referências</p>
+	<p class="miniatura">Links</p>
+	<div class="quadro">
 		<a href="https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux" class="a" target="_blank">https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux</a><br/><br/>
 		<a href="http://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users" class="a" target="_blank">http://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users</a><br/><br/>
 		<a href="https://devjava.wordpress.com/2014/01/21/env-002-instalacao-e-configuracao-da-jvm-e-jdk/" class="a" target="_blank">https://devjava.wordpress.com/2014/01/21/env-002-instalacao-e-configuracao-da-jvm-e-jdk/</a><br/><br/>

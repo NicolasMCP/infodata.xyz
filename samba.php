@@ -10,23 +10,23 @@ Meta   : Organizar as dicas do Samba (agora neste html, antes em OOo)
 include("cabecalho.php");
 ?>
 
-    <section>
-    <!--samba-->
+<section>
+<!--samba-->
 
-        <h1>SAMBA em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e<br/>
-            no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>SAMBA em Linux</h1>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-        <h2>Samba</h2>
-        <h3>Mudar as configurações do SAMBA</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
-            <a href="http://localhost:901" class="a" target="_blank">http://localhost:901</a><br/>
-        </div>
-        <h3>Logicamente só irá funcionar com o SAMBA instalado...</h3>
+    <h3>Mudar as configurações do SAMBA</h3>
+    <p class="comum">Abra seu browser (navegador) e digite o seguinte endereço</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <a href="http://localhost:901" class="a" target="_blank">http://localhost:901</a><br/>
+    </div>
+    <p class="comum">Logicamente só irá funcionar com o SAMBA instalado...</p>
 
-    </section>
+</section>
 
 <?php
-for($i=0; $i<29; $i++) {echo'<br/>';}
+for($i=0; $i<32; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

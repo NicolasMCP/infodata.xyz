@@ -17,8 +17,8 @@ include("cabecalho.php");
         <h1>Dicas do FireFox</h1>
 
         <h2>Acessar as Ferramentas de Desenvolvedor</h2>
-        <h3>Interessante para ver margens, padding e outros detalhes dos objetos da página</h3>
-        <h4>Procedimento</h4>
+        <p class="comum">Interessante para ver margens, padding e outros detalhes dos objetos da página</p>
+        <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             Pressione simultaneamente:<br/>
             Ctrl + Shift + i<br/>
@@ -27,6 +27,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<28; $i++) {echo'<br/>';}
+for($i=0; $i<32; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

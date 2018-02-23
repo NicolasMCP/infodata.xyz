@@ -16,27 +16,27 @@ include("cabecalho.php");
         <h1>Dicas do Google</h1>
 
         <h2>Google Fonts</h2>
-        <h3>Visualize os fontes de letra a incluir na sua aplicação</h3>
-        <h4>Procedimento</h4>
+        <p class="comum">Visualize os fontes de letra a incluir na sua aplicação</p>
+        <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             <a href="https://fonts.google.com/" target="_blank" class="a">https://fonts.google.com/</a><br/>
         </div>
 
-        <h3>dentro da página escolha um fonte, copie o nome e consulte a API do Google</h3>
-        <h4>Procedimento</h4>
+        <p class="comum">dentro da página escolha um fonte, copie o nome e consulte a API do Google</p>
+        <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             http://fonts.googleapis.com/css?family=[cole o nome aqui]<br/>
         </div>
 
-        <h3>para a fonte 'Arvo' vai ficar assim:</h3>
-        <h4>Link</h4>
+        <p class="comum">para a fonte 'Arvo' vai ficar assim:</p>
+        <p class="miniatura">Link</p>
 
         <div class="box sombra">
             <a href="http://fonts.googleapis.com/css?family=Arvo" target="_blank" class="a">http://fonts.googleapis.com/css?family=Arvo</a><br/>
         </div>
 
-        <h3>copie (ctrl + c) a o idioma que quiser e cole no CSS, exemplo:</h3>
-        <h4>Código</h4>
+        <p class="comum">copie (ctrl + c) a o idioma que quiser e cole no CSS, exemplo:</p>
+        <p class="miniatura">Código</p>
         <div class="box sombra">
             /* latin */<br/>
             @font-face {<br/>
@@ -48,14 +48,14 @@ include("cabecalho.php");
             }<br/>
         </div>
 
-        <h3>veja a informação sobre o uso da fonte 'Arvo'</h3>
-        <h4>Link</h4>
+        <p class="comum">veja a informação sobre o uso da fonte 'Arvo'</p>
+        <p class="miniatura">Link</p>
         <div class="box sombra">
             <a href="https://fonts.google.com/?selection.family=Arvo&category=Serif" target="_blank" class="a">https://fonts.google.com/?selection.family=Arvo&category=Serif</a><br/>
         </div>
 
-        <h3>veja a definição do font-family e use do mesmo modo no seu CSS</h3>
-        <h4>Código</h4>
+        <p class="comum">veja a definição do font-family e use do mesmo modo no seu CSS</p>
+        <p class="miniatura">Código</p>
         <div class="box sombra">
             font-family: 'Arvo', serif;<br/>
         </div>

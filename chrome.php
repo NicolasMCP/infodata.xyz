@@ -17,8 +17,8 @@ include("cabecalho.php");
         <h1>Dicas do Chrome</h1>
 
         <h2>Acessar as Ferramentas de Desenvolvedor</h2>
-        <h3>Interessante para ver margens, padding e outros detalhes dos objetos da página</h3>
-        <h4>Procedimento</h4>
+        <p class="comum">Interessante para ver margens, padding e outros detalhes dos objetos da página</p>
+        <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             Pressione simultaneamente:<br/>
             Ctrl + Shift + i<br/>
@@ -29,10 +29,10 @@ include("cabecalho.php");
         include("pre-rodape.php");
         ?>
 
-        <h2>Salvar sites como MHT</h2>
-        <h3>Os sites em MHT ficam com todo os componentes em um só arquivo, e podem ser abertos em diversos navegadores (no FireFox você precisa de um plugin).</h3>
-        <h3>Abra o Chrome e faça o procedimento a seguir...</h3>
-        <h4>Procedimento</h4>
+        <h3>Salvar sites como MHT</h3>
+        <p class="comum">Os sites em MHT ficam com todo os componentes em um só arquivo, e podem ser abertos em diversos navegadores (no FireFox você precisa de um plugin).</p>
+        <p class="comum">Abra o Chrome e faça o procedimento a seguir...</p>
+        <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             Na barra de endereços digite 'chrome://flags/'<br/>
             Pesquise por MHTML <br/>
@@ -47,6 +47,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<13; $i++) {echo'<br/>';}
+for($i=0; $i<15; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

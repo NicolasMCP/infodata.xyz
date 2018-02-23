@@ -67,12 +67,20 @@ h1 {
     color: #48D1CC;
     text-shadow: 1px 1px 1px #191970;
 }
-h2, h3, h4 {
+h2, h3, h4, h5, h6 {
     font-size: 28px;
     font-weight: lighter;
     text-shadow: 1px 1px 1px #A52A2A;
     color: #ff6666;
     margin-bottom: 12px;
+}
+.reduzido {
+    font-size: 20px;
+    font-family: 'Cousine', monospace;
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    margin-bottom: 8px;
 }
 .comum {
     font-size: 16px;

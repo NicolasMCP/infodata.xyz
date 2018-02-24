@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 21/01/2018
 Projeto: Dicas
 Meta   : Organizar as dicas de configuração da Porta SSH do Linux (agora neste html, antes em OOo)
 -->
@@ -10,32 +10,39 @@ Meta   : Organizar as dicas de configuração da Porta SSH do Linux (agora neste
 include("cabecalho.php");
 ?>
 
-    <section>
+<section>
 
-        <h1>Porta SSH, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e<br/>
-            no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>Mudando a Porta SSH</h1>
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-        <h2>Mudando a porta SSH</h2>
+    <h3>Configurando a porta SSH</h3>
 
-        <h3>Mudar a porta de acesso do SSH</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="comum">Para mudar a porta de acesso do SSH devemos editar o sshd_config</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo vim /etc/ssh/sshd_config<br/>
-        </div>
-        <h4>Código dentro do arquivo</h4>
-        <div class="box sombra">
-            #-------------------------------------------------<br/>
-            # MUDAR A PORTA NA PRÓXIMA LINHA:<br/>
-            Port 22<br/>
-           <br/>
-            #-------------------------------------------------<br/>
-        </div>
-        <h4>Código</h4>
-        <div class="box sombra">
-            $ sudo /etc/init.d/ssh restart<br/>
-        </div>
+        </code>
+    </div>
 
-    </section>
+    <p class="miniatura">Código dentro do arquivo</p>
+    <div class="box sombra">
+        #-------------------------------------------------<br/>
+        # MUDAR A PORTA NA PRÓXIMA LINHA:<br/>
+        Port 22<br/>
+       <br/>
+        #-------------------------------------------------<br/>
+    </div>
+
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
+            $ sudo /etc/init.d/ssh restart<br/>
+        </code>
+    </div>
+
+</section>
 
 <?php
 for($i=0; $i<21; $i++) {echo'<br/>';}

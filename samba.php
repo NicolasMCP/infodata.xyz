@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 Autor  : Nicolas Ramos
-Data   : 22/12/2017
+Data   : 08/02/2018
 Projeto: Dicas
 Meta   : Organizar as dicas do Samba (agora neste html, antes em OOo)
 -->

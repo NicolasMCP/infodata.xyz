@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 12/01/2018
 Projeto: Dicas
 Meta   : Organizar as dicas do phpstorm (agora neste html, antes em OOo)
 -->

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 07/02/2018
 Projeto: Dicas
-Meta   : Organizar as dicas do ie (agora neste html, antes em OOo)
+Meta   : Organizar as dicas do ie
 -->
 
 <?php

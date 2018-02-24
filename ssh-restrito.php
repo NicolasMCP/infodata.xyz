@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 21/01/2018
 Projeto: Dicas
 Meta   : Organizar as dicas do acesso SSH do Linux (agora neste html, antes em OOo)
 -->
@@ -10,44 +10,52 @@ Meta   : Organizar as dicas do acesso SSH do Linux (agora neste html, antes em O
 include("cabecalho.php");
 ?>
 
-    <section>
+<section>
 
-        <h1>SSH Restringindo o Acesso, para Linux<br/>
-            Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>SSH Restringindo o Acesso</h1>
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-        <h2>SSH Acesso restrito!</h2>
+    <h3>SSH Acesso restrito!</h3>
 
-        <h3>Se você ainda não instalou o Servidor de SSH</h3>
-        <h3>Utilize o comando a seguir...</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="comum">Se você ainda não instalou o Servidor de SSH</p>
+    <p class="comum">Utilize o comando a seguir...</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo apt install openssh-server<br/>
-        </div>
+        </code>
+    </div>
 
-        <h3>Permitir somente usuários predeterminados logar via SSH</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="comum">Permitir somente usuários predeterminados logar via SSH</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo vim /etc/ssh/sshd_config<br/>
-        </div>
+        </code>
+    </div>
 
-        <h4>Verify and Add In File</h4>
-        <div class="box sombra">
-            #--------------------------------------------------------<br/>
-            # VERIFICAR SE A PRÓXIMA LINHA ESTA IGUAL A ESTA:<br/>
-            PermitEmptyPasswords no<br/>
-           <br/>
-            # INCLUIR A PRÓXIMA LINHA:<br/>
-            AllowUsers root nome-usuario nome-usuario2<br/>
-            #--------------------------------------------------------<br/>
-        </div>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="miniatura">Verify and Add In File</p>
+    <div class="box sombra">
+        #--------------------------------------------------------<br/>
+        # VERIFICAR SE A PRÓXIMA LINHA ESTA IGUAL A ESTA:<br/>
+        PermitEmptyPasswords no<br/>
+       <br/>
+        # INCLUIR A PRÓXIMA LINHA:<br/>
+        AllowUsers root nome-usuario nome-usuario2<br/>
+        #--------------------------------------------------------<br/>
+    </div>
+
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo /etc/init.d/ssh restart<br/>
-        </div>
+        </code>
+    </div>
 
-    </section>
+</section>
 
 <?php
-for($i=0; $i<12; $i++) {echo'<br/>';}
+for($i=0; $i<13; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

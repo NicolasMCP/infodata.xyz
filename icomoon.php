@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
+Autor  : Nicolas Ramos
 Data   : 22/12/2017
 Projeto: Dicas
 Meta   : Organizar as dicas do IcoMoon (agora neste html, antes em OOo)

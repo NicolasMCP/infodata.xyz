@@ -11,7 +11,7 @@ Data   : 03/02/2018, 22:40:10
     width: 200px;
     position: relative;
     float: right;
-    margin-right: -200px;
+    margin-right: 400px;
     margin-top: 39px;
     visibility: hidden;
     opacity: 0;
@@ -79,7 +79,8 @@ Data   : 03/02/2018, 22:40:10
     cursor:  pointer;
 }
 #chk_menu:checked ~ .menu {
-    transition: all 1s;
+    margin-right: -200px;
+    transition: all 0.5s;
     opacity: 1;
     visibility: visible;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 24/02/2018
 Projeto: Dicas
 Meta   : Organizar as dicas do Node.js (agora neste html, antes em OOo)
 -->

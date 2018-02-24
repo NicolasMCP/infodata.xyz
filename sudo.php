@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 05/02/2018
 Projeto: Dicas
 Meta   : Organizar as dicas do Sudo do Linux (agora neste html, antes em OOo)
 -->
@@ -10,34 +10,39 @@ Meta   : Organizar as dicas do Sudo do Linux (agora neste html, antes em OOo)
 include("cabecalho.php");
 ?>
 
-    <section>
-    <!--sudo-->
+<section>
+<!--sudo-->
 
-        <h1>Sudo, no Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no<br/>
-            Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>Sudo, no Linux</h1>
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-        <h2>Configurar sudo</h2>
-        <h3>Você deve incluir o seu usuário no arquivo de configuração</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <h3>Configurar sudo</h3>
+    <p class="comum">Você deve incluir o seu usuário no arquivo de configuração</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             # visudo<br/>
-        </div>
+        </code>
+    </div>
 
-        <h3>Se o comando anterior não funcionar, use...</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="comum">Se o comando anterior não funcionar, use...</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             # apt install sudo<br/>
+        </code>
+    </div>
 
-        </div>
+    <p class="comum">dentro do arquivo (após a linha do root) inclua a linha com seu usuario</p>
+    <p class="miniatura">Incluir no arquivo (2º linha)</p>
+    <div class="box sombra">
+        root    ALL=(ALL:ALL) ALL<br/>
+        my      ALL=(ALL:ALL) ALL<br/>
+    </div>
+    <p class="comum">Reinicie o computador</p>
 
-        <h3>dentro do arquivo (após a linha do root) inclua a linha com seu usuario</h3>
-        <h4>Incluir no arquivo (2º linha)</h4>
-        <div class="box sombra">
-            root    ALL=(ALL:ALL) ALL<br/>
-            my      ALL=(ALL:ALL) ALL<br/>
-        </div>
-        <h3>Reinicie o computador</h3>
-    </section>
+</section>
 
 <?php
 for($i=0; $i<20; $i++) {echo'<br/>';}

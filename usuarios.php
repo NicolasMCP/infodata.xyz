@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 31/12/2017
 Projeto: Dicas
 Meta   : Organizar as dicas do Linux (agora neste html, antes em OOo)
 -->

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
-Autor  : Herley Ramos
-Data   : 22/12/2017
+Autor  : Nicolas Ramos
+Data   : 22/102/2018
 Projeto: Dicas
 Meta   : Organizar as dicas do Opera (agora neste html, antes em OOo)
 -->

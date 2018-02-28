@@ -10,31 +10,39 @@ Meta   : Organizar as dicas do SSH do Linux (agora neste html, antes em OOo)
 include("cabecalho.php");
 ?>
 
-    <section>
+<section>
 
-        <h1>Erro no SSH, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch <br/>
-            e Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>Corrigindo Erro no SSH</h1>
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">8</span> Jessie</h2>
 
-        <h2>SSH, Erro broken pipe</h2>
+    <h3>SSH, Corrigindo Erro de broken pipe</h3>
 
-        <h3>Para concertar temos que alterar um arquivo</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="comum">Para concertar temos que alterar um arquivo</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo vim /etc/ssh/sshd_config<br/>
-        </div>
-        <h4>Código dentro do arquivo</h4>
-        <div class="box sombra">
-            #-------------------------------------------------<br/>
-            # INCLUIR A PRÓXIMA LINHA:<br/>
-            ServerAliveInterval 30<br/>
-           <br/>
-            #-------------------------------------------------<br/>
-        </div>
-        <h4>Código</h4>
-        <div class="box sombra">
+        </code>
+    </div>
+
+    <p class="comum">Agora vamos modificar o arquivo</p>
+    <p class="miniatura">Parâmetro dentro do arquivo</p>
+    <div class="box sombra">
+        #-------------------------------------------------<br/>
+        # INCLUIR A PRÓXIMA LINHA:<br/>
+        ServerAliveInterval 30<br/>
+       <br/>
+        #-------------------------------------------------<br/>
+    </div>
+
+    <p class="comum">e reiniciamos o serviço ssh</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo /etc/init.d/ssh restart<br/>
-        </div>
-    </section>
+        </code>
+    </div>
+</section>
 
 <?php
 for($i=0; $i<21; $i++) {echo'<br/>';}

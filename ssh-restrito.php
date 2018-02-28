@@ -13,8 +13,7 @@ include("cabecalho.php");
 <section>
 
     <h1>SSH Restringindo o Acesso</h1>
-    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
-        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">8</span> Jessie</h2>
 
     <h3>SSH Acesso restrito!</h3>
 
@@ -35,15 +34,19 @@ include("cabecalho.php");
         </code>
     </div>
 
+    <p class="comum justify">
+        Verifique se encontra as seguintes linhas, dentro do arquivo, se estiverem comentadas, descomente;
+        se estiverem diferentes, modifique para ficar iguais a estas;
+        se não existirem, crie as que faltarem.
+    </p>
+    <p class="comum">A primeira linha só é necessaria caso queira incluir o 'root'</p>
+    <p class="comum justify">Nota: é considerada uma má pratica liberar o uso do 'root' pelo ssh, más as vezes é necessário.</p>
     <p class="miniatura">Verify and Add In File</p>
     <div class="box sombra">
-        #--------------------------------------------------------<br/>
-        # VERIFICAR SE A PRÓXIMA LINHA ESTA IGUAL A ESTA:<br/>
+        PermitRootLogin yes<br/>
+        PasswordAuthentication yes<br/>
         PermitEmptyPasswords no<br/>
-       <br/>
-        # INCLUIR A PRÓXIMA LINHA:<br/>
         AllowUsers root nome-usuario nome-usuario2<br/>
-        #--------------------------------------------------------<br/>
     </div>
 
     <p class="miniatura">Código</p>

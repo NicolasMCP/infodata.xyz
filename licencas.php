@@ -7,7 +7,7 @@ include("cabecalho.php");
 <!--licenças-->
 <h1>Licenças</h1>
 <h3>A seguir detalhes das licenças</h3>
-<h4>Licenças uso de ícones</h4>
+<p class="comum">Licenças uso de ícones</p>
 <div class="box">
     <p>
         Library Icons Feather, MIT Copyright <span class="icon-copyright"></span> 2018<br/>

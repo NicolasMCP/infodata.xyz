@@ -10,27 +10,34 @@ Meta   : Organizar as dicas do nmap do Linux (agora neste html, antes em OOo)
 include("cabecalho.php");
 ?>
 
-    <section>
+<section>
 
-        <h1>Usando nmap, Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch<br/>
-            e Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h1>
+    <h1>Usando nmap, no Linux</h1>
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-        <h2>Scaner de portas abertas</h2>
-        <h3>nmap IP</h3>
-        <h4>Código de exemplo</h4>
-        <div class="box sombra">
+    <h3>Scaner de portas abertas</h3>
+    <p class="comum">nmap IP</p>
+    <p class="miniatura">Código de exemplo</p>
+    <div class="box sombra">
+        <code>
             $ sudo nmap localhost<br/>
-            <h4>ou<br/></h4>
+        </code>
+        <p class="miniatura">ou<br/></p>
+        <code>
             $ sudo nmap 127.0.0.1<br/>
-        </div>
+        </code>
+    </div>
 
-        <h3>Se o comando nmap não funcionar</h3>
-        <h4>Código</h4>
-        <div class="box sombra">
+    <p class="comum">Se o comando nmap não funcionar</p>
+    <p class="miniatura">Código</p>
+    <div class="box sombra">
+        <code>
             $ sudo apt install nmap<br/>
-        </div>
+        </code>
+    </div>
 
-        <h3 class="justify">Quando usamos esse comando no localhost (ou 127.0.0.1) vemos os serviços ativos que usam portas, em nosso computador...</h3>
+    <p class="comum justify">Quando usamos esse comando no localhost (ou 127.0.0.1) vemos os serviços ativos que usam portas, em nosso computador...</p>
 
 </section>
 

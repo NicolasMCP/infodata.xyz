@@ -43,7 +43,6 @@ include("cabecalho.php");
 
     <h5 class="reduzido">Não Testado</h5>
 
-    <h6>Idioma dos Manuais</h6>
     <p class="comum">Instalar mais manuais do comando 'man' em português</p>
     <p class="miniatura">Código</p>
     <div class="box sombra">

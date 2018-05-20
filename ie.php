@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!--
-Autor  : Nicolas Ramos
-Data   : 07/02/2018
-Projeto: Dicas
-Meta   : Organizar as dicas do ie
+    Autor: Nicolas Ramos
+    Data : 07/02/2018
+    Nota : Organizar as dicas do ie
 -->
 
 <?php

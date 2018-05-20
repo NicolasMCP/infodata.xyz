@@ -1,5 +1,11 @@
 <!doctype html>
 
+<!--
+    Autor: Nicolas Ramos
+    Data : 29/12/2017
+    Nota : Detalhes das licenças de diversos componentes usados no site.
+-->
+
 <?php
 include("cabecalho.php");
 ?>
@@ -71,6 +77,3 @@ include("cabecalho.php");
 <?php
 include("rodape.php");
 ?>
-
-</body>
-</html>

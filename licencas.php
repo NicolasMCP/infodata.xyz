@@ -3,7 +3,7 @@
 <!--
     Autor: Nicolas Ramos
     Data : 29/12/2017
-    Nota : Detalhes das licenças de diversos componentes usados no site.
+    Nota : Detalhes das licenças de icones usados no site.
 -->
 
 <?php

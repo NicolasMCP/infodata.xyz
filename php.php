@@ -14,7 +14,7 @@ include("cabecalho.php");
 
     <h1>Instalando o PHP em Linux</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
-    <a href="#linux-mint" class="a" target="_parent">Veja como fazer a instalação no Linux Mint.</a>
+    <a href="#linux-mint" class="a" target="_parent">Instalação no Linux Mint.</a>
 
     <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.1.13</span> ou <span style="font-family: 'Noto Sans', sans-serif;">7.2.0</span> no Debian</h2>
     <p class="comum">Instalando o PHP</p>
@@ -115,7 +115,7 @@ include("cabecalho.php");
 
     <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.1.17</span> ou <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Linux Mint</h3>
     <h4 class="reduzido">Testado em Linux Mint 18.3</h4>
-    <a href="#top" class="a" target="_parent">Veja como fazer a instalação no Linux Debian.</a>
+    <a href="#top" class="a" target="_parent">Instalação no Linux Debian.</a>
 
     <p class="comum">Instalando o PHP no Linux Mint</p>
     <p class="miniatura">Código</p>

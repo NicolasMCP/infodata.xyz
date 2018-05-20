@@ -76,7 +76,8 @@ echo '<html lang="pt-br">
                         <li><a href="apache.php"><span class="icon-feather"></span>Apache</a></li>
                         <li><a href="mariaDB.php"><img src="img/mariadb.png" height="20px" width="28px">MariaDB</a></li>
                         <li><a href="mysql.php"><img src="img/mysql.png">MySQL</a></li>
-                        <li><a href="php.php"><span class="icon-file-php"></span>PHP</a></li>
+                        <li><a href="php.php"><span class="icon-file-php"></span>PHP Debian</a></li>
+                        <li><a href="php.php#linux-mint"><span class="icon-file-php"></span>PHP Mint</a></li>
                         <li><a href="node.php"><img src="img/nodejs.png" height="20px" width="28px">Node.js</a></li>
                     </ul>
                 <li>

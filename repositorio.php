@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!--
-Autor  : Nicolas Ramos
-Data   : 19/02/2018
-Projeto: Dicas
-Meta   : Organizar as dicas do Linux (agora neste html, antes em OOo)
+    Autor: Nicolas Ramos
+    Data : 19/02/2018
+    Nota : Organizar as dicas do Linux (agora neste html, antes em OOo)
 -->
 
 <?php

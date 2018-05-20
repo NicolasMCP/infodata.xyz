@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!--
-Autor  : Nicolas Ramos
-Data   : 12/01/2018
-Projeto: Dicas
-Meta   : Organizar as dicas do phpstorm (agora neste html, antes em OOo)
+    Autor: Nicolas Ramos
+    Data : 12/01/2018
+    Nota : Organizar as dicas do phpstorm (agora neste html, antes em OOo)
 -->
 
 <?php

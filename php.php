@@ -76,7 +76,7 @@ include("cabecalho.php");
             end Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies<br/>
             &nbsp;&nbsp;&nbsp;with Zend OPcache v7.1.13-1+0~20180105151623.14+stretch~1.gbp1086fa, Copyright (c) 1999-2017, by Zend Technologies<br/>
         </p>
-              <p class="miniatura">ou se você instalou o PHP 7.2.0...</p>
+              <p class="miniatura">ou se você instalou o PHP 7.2...</p>
         <p style="font-size: 12px;"><br/>
             PHP 7.2.0-1+0~20171201111333.14+stretch~1.gbp47ee8a (cli) (built: Dec  1 2017 11:13:35) ( NTS )<br/>
             Copyright (c) 1997-2017 The PHP Group<br/>
@@ -171,7 +171,7 @@ include("cabecalho.php");
             Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies<br/>
             with Zend OPcache v7.1.17-1+ubuntu16.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
         </p>
-        <p class="miniatura">ou se você instalou o PHP 7.2.0...</p>
+        <p class="miniatura">ou se você instalou o PHP 7.2...</p>
         <p style="font-size: 12px;"><br/>
             PHP 7.2.5-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: May  5 2018 04:59:13) ( NTS )<br/>
             Copyright (c) 1997-2018 The PHP Group<br/>

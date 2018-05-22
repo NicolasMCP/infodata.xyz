@@ -17,7 +17,7 @@ include("cabecalho.php");
     <h3>SSH, Corrigindo Erro de broken pipe</h3>
 
     <p class="comum">Para concertar temos que alterar um arquivo</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo vim /etc/ssh/sshd_config<br/>
@@ -25,17 +25,17 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Agora vamos modificar o arquivo</p>
-    <p class="miniatura">Parâmetro dentro do arquivo</p>
+    <p class="miniatura">Par&acirc;metro dentro do arquivo</p>
     <div class="box sombra">
         #-------------------------------------------------<br/>
-        # INCLUIR A PRÓXIMA LINHA:<br/>
+        # INCLUIR A PR&Oacute;XIMA LINHA:<br/>
         ServerAliveInterval 30<br/>
        <br/>
         #-------------------------------------------------<br/>
     </div>
 
-    <p class="comum">e reiniciamos o serviço ssh</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">e reiniciamos o servi&ccedil;o ssh</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo /etc/init.d/ssh restart<br/>

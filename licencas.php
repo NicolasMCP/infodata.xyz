@@ -11,9 +11,9 @@ include("cabecalho.php");
 ?>
 
 <!--licenças-->
-<h1>Licenças</h1>
-<h3>A seguir detalhes das licenças</h3>
-<p class="comum">Licenças uso de ícones</p>
+<h1>Licen&ccedil;as</h1>
+<h3>A seguir detalhes das licen&ccedil;as</h3>
+<p class="comum">Licen&ccedil;as uso de ícones</p>
 <div class="box">
     <p>
         Library Icons Feather, MIT Copyright <span class="icon-copyright"></span> 2018<br/>
@@ -21,7 +21,7 @@ include("cabecalho.php");
 
     <p>
         Permission is hereby granted, free of charge, to any person obtaining a copy
-        of this software and associated documentation files (the "Software"), to deal
+        of this software and associated documentation files (the &quot;Software&quot;), to deal
         in the Software without restriction, including without limitation the rights
         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
         copies of the Software, and to permit persons to whom the Software is
@@ -33,7 +33,7 @@ include("cabecalho.php");
     </p><br/>
 
     <p>
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -52,9 +52,9 @@ include("cabecalho.php");
     </p><br/>
 
     <p>
-        Qual é a licença?<br/>
-        Você é livre para usar o Hawcons para fins comerciais e pessoais sem atribuição, no entanto, um crédito para o trabalho seria apreciado. Você não pode vender ou redistribuir os próprios ícones como ícones. Não reivindique crédito criativo.<br/>
-        Se você tiver alguma dúvida adicional, entre em contato com a Hawcons por e-mail ou redes sociais.<br/><br/>
+        Qual &eacute; a licen&ccedil;a?<br/>
+        Voc&ecirc; &eacute; livre para usar o Hawcons para fins comerciais e pessoais sem atribui&ccedil;&atilde;o, no entanto, um cr&eacute;dito para o trabalho seria apreciado. Voc&ecirc; n&atilde;o pode vender ou redistribuir os pr&oacute;prios &iacute;cones como &iacute;cones. N&atilde;o reivindique cr&eacute;dito criativo.<br/>
+        Se voc&ecirc; tiver alguma d&uacute;vida adicional, entre em contato com a Hawcons por e-mail ou redes sociais.<br/><br/>
 
         <a href="http://hawcons.com/faq/" class="a" target="_blank">http://hawcons.com/faq/</a><br/>
     </p><br/>

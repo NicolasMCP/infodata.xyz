@@ -14,19 +14,19 @@ include("cabecalho.php");
 
     <h1>Instalando o PHP em Linux</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
-    <a href="#linux-mint" class="a" target="_parent">Instalação no Linux Mint.</a>
+    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
 
     <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.1.13</span> ou <span style="font-family: 'Noto Sans', sans-serif;">7.2.0</span> no Debian</h2>
     <p class="comum">Instalando o PHP</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install apt-transport-https lsb-release ca-certificates<br/>
             $ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg<br/>
             $ sudo su<br/>
-            # echo "## PHP 7.1.13 e 7.2.0" >> /etc/apt/sources.list<br/>
+            # echo &quot;## PHP 7.1.13 e 7.2.0&quot; &gt;&gt; /etc/apt/sources.list<br/>
             <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br/>-->
-            # echo "deb https://packages.sury.org/php/ <strong>stretch</strong> main" >> /etc/apt/sources.list<br/>
+            # echo &quot;deb https://packages.sury.org/php/ <strong>stretch</strong> main&quot; &gt;&gt; /etc/apt/sources.list<br/>
         </code>
         <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br/><br/></p>
         <code>
@@ -36,7 +36,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Agora a parte que muda, para PHP 7.1 use:</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install php7.1 libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json<br/>
@@ -49,8 +49,8 @@ include("cabecalho.php");
         </code>
     </div>
 
-    <p class="comum">Já para o PHP 7.2 use:</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">J&aacute; para o PHP 7.2 use:</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json<br/>
@@ -63,8 +63,8 @@ include("cabecalho.php");
         </code>
     </div>
 
-    <p class="comum">Teste a instalação</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Teste a instala&ccedil;&atilde;o</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ php -v<br/>
@@ -85,8 +85,8 @@ include("cabecalho.php");
         </p>
     </div>
 
-    <p class="comum">Crie um arquivo php de informações</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Crie um arquivo php de informa&ccedil;&odblac;es</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ cd /var/www/html<br/>
@@ -99,7 +99,7 @@ include("cabecalho.php");
         <code>
             <span style="color: orange">&lt;?</span><span style="color: red">php</span><br/>
             <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br/>
-            <span style="color: orange">?></span><br/>
+            <span style="color: orange">?&gt;</span><br/>
         </code>
     </div>
 
@@ -115,22 +115,22 @@ include("cabecalho.php");
 
     <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.1.17</span> ou <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Linux Mint</h3>
     <h4 class="reduzido">Testado em Linux Mint 18.3</h4>
-    <a href="#top" class="a" target="_parent">Instalação no Linux Debian.</a>
+    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">Instalando o PHP no Linux Mint</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install python-software-properties<br>
             $ sudo add-apt-repository ppa:ondrej/php<br>
         </code>
-        <p class="miniatura">Atualizar pelo 'gerenciador de atualizações'<br/>
-            Atualizar > Instalar Atualizações<br/><br/></p>
+        <p class="miniatura">Atualizar pelo 'gerenciador de atualiza&ccedil;&odblac;es'<br/>
+            Atualizar &gt; Instalar Atualiza&ccedil;&odblac;es<br/><br/></p>
     </div>
 
 
     <p class="comum">Agora a parte que muda, para PHP 7.1 use:</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install php7.1 libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json<br/>
@@ -143,8 +143,8 @@ include("cabecalho.php");
         </code>
     </div>
 
-    <p class="comum">Já para o PHP 7.2 use:</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">J&aacute; para o PHP 7.2 use:</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json<br/>
@@ -158,8 +158,8 @@ include("cabecalho.php");
     </div>
 
 
-    <p class="comum">Teste a instalação</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Teste a instala&ccedil;&atilde;o</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ php -v<br/>
@@ -181,8 +181,8 @@ include("cabecalho.php");
     </div>
 
 
-    <p class="comum">Agora crie um arquivo php de informações</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Agora crie um arquivo php de informa&ccedil;&odblac;es</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ cd /var/www/html<br/>
@@ -195,7 +195,7 @@ include("cabecalho.php");
         <code>
             <span style="color: orange">&lt;?</span><span style="color: red">php</span><br/>
             <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br/>
-            <span style="color: orange">?></span><br/>
+            <span style="color: orange">?&gt;</span><br/>
         </code>
     </div>
 
@@ -205,38 +205,38 @@ include("cabecalho.php");
         <a href="http://localhost/phpinfo.php" class="a" target="_blank">http://localhost/phpinfo.php</a>
     </div>
 
-    <p class="comum">Já me aconteceu uma vez que fui testar e só dava uma tela em branco</p>
-    <p class="comum">em vez de aparecerem as informações do phpinfo();</p>
+    <p class="comum">J&aacute; me aconteceu uma vez que fui testar e s&oacute; dava uma tela em branco</p>
+    <p class="comum">em vez de aparecerem as informa&ccedil;&odblac;es do phpinfo();</p>
     <p class="comum">aqui algumas coisas que ajudaram:</p>
-    <p class="comum">o comando 'php -v' (box um pouco acima), mostrava as informações de versão</p>
-    <p class="comum">corretamente, então fomos um pouco mais a fundo, no terminal</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">o comando 'php -v' (box um pouco acima), mostrava as informa&ccedil;&odblac;es de vers&atilde;o</p>
+    <p class="comum">corretamente, ent&atilde;o fomos um pouco mais a fundo, no terminal</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ php -a<br>
         <p style="font-size: 12px;"><br/>
             Interactive mode enabled<br/>
-            php ><br/>
+            php &gt;<br/>
         </p>
     </div>
 
-    <p class="comum">então digitamos</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">ent&atilde;o digitamos</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         php > phpinfo();<br/>
     </div>
 
-    <p class="comum">E o programa respondeu com as informações do phpinfo(); em modo texto,</p>
+    <p class="comum">E o programa respondeu com as informa&ccedil;&odblac;es do phpinfo(); em modo texto,</p>
     <p class="comum">assim ficamos sabendo que o php estava funcionando.</p>
     <p class="comum">Portanto</p>
 
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ sudo vim /etc/php/7.2/apache2/php.ini<br/>
     </div>
 
-    <p class="comum">Procure display_errors (<a href="vim.php" class="a" target="_blank">aprenda o básico do VIM</a>).</p>
+    <p class="comum">Procure display_errors (<a href="vim.php" class="a" target="_blank">aprenda o b&aacute;sico do VIM</a>).</p>
     <p class="comum">Se encontrar a linha seguinte descomente (se tiver um ';' no inicio da linha).</p>
-    <p class="comum">Se ela não existir, inclua conforme a seguir:</p>
+    <p class="comum">Se ela n&atilde;o existir, inclua conforme a seguir:</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         display_errors = On<br/>
@@ -252,7 +252,7 @@ include("cabecalho.php");
 
     <p id="phpBrasil" class="comum">AGRADECIMENTO: Gostariamos de deixar registrados nossos agradecimentos a</p>
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Juliano S S, e Igor de Paula. do PHP Brasil (telegram),</p>
-    <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pela sua ajuda na solução deste problema.</p>
+    <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pela sua ajuda na solu&ccedil;&atilde;o deste problema.</p>
 
 
 </section>

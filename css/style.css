@@ -133,7 +133,7 @@ section {
     width: 800px;
     font-size: 15px;
     font-family: 'Noto Sans', sans-serif;
-    background: #FFF; /* Blanco */
+    background: #FFF;
     margin: auto auto 25px;
     padding: 15px;
     box-sizing: border-box;
@@ -145,42 +145,40 @@ section {
     background: #E0E6E6;
     margin: 15px auto 25px;
     padding: 15px;
-    /*border: 1px #999999 solid;*/
     border: 1px #9DACB4 solid;
 }
 .sombra {
-    position: relative;   /* Posición relativa que se refiere a antes y después */
+    position: relative;   /* Posição relativa que se refere a antes y depois */
 }
-.sombra:before, .sombra:after  /* Aplicar algunas propiedades mutuas antes y después de este elemento */
+.sombra:before, .sombra:after  /* Aplicar algumas propriedades mutuas antes y despois deste elemento */
 {
-    z-index: -1;          /* Enviar este elemento hacia atrás */
-    position: absolute;   /* Posicionamiento absoluto que se refiere a effect2 */
-    content: "";          /* Solo necesario, no hay necesidad de poner nada dentro  */
-    bottom: 8px;         /* Alineación de la sombra inferior, menos está más cerca de la parte inferior */
-    left: 12px;           /* Considere esto como un margen izquierdo */
-    width: 50%;           /* Anchura del fondo del elemento sombra */
-    top: 10px;             /* 50% Considere esto como el borde superior del elemento sombra */
-    max-width: 387.5px;      /* Restringe el ancho máximo del elemento sombra  */
-    background: #E6E6E6;     /* #111 #E6E6E6 Da un color de fondo al elemento sombra  */
-    -webkit-box-shadow: 0 15px 10px #111; /* Aplicación por compatibilidad */
-    -moz-box-shadow: 0 15px 10px #111;    /* Aplicación por compatibilidad */
-    box-shadow: 0 15px 10px #111; /* Aplicado la propiedad básica de la caja-sombra */
-    /* Rotación de sombras / elementos da ese aspecto 3D a la caja */
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-2deg);
+    z-index: -1;          /* Enviar este elemento para tras */
+    position: absolute;   /* Posicionamento absoluto do effect2 */
+    content: "";          /* Necessario para que apareça */
+    bottom: 8px;          /* Alienação da sombra inferior, quanto menos for o valor, mais perto da parte inferior */
+    left: 12px;           /* Considere como margem esquerda */
+    width: 50%;           /* Tamanho de fundo da sombra */
+    top: 10px;            /* 50% Considere como borda superior da sombra */
+    max-width: 387.5px;   /* Tamanho máximo da sombra  */
+    background: #E6E6E6;  /* #111 #E6E6E6 Cor de fundo da sombra  */
+    box-shadow: 0 15px 10px #111;         /* Aplicado a propriedade básica da caixa sombra */
+    -moz-box-shadow: 0 15px 10px #111;
+    -webkit-box-shadow: 0 15px 10px #111;
+    transform: rotate(-2deg);             /* Rotação de sombras / elementos que dão o aspecto 3D da caixa */
     -o-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
-    transform: rotate(-2deg);
+    -webkit-transform: rotate(-3deg);
 }
 .sombra:after
 {
-    -webkit-transform: rotate(2deg);  /* aligns the shadow right */
+    -webkit-transform: rotate(2deg);  /* alinhamento da sombra a direita */
     -moz-transform: rotate(2deg);
     -o-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     transform: rotate(2deg);
-    right: 12px;                  /* Considere esto como un margen derecho */
-    left: auto;                   /* leave this auto to automatically set the left */
+    right: 12px;                      /* Considere como margem direita */
+    left: auto;                       /* deixe em 'auto' para definir automaticamente a esquerda */
 }
 .papel {
     width: 800px;
@@ -189,7 +187,7 @@ section {
     margin: auto;
     padding: 15px;
     box-sizing: border-box;
-    border: 1px solid gray; /*  */
+    border: 1px solid gray;
     position: relative;
 }
 .papel:after {

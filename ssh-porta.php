@@ -2,7 +2,7 @@
 <!--
     Autor: Nicolas Ramos
     Data : 21/01/2018
-    Nota : Organizar as dicas de configuração da Porta SSH do Linux (agora neste html, antes em OOo)
+    Nota : Organizar as dicas de configura&ccedil;&atilde;o da Porta SSH do Linux (agora neste html, antes em OOo)
 -->
 
 <?php
@@ -18,23 +18,23 @@ include("cabecalho.php");
     <h3>Configurando a porta SSH</h3>
 
     <p class="comum">Para mudar a porta de acesso do SSH devemos editar o sshd_config</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo vim /etc/ssh/sshd_config<br/>
         </code>
     </div>
 
-    <p class="miniatura">Código dentro do arquivo</p>
+    <p class="miniatura">C&oacute;digo dentro do arquivo</p>
     <div class="box sombra">
         #-------------------------------------------------<br/>
-        # MUDAR A PORTA NA PRÓXIMA LINHA:<br/>
+        # MUDAR A PORTA NA PR&Oacute;XIMA LINHA:<br/>
         Port 22<br/>
        <br/>
         #-------------------------------------------------<br/>
     </div>
 
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo /etc/init.d/ssh restart<br/>

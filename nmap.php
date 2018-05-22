@@ -17,7 +17,7 @@ include("cabecalho.php");
 
     <h3>Scaner de portas abertas</h3>
     <p class="comum">nmap IP</p>
-    <p class="miniatura">Código de exemplo</p>
+    <p class="miniatura">C&oacute;digo de exemplo</p>
     <div class="box sombra">
         <code>
             $ sudo nmap localhost<br/>
@@ -28,15 +28,15 @@ include("cabecalho.php");
         </code>
     </div>
 
-    <p class="comum">Se o comando nmap não funcionar</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Se o comando nmap n&atilde;o funcionar</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install nmap<br/>
         </code>
     </div>
 
-    <p class="comum justify">Quando usamos esse comando no localhost (ou 127.0.0.1) vemos os serviços ativos que usam portas, em nosso computador...</p>
+    <p class="comum justify">Quando usamos esse comando no localhost (ou 127.0.0.1) vemos os servi&ccedil;os ativos que usam portas, em nosso computador...</p>
 
 </section>
 

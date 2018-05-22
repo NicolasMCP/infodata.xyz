@@ -16,11 +16,11 @@ include("cabecalho.php");
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Instalando o Acesso ao Painel de Controle do Java</h3>
-    <p class="comum">Criando atalhos dos menús</p>
-    <p class="comum">Copie o código a seguir e cole no seu Terminal</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Criando atalhos dos men&uacute;s</p>
+    <p class="comum">Copie o c&oacute;digo a seguir e cole no seu Terminal</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <span class="b">$ sudo tee /usr/share/applications/java-control.desktop <<</span><span class="b">ATALHO<br/>
+        <span class="b">$ sudo tee /usr/share/applications/java-control.desktop &lt;&lt;</span><span class="b">ATALHO<br/>
         [Desktop Entry]<br/>
         Encoding=UTF-8<br/>
         Name=Java<br/>

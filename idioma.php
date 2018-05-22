@@ -17,14 +17,14 @@ include("cabecalho.php");
 
     <h3>Idioma do teclado</h3>
 
-    <p class="comum">Trocar o mapa do teclado para português brasileiro</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Trocar o mapa do teclado para portugu&ecirc;s brasileiro</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ sudo setxkbmap br<br/>
     </div>
 
     <p class="comum">Trocar o mapa do teclado para espanhol</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ sudo setxkbmap es<br/>
     </div>
@@ -35,15 +35,15 @@ include("cabecalho.php");
 
     <h4>Idioma dos Manuais</h4>
     <p class="comum">Instalar mais manuais do comando 'man' em espanhol</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ sudo apt install manpages-es manpages-es-extra<br/>
     </div>
 
-    <h5 class="reduzido">Não Testado</h5>
+    <h5 class="reduzido">N&atilde;o Testado</h5>
 
-    <p class="comum">Instalar mais manuais do comando 'man' em português</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Instalar mais manuais do comando 'man' em portugu&ecirc;s</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ sudo apt install manpages-pt manpages-pt-extra<br/>
     </div>

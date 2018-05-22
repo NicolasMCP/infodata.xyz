@@ -16,17 +16,17 @@ include("cabecalho.php");
 
     <h3>SSH Acesso restrito!</h3>
 
-    <p class="comum">Se você ainda não instalou o Servidor de SSH</p>
+    <p class="comum">Se voc&ecirc; ainda n&atilde;o instalou o Servidor de SSH</p>
     <p class="comum">Utilize o comando a seguir...</p>
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install openssh-server<br/>
         </code>
     </div>
 
-    <p class="comum">Permitir somente usuários predeterminados logar via SSH</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Permitir somente usu&aacute;rios predeterminados logar via SSH</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo vim /etc/ssh/sshd_config<br/>
@@ -36,10 +36,10 @@ include("cabecalho.php");
     <p class="comum justify">
         Verifique se encontra as seguintes linhas, dentro do arquivo, se estiverem comentadas, descomente;
         se estiverem diferentes, modifique para ficar iguais a estas;
-        se não existirem, crie as que faltarem.
+        se n&atilde;o existirem, crie as que faltarem.
     </p>
-    <p class="comum">A primeira linha só é necessaria caso queira incluir o 'root'</p>
-    <p class="comum justify">Nota: é considerada uma má pratica liberar o uso do 'root' pelo ssh, más as vezes é necessário.</p>
+    <p class="comum">A primeira linha s&oacute; &eacute; necessaria caso queira incluir o 'root'</p>
+    <p class="comum justify">Nota: &eacute; considerada uma m&aacute; pratica liberar o uso do 'root' pelo ssh, m&aacute;s as vezes &eacute; necess&aacute;rio.</p>
     <p class="miniatura">Verify and Add In File</p>
     <div class="box sombra">
         PermitRootLogin yes<br/>
@@ -48,7 +48,7 @@ include("cabecalho.php");
         AllowUsers root nome-usuario nome-usuario2<br/>
     </div>
 
-    <p class="miniatura">Código</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo /etc/init.d/ssh restart<br/>

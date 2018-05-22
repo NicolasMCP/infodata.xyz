@@ -57,7 +57,7 @@ echo '<html lang="pt-br">
                         <li><a href="buscas.php"><span class="icon-search"></span>Buscas</a></li>
                         <li><a href="idioma.php"><span class="icon-language"></span>Idioma</a></li>
                         <li><a href="samba.php"><span class="icon-folders"></span>Samba</a></li>
-                        <li><a href="usuarios.php"><span class="icon-user"></span>Usuários</a></li>
+                        <li><a href="usuarios.php"><span class="icon-user"></span>Usu&aacute;rios</a></li>
                     </ul>
                </li>
                 <li>
@@ -102,11 +102,11 @@ echo '<html lang="pt-br">
                         <li><a href="vim.php"><img src="img/vim.png" height="20px" width="28px">Vim</a></li>
                     </ul>
                 <li><a href="icomoon.php"><span class="icon-IcoMoon"></span>IcoMoon</a></li>
-                <li><a href="licencas.php"><span class="icon-copyright"></span>Licenças</a></li>
+                <li><a href="licencas.php"><span class="icon-copyright"></span>Licen&ccedil;as</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Botão exibida conforme a rolagem, "backontop.js" -->
+    <!-- Bot&atilde;o exibida conforme a rolagem, "backontop.js" -->
     <a class="tutop" onclick="up();"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a>
     <!-- <a href="#top" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a> -->
     '

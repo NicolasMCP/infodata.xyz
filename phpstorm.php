@@ -14,11 +14,11 @@ include("cabecalho.php");
 
     <h1>Dicas de Uso do PHPStorm</h1>
 
-    <h2>Edição Multilinha</h2>
-    <p class="comum">Para quando queremos inserir os mesmos comandos em várias linhas...</p>
+    <h2>Edi&ccedil;&atilde;o Multilinha</h2>
+    <p class="comum">Para quando queremos inserir os mesmos comandos em v&aacute;rias linhas...</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        Ctrl + Alt + Shift + (Click Cursor Mouse) nas linas a editar<br/>
+        Ctrl + Alt + Shift + (Click Cursor Mouse) nas linhas a editar<br/>
     </div>
 
     <?php
@@ -26,10 +26,10 @@ include("cabecalho.php");
     ?>
 
     <h3>Ativar quebra automatica de linha</h3>
-    <p class="comum justify">Quando a linha é muito longa, se desejamos que ela se divida automaticamente em várias linhas (de acordo com o tamanho da tela do editor).</p>
+    <p class="comum justify">Quando a linha &eacute; muito longa, se desejamos que ela se divida automaticamente em v&aacute;rias linhas (de acordo com o tamanho da tela do editor).</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        File > Settings > Editor > General > Soft Wraps ><br/>
+        File &gt; Settings &gt; Editor &gt; General &gt; Soft Wraps &gt;<br/>
         ative o checkbox: 'Use soft wraps in editor'<br/>
     </div>
 
@@ -44,17 +44,17 @@ include("cabecalho.php");
     <p class="comum">No projeto atual do phpstorm...</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        File > Settings > Languages & Frameworks > PHP<br/>
-        > PHP Language Level = 7.2<br/>
-        > Cli Interpreter = ... > + > /usr/bin/php7.2 > Apply > Ok > Apply > Ok<br/>
+        File &gt; Settings &gt; Languages &amp; Frameworks &gt; PHP<br/>
+        &gt; PHP Language Level = 7.2<br/>
+        &gt; Cli Interpreter = ... &gt; + &gt; /usr/bin/php7.2 &gt; Apply &gt; Ok &gt; Apply &gt; Ok<br/>
     </div>
 
     <p class="comum">Depois para projetos futuros (default)...</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        File > Default Settings > Languages & Frameworks > PHP<br/>
-        > PHP Language Level = 7.2<br/>
-        > Cli Interpreter = ... > + > /usr/bin/php7.2 > Apply > Ok > Apply > Ok<br/>
+        File &gt; Default Settings &gt; Languages &amp; Frameworks &gt; PHP<br/>
+        &gt; PHP Language Level = 7.2<br/>
+        &gt; Cli Interpreter = ... &gt; + &gt; /usr/bin/php7.2 &gt; Apply &gt; Ok &gt; Apply &gt; Ok<br/>
     </div>
 
     <p class="comum">Referência</p>
@@ -66,13 +66,13 @@ include("cabecalho.php");
     include("pre-rodape.php");
     ?>
 
-    <h5>Dicionário em Português no PHPStorm</h5>
+    <h5>Dicion&aacute;rio em Portugu&ecirc;s no PHPStorm</h5>
 
-    <p class="comum">Como instalar o dicionário em Português...</p>
+    <p class="comum">Como instalar o dicion&aacute;rio em Português...</p>
     <p class="comum">Primeiramente fazer o seguinte</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        baixe o dicionário de:<br/>
+        baixe o dicion&aacute;rio de:<br/>
         <a href="https://github.com/rafaelsc/IntelliJ.Portuguese.Brazil.Dictionary" target="_blank" class="a">https://github.com/rafaelsc/IntelliJ.Portuguese.Brazil.Dictionary</a><br/>
         (descompacte o arquivo em uma pasta)<br/>
     </div>
@@ -80,19 +80,19 @@ include("cabecalho.php");
     <p class="comum">No projeto atual do phpstorm...</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        File > Settings > Editor > Spelling > Dictionaries >
+        File &gt; Settings &gt; Editor &gt; Spelling &gt; Dictionaries &gt;
         (clique no sinal de) +<br/>
-        (inclua o caminho da pasta descompactada do dicionário)<br/>
-        (botões) Apply > Ok<br/>
+        (inclua o caminho da pasta descompactada do dicion&aacute;rio)<br/>
+        (bot&odblac;es) Apply &gt; Ok<br/>
     </div>
 
     <p class="comum">Para projetos futuros (default)...</p>
     <p class="comum">Procedimento</p>
     <div class="box sombra">
-        File > Default Settings > Editor > Spelling > Dictionaries >
+        File &gt; Default Settings &gt; Editor &gt; Spelling &gt; Dictionaries &gt;
         (clique no sinal de) +<br/>
-        (inclua o caminho da pasta descompactada do dicionário)<br/>
-        (botões) Apply > Ok<br/>
+        (inclua o caminho da pasta descompactada do dicion&aacute;rio)<br/>
+        (bot&odblac;es) Apply &gt; Ok<br/>
     </div>
 
 </section>

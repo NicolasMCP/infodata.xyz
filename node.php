@@ -18,7 +18,7 @@ include("cabecalho.php");
 
     <h3>Instalando o Node.js</h3>
     <p class="comum">Siga estes passos...</p>
-	<p class="miniatura">Código</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
             $ su<br/>
@@ -29,8 +29,8 @@ include("cabecalho.php");
         </code>
 	</div>
 
-	<p class="comum">Teste a instalação</p>
-	<p class="miniatura">Código</p>
+	<p class="comum">Teste a instala&ccedil;&atilde;o</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
             $ node -v<br/>
@@ -48,7 +48,7 @@ include("cabecalho.php");
 
 	<h3>Instalar TypeScript no Linux</h3>
     <p class="comum">Instalando o <strong>TypeScript</strong></p>
-	<p class="miniatura">Código</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
             $ sudo npm install -g typescript<br/>
@@ -60,7 +60,7 @@ include("cabecalho.php");
 
 	<h4>Instalar @angular/cli no Linux</h4>
     <p class="comum">Instalando o Angular Cli</p>
-	<p class="miniatura">Código</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
             $ su -<br/>
@@ -71,8 +71,8 @@ include("cabecalho.php");
         </samp>
 	</div>
 
-	<p class="comum">Verificação do ambiente</p>
-	<p class="miniatura">Código</p>
+	<p class="comum">Verifica&ccedil;&atilde;o do ambiente</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
             $ ng -v<br/>

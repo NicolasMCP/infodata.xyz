@@ -17,24 +17,24 @@ include("cabecalho.php");
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Configurar sudo</h3>
-    <p class="comum">Você deve incluir o seu usuário no arquivo de configuração</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Você deve incluir o seu usu&aacute;rio no arquivo de configura&ccedil;&atilde;o</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             # visudo<br/>
         </code>
     </div>
 
-    <p class="comum">Se o comando anterior não funcionar, use...</p>
-    <p class="miniatura">Código</p>
+    <p class="comum">Se o comando anterior n&atilde;o funcionar, use...</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             # apt install sudo<br/>
         </code>
     </div>
 
-    <p class="comum">dentro do arquivo (após a linha do root) inclua a linha com seu usuario</p>
-    <p class="miniatura">Incluir no arquivo (2º linha)</p>
+    <p class="comum">dentro do arquivo (ap&oacute;s a linha do root) inclua a linha com seu usuario</p>
+    <p class="miniatura">Incluir no arquivo (2&ordm; linha)</p>
     <div class="box sombra">
         root    ALL=(ALL:ALL) ALL<br/>
         my      ALL=(ALL:ALL) ALL<br/>

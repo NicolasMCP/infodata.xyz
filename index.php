@@ -10,50 +10,50 @@ include("cabecalho.php");
 ?>
 
     <section>
-        <h1>Página Inicial...</h1>
+        <h1>P&aacute;gina Inicial...</h1>
 
         <h2>Nas Dicas InfoData, coloco dicas dos mais diversos tipos</h2>
         <div class="comum">
             <p class="justify indent">
-                Começei aderindo a mentalidade 'Clean', mas depois achei mais divertido colocar um
-                pouco mais de 'cor', para que não ficasse tâo P&B. <span class="icon-wink"></span>
+                Come&ccedil;ei aderindo a mentalidade 'Clean', mas depois achei mais divertido colocar um
+                pouco mais de 'cor', para que n&atilde;o ficasse t&acirc;o P&amp;B. <span class="icon-wink"></span>
             </p><br/>
             <p class="justify indent">
-            O objetivo deste espaço e que sirva como fonte de informações claras para consulta rápida
+            O objetivo deste espa&ccedil;o e que sirva como fonte de informa&ccedil;&odblac;es claras para consulta r&aacute;pida
                (principalmente para mim mesmo). Muitas vezes da um branco e esquecemos de certa
-               instalação, implantação ou procedimento que já tinhamos feito várias vezes antes...
-               E é chato ter que ficar
-               buscando informações, uma e outra vez. Além disso, as vezes, alguns dos sites
-               onde tinhamos encontrado as informações inicialmente, não tem a explicação exata e
-               detalhada do que desejamos. Também esses sites podem 'sair do ar'... Daí, só nos
+               instala&ccedil;&atilde;o, implanta&ccedil;&atilde;o ou procedimento que j&aacute; tinhamos feito v&aacute;rias vezes antes...
+               E &eacute; chato ter que ficar
+               buscando informa&ccedil;&odblac;es, uma e outra vez. Al&eacute;m disso, as vezes, alguns dos sites
+               onde tinhamos encontrado as informa&ccedil;&odblac;es inicialmente, n&atilde;o tem a explica&ccedil;&atilde;o exata e
+               detalhada do que desejamos. Tamb&eacute;m esses sites podem 'sair do ar'... Da&iacute;, s&oacute; nos
                resta refazer ou ver outra forma de implementar o que queremos.
             </p><br/>
             <p class="justify indent">
-                Você vai notar, que em muitas partes foram colocadas instruções obvias, como por exemplo,
-                se não funcionar visudo, use 'apt install sudo'... e coisas do estilo; e que estou imaginando,
-                que o blog será acessado por todo tipo de pessoas, com conhecimentos diversos (alguns
-                deles mais principiantes), e desejo que o blog seja útil a maior diversidade de pessoas (tenham
-                elas mais conhecimento ou não).
+                Voc&ecirc; vai notar, que em muitas partes foram colocadas instru&ccedil;&odblac;es obvias, como por exemplo,
+                se n&atilde;o funcionar visudo, use 'apt install sudo'... e coisas do estilo; e que estou imaginando,
+                que o blog ser&aacute; acessado por todo tipo de pessoas, com conhecimentos diversos (alguns
+                deles mais principiantes), e desejo que o blog seja &uacute;til a maior diversidade de pessoas (tenham
+                elas mais conhecimento ou n&atilde;o).
             </p><br/>
             <p class="justify indent">
-                Também, não coloquei comentarios ou redes sociais (devido a que
-                eu não vou ter tempo de atender as consultas) além disso eu só uso
+                Tamb&eacute;m, n&atilde;o coloquei comentarios ou redes sociais (devido a que
+                eu n&atilde;o vou ter tempo de atender as consultas) al&eacute;m disso eu s&oacute; uso
                 as redes sociais para estudo ou trabalho (atendimento a clientes na maior parte),
-                e meu tempo é bem limitado.
+                e meu tempo &eacute; bem limitado.
             </p><br/>
             <p class="justify indent">
-                Portanto se encontrar qualquer material útil para você, fique a vontade para
+                Portanto se encontrar qualquer material &uacute;til para voc&ecirc;, fique a vontade para
                 usar qualquer uma dessas dicas.
             </p><br/>
             <p class="justify indent">
-                Muitas destas dicas tenho usado há alguns anos já. Mas vou testando  dentro do possível no
+                Muitas destas dicas tenho usado h&aacute; alguns anos j&aacute;. Mas vou testando  dentro do possível no
                 Debian 9.3 Stretch, Debian 10 Buster e Linux Mint 18.3.
             </p><br/>
             <p class="indent">
-                Desde já agradeço por acessar o meu Blog.
+                Desde j&aacute; agrade&ccedil;o por acessar o meu Blog.
             </p><br/>
             <p class="justify indent">
-                Se você encontar qualquer informação incorreta (ERRO) por favor me informe
+                Se voc&ecirc; encontrar qualquer informa&ccedil;&atilde;o incorreta (ERRO) por favor me informe
                 por e-mail.
             </p><br/>
             <p class="indent">

@@ -15,20 +15,20 @@ include("cabecalho.php");
 
         <h1>Dicas do Android</h1>
 
-        <h2>Bloquear chamdas a partir de um Número</h2>
+        <h2>Bloquear chamadas a partir de um N&uacute;mero</h2>
         <p class="comum">Como fazer no Android <strong>Samsung Win</strong></p>
         <p class="miniatura">Procedimento</p>
         <div class="box sombra">
-            Telefone > Registros > Localize o Número a Bloquear ><br/>
-            Deixe o dedo pressionado sobre esse número > No menu que aparecer >
-            Adicionar a Lista de Rejeição.
+            Telefone &gt; Registros &gt; Localize o N&uacute;mero a Bloquear &gt;<br/>
+            Deixe o dedo pressionado sobre esse n&uacute;mero &gt; No menu que aparecer &gt;
+            Adicionar a Lista de Rejei&ccedil;&atilde;o.
         </div>
 
         <p class="comum">Como fazer no Android <strong>Samsung J7</strong></p>
         <p class="miniatura">Procedimento</p>
         <div class="box sombra">
-            Telefone > Lista de Contatos > Mais > Configurações ><br/>
-            Bloqueio de Chamadas > Lista de Bloqueio ><br/>Cadastre os Números que Deseja Bloquear.
+            Telefone &gt; Lista de Contatos &gt; Mais &gt; Configura&ccedil;&odblac;es &gt;<br/>
+            Bloqueio de Chamadas &gt; Lista de Bloqueio &gt;<br/>Cadastre os N&uacute;meros que Deseja Bloquear.
         </div>
     </section>
 

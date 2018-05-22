@@ -15,17 +15,17 @@ include("cabecalho.php");
 	<h1>Instalando o Java JDK</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
-	<h3>Instalação do JDK Oracle 8 update 152</h3>
-    <p class="comum">Acompanhe passo a passo a instalação...</p>
+	<h3>Instala&ccedil;&atilde;o do JDK Oracle 8 update 152</h3>
+    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
 	<p class="miniatura">Procedimento</p>
 	<div class="box sombra">
-		Faça download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" class="a">JDK8</a>
+		Fa&ccedil;a download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" class="a">JDK8</a>
 		salvando em:<br/>
 		/home/$USER/Downloads/Desenvolvedor/jdk-oracle/jdk-8u152-linux-x64.tar.gz<br/>
 	</div>
 
 	<p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
-	<p class="miniatura">Código</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
 		$ cd /home/$USER/Downloads/Desenvolvedor/jdk-oracle/<br/>
 		$ tar xvzf jdk-*.tar.gz<br/>
@@ -33,18 +33,18 @@ include("cabecalho.php");
 	</div>
 
 	<p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
-	<p class="miniatura">Código</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
 		$ su<br/>
-		# cp -rp jdk-oracle /usr/lib/jvm && rm -r jdk-oracle/<br/>
-		# update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/bin/java" 1<br/>
-		# update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/bin/javac" 1<br/>
-		# update-alternatives --install "/usr/bin/jar" "jar" "/usr/lib/jvm/bin/jar" 1<br/>
-		# update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/bin/javaws" 1<br/>
+		# cp -rp jdk-oracle /usr/lib/jvm &amp;&amp; rm -r jdk-oracle/<br/>
+		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/bin/java&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/bin/javac&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/bin/jar&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/bin/javaws&quot; 1<br/>
 	</div>
 
-	<p class="comum">Definir o JDK 8 up.152 como padrão</p>
-	<p class="miniatura">Código</p>
+	<p class="comum">Definir o JDK 8 up.152 como padr&atilde;o</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
 		# update-alternatives --set java /usr/lib/jvm/bin/java<br/>
 		# update-alternatives --set javac /usr/lib/jvm/bin/javac<br/>
@@ -52,13 +52,13 @@ include("cabecalho.php");
 		# update-alternatives --set javaws /usr/lib/jvm/bin/javaws<br/>
 	</div>
 
-	<p class="comum">Incluir as variáveis de ambiente</p>
-	<p class="miniatura">Código</p>
+	<p class="comum">Incluir as vari&aacute;veis de ambiente</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
 		# vim /etc/profile<br/>
 	</div>
 
-	<p class="comum">Va até o final do arquivo e inclua as seguintes linhas</p>
+	<p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
 	<p class="miniatura">Incluir no arquivo</p>
 	<div class="box sombra">
 		JAVA_HOME=/usr/lib/jvm<br/>
@@ -68,15 +68,15 @@ include("cabecalho.php");
 	</div>
 
 	<p class="comum">Reiniciar e testar</p>
-	<p class="miniatura">Código</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
 		# reboot<br/>
 		$ java -version<br/>
 		$ javac -version<br/>
 	</div>
 
-	<p class="reduzido">Referências</p>
-    <p class="comum">Algumas referências</p>
+	<p class="reduzido">Refer&ecirc;ncias</p>
+    <p class="comum">Algumas refer&ecirc;ncias</p>
 	<p class="miniatura">Links</p>
 	<div class="quadro">
 		<a href="https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux" class="a" target="_blank">https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux</a><br/><br/>

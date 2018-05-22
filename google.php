@@ -15,26 +15,26 @@ include("cabecalho.php");
         <h1>Dicas do Google</h1>
 
         <h2>Google Fonts</h2>
-        <p class="comum">Visualize os fontes de letra a incluir na sua aplicação</p>
+        <p class="comum">Visualize os fontes de letra a incluir na sua aplica&ccedil;&atilde;o</p>
         <p class="miniatura">Procedimento</p>
         <div class="box sombra">
             <a href="https://fonts.google.com/" target="_blank" class="a">https://fonts.google.com/</a><br/>
         </div>
 
-        <p class="comum">dentro da página escolha um fonte</p>
+        <p class="comum">dentro da p&aacute;gina escolha um fonte</p>
         <p class="comum">depois de escolhido clique no '+' (circulo vermelho)</p>
-        <p class="comum">repare que abaixo aprecerá 1 Family Selected, (clique nessa aba)</p>
-        <p class="comum">abrirá a janela, (clique em CUSTOMIZE)</p>
-        <p class="comum">selecione todos os tipos de carteristicas do fonte que vai usar e (clique em EMBED)</p>
+        <p class="comum">repare que abaixo aparecer&aacute; 1 Family Selected, (clique nessa aba)</p>
+        <p class="comum">abrir&aacute; a janela, (clique em CUSTOMIZE)</p>
+        <p class="comum">selecione todos os tipos de carateristicas do fonte que vai usar e (clique em EMBED)</p>
         <p class="comum">(clique em @IMPORT), e copie (ctrl + c) a(s) linha(s) dentro dos 'styles'</p>
-        <p class="miniatura">Código</p>
+        <p class="miniatura">C&oacute;digo</p>
         <div class="box sombra">
             @import url('https://fonts.googleapis.com/css?family=Arvo:400,700');<br/>
         </div>
 
-        <p class="comum">No inicio do seu CSS você pode incluir essa linha (quadro anterior)</p>
+        <p class="comum">No inicio do seu CSS voc&ecirc; pode incluir essa linha (quadro anterior)</p>
         <p class="comum">para usar o fonte basta</p>
-        <p class="miniatura">Código</p>
+        <p class="miniatura">C&oacute;digo</p>
         <div class="box sombra">
             font-family: Arvo, serif;<br/>
         </div>

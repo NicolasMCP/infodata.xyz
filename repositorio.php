@@ -18,7 +18,7 @@ include("cabecalho.php");
     <h3>Reposit&oacute;rio com as imagens ISO dos DVD ou BD</h3>
     <p class="comum">Primeiro baixe o ISO dos DVD</p>
     <p class="comum">Vou colocar no tutorial somente para um DVD, os outros e s&oacute; fazer igual</p>
-    <p class="comum">Nas Referências constar&atilde;o os links dos arquivos necess&aacute;rios...</p>
+    <p class="comum">Nas Refer&ecirc;ncias constar&atilde;o os links dos arquivos necess&aacute;rios...</p>
     <p class="comum">Usarei DVD mas aplica-se tamb&eacute;m aos BD</p>
     <p class="comum">Primeiro criamos uma pasta que ir&aacute; conter os ISO</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -131,7 +131,7 @@ include("cabecalho.php");
         <p class="miniatura">Observe as mensagens retornadas</p>
     </div>
 
-    <h5>S&oacute; para Referência</h5>
+    <h5>S&oacute; para Refer&ecirc;ncia</h5>
     <p class="comum">Ultimas linhas do meu arquivo /etc/fstab</p>
     <p class="miniatura">C&oacute;digo no Arquivo</p>
     <div class="box sombra">
@@ -165,7 +165,7 @@ include("cabecalho.php");
     <p class="comum">Fontes de arquivos do Debian</p>
     <a href="https://www.debian.org/CD/http-ftp/index.pt.html" target="_blank" class="a">https://www.debian.org/CD/http-ftp/index.pt.html</a>
     <p class="comum">DVDs para 'stretch' (arquivos jigdos e templates)</p>
-    <a href="https://cdimage.debian.org/debian-cd/9.3.0/amd64/jigdo-dvd/" target="_blank" class="a">https://cdimage.debian.org/debian-cd/9.3.0/amd64/jigdo-dvd/</a><br/>
+    <a href="https://cdimage.debian.org/debian-cd/9.4.0/amd64/jigdo-dvd/" target="_blank" class="a">https://cdimage.debian.org/debian-cd/9.4.0/amd64/jigdo-dvd/</a><br/>
 
     <p class="comum">DVDs para 'buster' (arquivos jigdos e templates)</p>
     <a href="https://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-dvd/" target="_blank" class="a">https://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-dvd/</a><br/>
@@ -177,7 +177,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">BDs somente 'stretch' (arquivos jigdos e templates)</p>
-    <a href="https://cdimage.debian.org/debian-cd/9.3.0/amd64/jigdo-bd/" target="_blank" class="a">https://cdimage.debian.org/debian-cd/9.3.0/amd64/jigdo-bd/</a><br/>
+    <a href="https://cdimage.debian.org/debian-cd/9.4.0/amd64/jigdo-bd/" target="_blank" class="a">https://cdimage.debian.org/debian-cd/9.4.0/amd64/jigdo-bd/</a><br/>
     <p class="comum">Jigdo</p>
     <a href="http://atterer.org/jigdo/" target="_blank" class="a">http://atterer.org/jigdo/</a><br/>
     <p class="comum">exdebian.org</p>

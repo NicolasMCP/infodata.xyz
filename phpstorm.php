@@ -68,7 +68,7 @@ include("cabecalho.php");
 
     <h5>Dicion&aacute;rio em Portugu&ecirc;s no PHPStorm</h5>
 
-    <p class="comum">Como instalar o dicion&aacute;rio em Português...</p>
+    <p class="comum">Como instalar o dicion&aacute;rio em Portugu&ecirc;s...</p>
     <p class="comum">Primeiramente fazer o seguinte</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">

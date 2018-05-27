@@ -103,9 +103,16 @@ include("cabecalho.php");
     include("pre-rodape.php");
     ?>
 
-    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.1.17</span> ou <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Linux Mint</h3>
+    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Linux Mint</h3>
     <h4 class="reduzido">Testado em Linux Mint 18.3</h4>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
+
+    <p class="comum">Instalando o PHP</p>
+    <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
+    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO</a><br>
+    <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
+    <a href="mariaDB.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do MariaDB</a><br>
+
 
     <p class="comum">Instalando o PHP no Linux Mint</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -119,29 +126,13 @@ include("cabecalho.php");
     </div>
 
 
-    <p class="comum">Agora a parte que muda, para PHP 7.1 use:</p>
+    <p class="comum">A instala&ccedil;&atilde;o dos pacotes...</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install php7.1 libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json<br/>
-            $ sudo apt install php7.1-cgi php7.1-xsl php7.1-cli apache2-mod-php7.1 php7.1-mysqli<br/>
-            $ sudo apt install php7.1-dev php7.1-mcrypt php7.1-sqlite3 php7.1-mbstring php7.1-curl<br/>
-            $ sudo apt install php-memcached php-pear php7.1-opcache php7.1-readline<br/>
-            $ sudo apt install php7.1-gd php7.1-zip php7.1-xml<br/>
-            $ sudo update-alternatives --set php /usr/bin/php7.1<br/>
-            $ sudo systemctl restart apache2<br/>
-        </code>
-    </div>
-
-    <p class="comum">J&aacute; para o PHP 7.2 use:</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>
-            $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json<br/>
-            $ sudo apt install php7.2-cgi php7.2-xsl php7.2-cli apache2-mod-php7.2 php7.2-mysqli<br/>
-            $ sudo apt install php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl<br/>
-            $ sudo apt install php-memcached  php-pear php7.2-opcache php7.2-readline<br/>
-            $ sudo apt install php7.2-gd php7.2-zip php7.2-xml<br/>
+            $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json php7.2-cgi php7.2-xsl
+            php7.2-cli apache2-mod-php7.2 php7.2-mysqli php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl
+            php-memcached  php-pear php7.2-opcache php7.2-readline php7.2-gd php7.2-zip php7.2-xml<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.2<br/>
             $ sudo systemctl restart apache2<br/>
         </code>
@@ -155,13 +146,6 @@ include("cabecalho.php");
             $ php -v<br/>
         </code>
 
-        <p style="font-size: 12px;"><br/>
-            PHP 7.1.17-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: May  5 2018 04:55:21) ( NTS )<br/>
-            Copyright (c) 1997-2018 The PHP Group<br/>
-            Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies<br/>
-            with Zend OPcache v7.1.17-1+ubuntu16.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
-        </p>
-        <p class="miniatura">ou se voc&ecirc; instalou o PHP 7.2...</p>
         <p style="font-size: 12px;"><br/>
             PHP 7.2.5-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: May  5 2018 04:59:13) ( NTS )<br/>
             Copyright (c) 1997-2018 The PHP Group<br/>

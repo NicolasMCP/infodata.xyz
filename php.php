@@ -13,18 +13,31 @@ include("cabecalho.php");
 <!--php-->
 
     <h1>Instalando o PHP em Linux</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
     <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
 
-    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.1.13</span> ou <span style="font-family: 'Noto Sans', sans-serif;">7.2.0</span> no Debian</h2>
+    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Debian</h2>
     <p class="comum">Instalando o PHP</p>
+    <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
+    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO</a><br>
+    <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
+    <a href="mariaDB.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do MariaDB</a><br>
+
+    <p class="comum">Para que seu PHP possa ser instalado, precisaremos ter o Apache funcionando, portanto
+    por favor abra no seu navegador o link abaixo para ter certeza do correto funcionamento do mesmo.</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <a href="http://localhost" class="a" target="_blank">http://localhost</a>
+    </div>
+    <p class="comum">Agora come&ccedil;aremos a instala&ccedil;&atilde;o do PHP em si.</p>
+    <p class="comum">Preparativos, incluindo o reposit&oacute;rio.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
             $ sudo apt install apt-transport-https lsb-release ca-certificates<br/>
             $ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg<br/>
             $ sudo su<br/>
-            # echo &quot;## PHP 7.1.13 e 7.2.0&quot; &gt;&gt; /etc/apt/sources.list<br/>
+            # echo &quot;## 7.2 &quot; &gt;&gt; /etc/apt/sources.list<br/>
             <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br/>-->
             # echo &quot;deb https://packages.sury.org/php/ <strong>stretch</strong> main&quot; &gt;&gt; /etc/apt/sources.list<br/>
         </code>
@@ -35,29 +48,13 @@ include("cabecalho.php");
         </code>
     </div>
 
-    <p class="comum">Agora a parte que muda, para PHP 7.1 use:</p>
+    <p class="comum">Instala&ccedil;&atilde;o dos pacotes necess&aacute;rios</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install php7.1 libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json<br/>
-            $ sudo apt install php7.1-cgi php7.1-xsl php7.1-cli apache2-mod-php7.1 php7.1-mysqli<br/>
-            $ sudo apt install php7.1-dev php7.1-mcrypt php7.1-sqlite3 php7.1-mbstring php7.1-curl<br/>
-            $ sudo apt install php-memcached php-pear php7.1-opcache php7.1-readline<br/>
-            $ sudo apt install php7.1-gd php7.1-zip php7.1-xml<br/>
-            $ sudo update-alternatives --set php /usr/bin/php7.1<br/>
-            $ sudo systemctl restart apache2<br/>
-        </code>
-    </div>
-
-    <p class="comum">J&aacute; para o PHP 7.2 use:</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>
-            $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json<br/>
-            $ sudo apt install php7.2-cgi php7.2-xsl php7.2-cli apache2-mod-php7.2 php7.2-mysqli<br/>
-            $ sudo apt install php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl<br/>
-            $ sudo apt install php-memcached  php-pear php7.1-opcache php7.1-readline<br/>
-            $ sudo apt install php7.1-gd php7.1-zip php7.1-xml<br/>
+            $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json php7.2-xsl php7.2-cli
+            apache2-mod-php7.2 php7.2-mysqli php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl php-memcached
+            php-pear php7.2-opcache php7.2-readline php7.2-gd php7.2-zip php7.2-xml php7.2-cgi<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.2<br/>
             $ sudo systemctl restart apache2<br/>
         </code>
@@ -70,18 +67,11 @@ include("cabecalho.php");
             $ php -v<br/>
         </code>
 
-        <p style="font-size: 12px;"><br/>
-            PHP 7.1.13-1+0~20180105151623.14+stretch~1.gbp1086fa (cli) (built: Jan  5 2018 15:16:25) ( NTS )<br/>
-            Copyright (c) 1997-2017 The PHP Group<br/>
-            end Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies<br/>
-            &nbsp;&nbsp;&nbsp;with Zend OPcache v7.1.13-1+0~20180105151623.14+stretch~1.gbp1086fa, Copyright (c) 1999-2017, by Zend Technologies<br/>
-        </p>
-              <p class="miniatura">ou se você instalou o PHP 7.2...</p>
-        <p style="font-size: 12px;"><br/>
-            PHP 7.2.0-1+0~20171201111333.14+stretch~1.gbp47ee8a (cli) (built: Dec  1 2017 11:13:35) ( NTS )<br/>
-            Copyright (c) 1997-2017 The PHP Group<br/>
-            Zend Engine v3.2.0, Copyright (c) 1998-2017 Zend Technologies<br/>
-            &nbsp;&nbsp;&nbsp;with Zend OPcache v7.2.0-1+0~20171201111333.14+stretch~1.gbp47ee8a, Copyright (c) 1999-2017, by Zend Technologies<br/>
+         <p style="font-size: 12px;"><br/>
+             PHP 7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6 (cli) (built: May  5 2018 04:57:44) ( NTS )<br/>
+             Copyright (c) 1997-2018 The PHP Group<br/>
+             Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies<br/>
+             with Zend OPcache v7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6, Copyright (c) 1999-2018, by Zend Technologies<br/>
         </p>
     </div>
 
@@ -171,7 +161,7 @@ include("cabecalho.php");
             Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies<br/>
             with Zend OPcache v7.1.17-1+ubuntu16.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
         </p>
-        <p class="miniatura">ou se você instalou o PHP 7.2...</p>
+        <p class="miniatura">ou se voc&ecirc; instalou o PHP 7.2...</p>
         <p style="font-size: 12px;"><br/>
             PHP 7.2.5-1+ubuntu16.04.1+deb.sury.org+1 (cli) (built: May  5 2018 04:59:13) ( NTS )<br/>
             Copyright (c) 1997-2018 The PHP Group<br/>
@@ -222,7 +212,7 @@ include("cabecalho.php");
     <p class="comum">ent&atilde;o digitamos</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        php > phpinfo();<br/>
+        php &gt; phpinfo();<br/>
     </div>
 
     <p class="comum">E o programa respondeu com as informa&ccedil;&odblac;es do phpinfo(); em modo texto,</p>

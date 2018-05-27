@@ -13,7 +13,7 @@ include("cabecalho.php");
 <!--linux-->
 
     <h1>Reposit&oacute;rio Local usando ISOs</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Reposit&oacute;rio com as imagens ISO dos DVD ou BD</h3>
     <p class="comum">Primeiro baixe o ISO dos DVD</p>
@@ -33,8 +33,8 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ cd /home/db/ISO<br/>
-        $ wget https://cdimage.debian.org/debian-cd/9.3.0/amd64/jigdo-dvd/debian-9.3.0-amd64-DVD-1.jigdo<br/>
-        $ wget https://cdimage.debian.org/debian-cd/9.3.0/amd64/jigdo-dvd/debian-9.3.0-amd64-DVD-1.template<br/>
+        $ wget https://cdimage.debian.org/debian-cd/9.4.0/amd64/jigdo-dvd/debian-9.4.0-amd64-DVD-1.jigdo<br/>
+        $ wget https://cdimage.debian.org/debian-cd/9.4.0/amd64/jigdo-dvd/debian-9.4.0-amd64-DVD-1.template<br/>
     </div>
 
     <p class="comum">Baixar e descompactar o jigdo</p>
@@ -47,15 +47,15 @@ include("cabecalho.php");
     <p class="comum">Colocamos os arquivos do DVD no mesmo diret&oacute;rio</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ mv debian-9.3.0-amd64-DVD-1.jigdo jigdo-bin-0.7.3<br/>
-        $ mv debian-9.3.0-amd64-DVD-1.template jigdo-bin-0.7.3<br/>
+        $ mv debian-9.4.0-amd64-DVD-1.jigdo jigdo-bin-0.7.3<br/>
+        $ mv debian-9.4.0-amd64-DVD-1.template jigdo-bin-0.7.3<br/>
         $ cd jigdo-bin-0.7.3<br/>
     </div>
 
     <p class="comum">Iniciamos a constru&ccedil;&atilde;o do ISO com jigdo</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        ./jigdo-lite debian-9.3.0-amd64-DVD-1.jigdo<br/>
+        ./jigdo-lite debian-9.4.0-amd64-DVD-1.jigdo<br/>
         (Files to scan:) /home/db/ISO/debian-8.5.0-amd64-BD-1.iso<br/>
         <p class="miniatura">Quando apresenta (Files to Scan) se tivermos um DVD anterior informamos, sen&atilde;o damos &lt;Enter&gt;<br/><br/></p>
 
@@ -63,11 +63,11 @@ include("cabecalho.php");
         <p class="miniatura">Quando apresenta (Debian mirror) digitamos 'http://ftp.debian.org/debian/'</p>
     </div>
     <p class="comum">depois ir&aacute; come&ccedil;ar o download dos pacotes...</p>
-    <p class="comum">Ao concluir, voc&ecirc; ter&aacute; o ISO: debian-9.3.0-amd64-DVD-1.iso</p>
+    <p class="comum">Ao concluir, voc&ecirc; ter&aacute; o ISO: debian-9.4.0-amd64-DVD-1.iso</p>
     <p class="comum">Vamos colocar ele na pasta dos ISOs</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ mv debian-9.3.0-amd64-DVD-1.iso /home/db/ISO/<br/>
+        $ mv debian-9.4.0-amd64-DVD-1.iso /home/db/ISO/<br/>
         $ cd /home/db/ISO/<br/>
     </div>
 
@@ -81,7 +81,7 @@ include("cabecalho.php");
     <p class="comum">Vamos primeiro montar manualmente para testar...</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo mount -t iso9660 -o loop /home/db/ISO/debian-9.3.0-amd64-DVD-1.iso /mnt/iso-1<br/>
+        $ sudo mount -t iso9660 -o loop /home/db/ISO/debian-9.4.0-amd64-DVD-1.iso /mnt/iso-1<br/>
     </div>
 
     <p class="comum">Da&iacute; alteramos o sources.list</p>
@@ -115,7 +115,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo no Arquivo</p>
     <div class="box sombra">
         # iso-1 #<br/>
-        /home/db/ISO/debian-9.3.0-amd64-DVD-1.iso /mnt/iso-1 iso9660 loop,user,auto 0 0<br/>
+        /home/db/ISO/debian-9.4.0-amd64-DVD-1.iso /mnt/iso-1 iso9660 loop,user,auto 0 0<br/>
     </div>
 
     <p class="comum">Reinicie</p>
@@ -136,11 +136,11 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo no Arquivo</p>
     <div class="box sombra">
         # iso-1 #<br/>
-        /home/db/ISO/debian-9.3.0-amd64-BD-1.iso /mnt/iso-1 iso9660 loop,user,auto 0 0<br/>
+        /home/db/ISO/debian-9.4.0-amd64-BD-1.iso /mnt/iso-1 iso9660 loop,user,auto 0 0<br/>
         # iso-2 #<br/>
-        /home/db/ISO/debian-9.3.0-amd64-BD-2.iso /mnt/iso-2 iso9660 loop,user,auto 0 0<br/>
+        /home/db/ISO/debian-9.4.0-amd64-BD-2.iso /mnt/iso-2 iso9660 loop,user,auto 0 0<br/>
         # iso-3 #<br/>
-        /home/db/ISO/debian-9.3.0-amd64-BD-3.iso /mnt/iso-3 iso9660 loop,user,auto 0 0<br/>
+        /home/db/ISO/debian-9.4.0-amd64-BD-3.iso /mnt/iso-3 iso9660 loop,user,auto 0 0<br/>
     </div>
 
     <p class="comum">Primeiras linhas do meu arquivo /etc/apt/sources.list</p>
@@ -171,7 +171,7 @@ include("cabecalho.php");
     <a href="https://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-dvd/" target="_blank" class="a">https://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-dvd/</a><br/>
     <div class="quadro">
         $ sudo apt update<br/>
-        E: O ficheiro Release para file:/mnt/iso-1/dists/buster/Release est&aacute; expirado (inv&aacute;lido desde 3d 0h 36min 18s). N&atilde;o ser&atilde;o aplicadas as actualiza&ccedil;&odblac;es para este reposit&oacute;rio.<br/>
+        E: O ficheiro Release para file:/mnt/iso-1/dists/buster/Release est&aacute; expirado (inv&aacute;lido desde 3d 0h 36min 18s). N&atilde;o ser&atilde;o aplicadas as atualiza&ccedil;&otilde;es para este reposit&oacute;rio.<br/>
         <p class="miniatura">Mesmo que o Reposit&oacute;rio de Testing, esteja vencido, se desejar fazer uso dele. Solu&ccedil;&atilde;o:<br/><br/></p>
         $ sudo apt -o Acquire::Check-Valid-Until=false update<br/>
     </div>

@@ -13,7 +13,7 @@ include("cabecalho.php");
 <!--vim-->
 
     <h1>Dicas do Vim</h1>
-    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Instalando o Vim</h3>

@@ -13,11 +13,11 @@ include("cabecalho.php");
 <!--sudo-->
 
     <h1>Sudo, no Linux</h1>
-    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no
+    <h2 class="reduzido">Testado em Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Configurar sudo</h3>
-    <p class="comum">Você deve incluir o seu usu&aacute;rio no arquivo de configura&ccedil;&atilde;o</p>
+    <p class="comum">Voc&ecirc; deve incluir o seu usu&aacute;rio no arquivo de configura&ccedil;&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>

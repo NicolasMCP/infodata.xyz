@@ -12,10 +12,10 @@ include("cabecalho.php");
 <section>
 
     <h1>MariaDB no Linux</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2>Instalando MariaDB no Debian</h2>
+    <h3 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h3>
     <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
     <!--MariaDB-->
-    <h3>Instalando MariaDB no Debian</h3>
     <p class="comum">S&oacute; precisa descomentar os reposit&oacute;rios oficiais principais</p>
     <p class="comum">Verifique se tem estes reposit&oacute;rios</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -55,6 +55,7 @@ include("cabecalho.php");
     ?>
     <h5 id="linux-mint">Instalando MariaDB no Linux Mint</h5>
     <h4 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">18.3</span></h4>
+    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">No Linux Mint &eacute; mais molezinha ainda, basta digitar:</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -75,6 +76,6 @@ include("cabecalho.php");
 </section>
 
 <?php
-for($i=0; $i<10; $i++) {echo'<br/>';}
+for($i=0; $i<3; $i++) {echo'<br/>';}
 include("rodape.php");
 ?>

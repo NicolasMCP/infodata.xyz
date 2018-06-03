@@ -108,8 +108,6 @@ include("cabecalho.php");
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">Instalando o PHP</p>
-    <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
-    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO</a><br>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
     <a href="mariaDB.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do MariaDB</a><br>
 

@@ -11,13 +11,13 @@ echo '<html lang="pt-br">
     <meta name="viewport"
           content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
     <meta http-equiv="X-UA-Compatible" content="ie=mozilla">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/totop.css">
-    <link rel="stylesheet" href="css/menu.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../css/totop.css">
+    <link rel="stylesheet" href="../css/menu.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
     <!--    <link rel="shortcut icon" href="favicon.ico" />-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/totop.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/totop.js"></script>
 
     <title>Dicas InfoData</title>
     
@@ -26,7 +26,7 @@ echo '<html lang="pt-br">
 
 <div id="top" class="header">
     <div class="fix">
-        <img src="img/header.png">
+        <img src="../img/header.png">
         <div class="titulo-header">Dicas InfoData</div>
     </div>
 </div>
@@ -75,11 +75,11 @@ echo '<html lang="pt-br">
                     <label for="chk_lamp" id="lbl_lamp"><span class="icon-list-ul"></span>LAMP e Node.js<i class="icon-select-arrows"></i></label>
                     <ul>
                         <li><a href="apache.php"><span class="icon-feather"></span>Apache</a></li>
-                        <li><a href="mariaDB.php"><img src="img/mariadb.png" height="20px" width="28px">MariaDB</a></li>
-                        <li><a href="mysql.php"><img src="img/mysql.png">MySQL</a></li>
+                        <li><a href="mariaDB.php"><img src="../img/mariadb.png" height="20px" width="28px">MariaDB</a></li>
+                        <li><a href="mysql.php"><img src="../img/mysql.png">MySQL</a></li>
                         <li><a href="php.php"><span class="icon-file-php"></span>PHP Debian</a></li>
                         <li><a href="php.php#linux-mint"><span class="icon-file-php"></span>PHP Mint</a></li>
-                        <li><a href="node.php"><img src="img/nodejs.png" height="20px" width="28px">Node.js</a></li>
+                        <li><a href="node.php"><img src="../img/nodejs.png" height="20px" width="28px">Node.js</a></li>
                     </ul>
                 <li>
                     <input type="checkbox" id="chk_sudo">
@@ -100,13 +100,13 @@ echo '<html lang="pt-br">
                         <li><a href="phpstorm.php"><span class="icon-bulb"></span>PHPStorm</a></li>
                         <li><a href="netbeans.php"><span class="icon-codepen"></span>NetBeans</a></li>
                         <li><a href="android.php"><span class="icon-android"></span>Android</a></li>
-                        <li><a href="vim.php"><img src="img/vim.png" height="20px" width="28px">Vim</a></li>
+                        <li><a href="vim.php"><img src="../img/vim.png" height="20px" width="28px">Vim</a></li>
                     </ul>
                 <li><a href="icomoon.php"><span class="icon-IcoMoon"></span>IcoMoon</a></li>
                 <li><a href="licencas.php"><span class="icon-copyright"></span>Licen&ccedil;as</a></li>
             </ul>
         </nav>
     </header>
-    <a id="totop"><img src="img/totop.png" alt="imagem para o topo" /></a>
+    <a id="totop"><img src="../img/totop.png" alt="imagem para o topo" /></a>
     '
 ?>

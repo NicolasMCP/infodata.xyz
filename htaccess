@@ -1,0 +1,21 @@
+#    O caminho da página após o numero de erro
+# no caso automatizei para ir apenas a uma pá-
+# gina levando os dados de erro por método GET
+
+ErrorDocument 400 /errors/recebe-erros.php?q=400
+ErrorDocument 401 /errors/recebe-erros.php?q=401
+ErrorDocument 403 /errors/recebe-erros.php?q=403
+ErrorDocument 404 /errors/recebe-erros.php?q=404
+ErrorDocument 500 /errors/recebe-erros.php?q=500
+
+# impedindo o acesso a este arquivo
+<files ~ "^.*\.([Hh][Tt][Aa][Cc][Cc][Ee][Ss][Ss])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

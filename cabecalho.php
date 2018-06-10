@@ -9,17 +9,18 @@ echo '<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
     <meta http-equiv="X-UA-Compatible" content="ie=mozilla">
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/totop.css">
     <link rel="stylesheet" href="css/menu.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/backontop.css"/>
     <!--    <link rel="shortcut icon" href="favicon.ico" />-->
-    <script src="js/backontop.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/totop.js"></script>
+
     <title>Dicas InfoData</title>
     
-    <script>window.addEventListener( "scroll", Scroll );</script>
 </head>
 <body class="geral">
 
@@ -106,8 +107,6 @@ echo '<html lang="pt-br">
             </ul>
         </nav>
     </header>
-    <!-- Bot&atilde;o exibida conforme a rolagem, "backontop.js" -->
-    <a class="tutop" onclick="up();"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a>
-    <!-- <a href="#top" class="tutop"><img src="img/backtotop.png" alt="imagem para o topo" title=""/></a> -->
+    <a id="totop"><img src="img/totop.png" alt="imagem para o topo" /></a>
     '
 ?>

@@ -46,8 +46,8 @@ include("cabecalho.php");
                 usar qualquer uma dessas dicas.
             </p><br/>
             <p class="justify indent">
-                Muitas destas dicas tenho usado h&aacute; alguns anos j&aacute;. Mas vou testando  dentro do possível no
-                Debian 9.3 Stretch, Debian 10 Buster e Linux Mint 18.3.
+                Muitas destas dicas tenho usado h&aacute; alguns anos j&aacute;. Mas vou testando  dentro do poss&iacute;vel no
+                Debian 9.4 Stretch, Debian 10 Buster e Linux Mint 18.3.
             </p><br/>
             <p class="indent">
                 Desde j&aacute; agrade&ccedil;o por acessar o meu Blog.

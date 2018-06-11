@@ -1,2 +1,4 @@
 # infodata.xyz
 AREA DE DESENVOLVIMENTO do Site infodata.xyz
+
+GNU GENERAL PUBLIC LICENSE V.2

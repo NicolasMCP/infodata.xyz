@@ -13,7 +13,7 @@ include("cabecalho.php");
 <!--linux-->
 
     <h1>Usu&aacute;rios e Grupos no Linux</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Usu&aacute;rios</h3>
 

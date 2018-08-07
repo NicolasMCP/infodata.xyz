@@ -13,7 +13,7 @@ include("cabecalho.php");
 <!--samba-->
 
     <h1>SAMBA em Linux</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.3</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
 
     <h3>Mudar as configura&ccedil;&odblac;es do SAMBA</h3>
     <p class="comum">Abra seu browser (navegador) e digite o seguinte endere&ccedil;o</p>

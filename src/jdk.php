@@ -20,11 +20,19 @@ include("cabecalho.php");
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
 
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
+    <p class="comum"><b>Nota:</b> Apenas como esclarecimento, resolvi incluir o JRE em uma pasta</p>
+    <p class="comum">em separado para refletir a estructura do jdk anterior (facilitando</p>
+    <p class="comum">assim para programas como Eclipse).</p>
+
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        Fa&ccedil;a download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html" target="_blank" class="a">JDK10</a>
+        Fa&ccedil;a download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html" target="_blank" class="a">JDK 10</a>
         salvando em:<br/>
-        /home/$USER/Downloads/dev-linux/jdk-oracle/jdk10-downloads-4416644.html<br/>
+        ~/Downloads/dev-linux/jdk-oracle/jdk-10.0.2_linux-x64_bin.tar.gz<br/>
+
+        Fa&ccedil;a download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html" target="_blank" class="a">JRE 10</a>
+        salvando em:<br/>
+        ~/Downloads/dev-linux/jdk-oracle/jre-10.0.2_linux-x64_bin.tar.gz<br>
     </div>
 
 
@@ -38,15 +46,24 @@ include("cabecalho.php");
     <p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ cd /home/$USER/Downloads/dev-linux/jdk-oracle/<br/>
+        $ cd ~/Downloads/dev-linux/jdk-oracle/<br/>
         $ tar xvzf jdk-*.tar.gz<br/>
         $ mv jdk-10.0.2/ jdk-oracle<br/>
+        $ tar xvzf jre-*.tar.gz<br/>
+        $ mv jre-10.0.2/ jdk-oracle/jre<br/>
     </div>
 
     <p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
+        <span class="miniatura">O proximo comando no debian &eacute;:</span>
+        <br>
         $ su<br/>
+        <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
+        <br>
+        $ sudo su<br>
+        <span class="miniatura">O seguinte e comum aos dois SO.</span>
+        <br>
         # cp -rp jdk-oracle /usr/lib/jvm &amp;&amp; rm -r jdk-oracle/<br/>
         # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/bin/java&quot; 1<br/>
         # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/bin/javac&quot; 1<br/>
@@ -98,7 +115,7 @@ include("cabecalho.php");
 	<div class="box sombra">
 		Fa&ccedil;a download do <a href="http://jdk.java.net/8/" target="_blank" class="a">JDK8</a>
 		salvando em:<br/>
-		/home/$USER/Downloads/dev-linux/jdk-oracle/jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
+		~/Downloads/dev-linux/jdk-oracle/jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
 	</div>
 
 
@@ -112,7 +129,7 @@ include("cabecalho.php");
     <p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		$ cd /home/$USER/Downloads/dev-linux/jdk-oracle/<br/>
+		$ cd ~/Downloads/dev-linux/jdk-oracle/<br/>
 		$ tar xvzf jdk-*.tar.gz<br/>
 		$ mv jdk1*/ jdk-oracle<br/>
 	</div>
@@ -120,7 +137,14 @@ include("cabecalho.php");
 	<p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		$ su<br/>
+        <span class="miniatura">O proximo comando no debian &eacute;:</span>
+        <br>
+        $ su<br/>
+        <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
+        <br>
+        $ sudo su<br>
+        <span class="miniatura">O seguinte e comum aos dois SO.</span>
+        <br>
 		# cp -rp jdk-oracle /usr/lib/jvm &amp;&amp; rm -r jdk-oracle/<br/>
 		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/bin/java&quot; 1<br/>
 		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/bin/javac&quot; 1<br/>

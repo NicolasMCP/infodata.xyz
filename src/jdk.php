@@ -16,6 +16,9 @@ include("cabecalho.php");
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span></h2>
 
     <h3>Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h3>
+
+    <a href="#jdk8" class="a" target="_parent">Instala&ccedil;&atilde;o do JDK 8.</a>
+
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
@@ -79,7 +82,8 @@ include("cabecalho.php");
     <!--------------------------------------------------------------------------------------------->
     <br>
 
-    <h3>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h3>
+    <h3 id="jdk8">Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h3>
+
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
     <p class="comum">O procedimento para o 9 &eacute; o mesmo.</p>
 	<p class="miniatura">Procedimento</p>

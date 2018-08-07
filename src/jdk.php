@@ -17,7 +17,7 @@ include("cabecalho.php");
 
     <h3>Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h3>
 
-    <a href="#jdk8" class="a" target="_parent">Instala&ccedil;&atilde;o do JDK 8.</a>
+    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
 
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
     <p class="miniatura">Procedimento</p>
@@ -26,6 +26,14 @@ include("cabecalho.php");
         salvando em:<br/>
         /home/$USER/Downloads/dev-linux/jdk-oracle/jdk10-downloads-4416644.html<br/>
     </div>
+
+
+    <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        rm -r /usr/lib/jvm<br/>
+    </div>
+
 
     <p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -93,7 +101,15 @@ include("cabecalho.php");
 		/home/$USER/Downloads/dev-linux/jdk-oracle/jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
 	</div>
 
-	<p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
+
+    <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        rm -r /usr/lib/jvm<br/>
+    </div>
+
+
+    <p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
 		$ cd /home/$USER/Downloads/dev-linux/jdk-oracle/<br/>

@@ -1,7 +1,3 @@
-#    O caminho da página após o numero de erro
-# no caso automatizei para ir apenas a uma pá-
-# gina levando os dados de erro por método GET
-
 ErrorDocument 400 /errors/recebe-erros.php?q=400
 ErrorDocument 401 /errors/recebe-erros.php?q=401
 ErrorDocument 403 /errors/recebe-erros.php?q=403
@@ -14,7 +10,6 @@ order allow,deny
 deny from all
 satisfy all
 </files>
-
 
 RewriteEngine On
 RewriteCond %{HTTPS} !=on

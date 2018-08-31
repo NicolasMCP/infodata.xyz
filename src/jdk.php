@@ -105,9 +105,14 @@ include("cabecalho.php");
 
 
     <!--------------------------------------------------------------------------------------------->
+    <br id="jdk8"/>
+    <?php
+    include("pre-rodape.php");
+    ?>
     <br>
 
-    <h3 id="jdk8">Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h3>
+
+    <h3>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h3>
 
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
     <p class="comum">O procedimento para o 9 &eacute; o mesmo.</p>

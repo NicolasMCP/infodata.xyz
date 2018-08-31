@@ -72,11 +72,13 @@ echo '<html lang="pt-br">
                 <li>
                     <input type="checkbox" id="chk_lamp">
         
-                    <label for="chk_lamp" id="lbl_lamp"><span class="icon-list-ul"></span>LAMP e Node.js<i class="icon-select-arrows"></i></label>
+                    <label for="chk_lamp" id="lbl_lamp"><span class="icon-list-ul"></span>LAMP e Cia.<i class="icon-select-arrows"></i></label>
                     <ul>
                         <li><a href="apache.php"><span class="icon-feather"></span>Apache</a></li>
-                        <li><a href="mariaDB.php"><img src="../img/mariadb.png" height="20px" width="28px">MariaDB</a></li>
                         <li><a href="mysql.php"><img src="../img/mysql.png">MySQL</a></li>
+                        <li><a href="mariaDB.php"><img src="../img/mariadb.png" height="20px" width="28px">MariaDB</a></li>
+                        <li><a href="firebird.php"><img src="../img/firebird-logo-32pb.png" height="20px" width="28px">Firebird</a></li>
+                        <li><a href="firebird.php#FlameRobin"><img src="../img/flamerobin-logo24pb.png" height="20px" width="28px">FlameRobin</a></li>
                         <li><a href="php.php"><span class="icon-file-php"></span>PHP Debian</a></li>
                         <li><a href="php.php#linux-mint"><span class="icon-file-php"></span>PHP Mint</a></li>
                         <li><a href="node.php"><img src="../img/nodejs.png" height="20px" width="28px">Node.js</a></li>

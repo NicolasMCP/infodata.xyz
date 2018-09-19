@@ -18,7 +18,7 @@ Data   : 03/02/2018, 22:40:10
     z-index: 10;
 }
 /* aplica a todos os 'a' */
-.menu a, #lbl_browser, #lbl_linux, #lbl_java, #lbl_lamp, #lbl_sudo, #lbl_ide {
+.menu a, #lbl_browser, #lbl_linux, #lbl_java, #lbl_lamp, #lbl_sudo, #lbl_ide, #lbl_github {
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
     font-size: medium;
@@ -87,10 +87,10 @@ Data   : 03/02/2018, 22:40:10
 #chk_menu:checked ~ #lbl_menu {
     width: 200px;
 }
-#chk_menu, #chk_browser, #chk_linux, #chk_java, #chk_lamp, #chk_sudo, #chk_ide {
+#chk_menu, #chk_browser, #chk_linux, #chk_java, #chk_lamp, #chk_sudo, #chk_ide, #chk_github {
     display: none;
 }
-#chk_browser:checked ~ ul, #chk_linux:checked ~ ul, #chk_java:checked ~ ul, #chk_lamp:checked ~ ul, #chk_sudo:checked ~ ul, #chk_ide:checked ~ ul {
+#chk_browser:checked ~ ul, #chk_linux:checked ~ ul, #chk_java:checked ~ ul, #chk_lamp:checked ~ ul, #chk_sudo:checked ~ ul, #chk_ide:checked ~ ul, #chk_github:checked ~ ul {
     visibility: visible;
     transition: all 1s;
     opacity: 1;

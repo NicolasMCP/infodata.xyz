@@ -112,6 +112,7 @@ echo '<html lang="pt-br">
         
                 <label for="chk_github" id="lbl_github"><span class="icon-github"></span>NotABug<i class="icon-select-arrows"></i></label>
                 <ul>
+                        <li><a href="https://notabug.org/NicolasMCP/infodata.xyz" target="_blank"><span class="icon-git"></span>infodata.xyz</a></li>
                         <li><a href="https://notabug.org/NicolasMCP/Python" target="_blank"><span class="icon-git"></span>Python</a></li>
                         <li><a href="https://notabug.org/NicolasMCP/Java" target="_blank"><span class="icon-git"></span>Java</a></li>
                         <li><a href="https://notabug.org/NicolasMCP/ExportCatalog" target="_blank"><span class="icon-git"></span>C# ExportCatalog</a></li>

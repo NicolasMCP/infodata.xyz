@@ -12,10 +12,104 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span> a <span style="font-family: 'Noto Sans', sans-serif;">10</span></h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span></h2>
+	<h1>Instalando o Java JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span>, <span style="font-family: 'Noto Sans', sans-serif;">10</span> e <span style="font-family: 'Noto Sans', sans-serif;">11</span></h1>
+    <h2 class="reduzido">Testado em Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h2>
 
-    <h3>Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h3>
+    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11</span></h3>
+
+    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.</a>
+    <br>
+    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
+    <br>
+    <br>
+    <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
+    <p class="comum">Ao instalar o Linux Mint 19 (nesta data Setembro de 2018) ele j&aacute; vem com o openJDK 11 instalado,
+    no entanto se voc&ecirc; usar o comando:</p>
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ java -version<br>
+    </div>
+
+    <p class="comum">vai receber como resposta:</p>
+
+    <p class="miniatura">Resposta</p>
+    <div class="box sombra">
+        openjdk version "10.0.2" 2018-07-17<br>
+        OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2)<br>
+        OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2, mixed mode)<br>
+    </div>
+
+    <p class="comum">Eu tentei Atualizar o Linux Mint, Reinstalar, e não deu certo, então...</p>
+    <p class="comum">Optei pelo seguinte procedimento</p>
+
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        $ sudo add-apt-repository ppa:openjdk-r/ppa<br/>
+        $ sudo apt update (pelo escudo)<br/>
+    </div>
+    <p class="comum">O escudo &eacute; aquele icone em formato de escudo pelo qual voc&ecirc; atualiza o Linux Mint, tamb&eacute;m conhecido como Gerenciador de Atualiza&ccedil;&otilde;es.</p>
+    <p class="comum">No Gerenciador de Atualiza&ccedil;&otilde;es, vai aparecer 'openjdk-11' marcado, clique em 'Instalar Atualiza&ccedil;&otilde;es'.</p>
+    <p class="comum">Ap&oacute;s o qual vai novamente usar o comando:</p>
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ java -version<br>
+    </div>
+
+    <p class="comum">vai receber como resposta:</p>
+
+    <p class="miniatura">Resposta</p>
+    <div class="box sombra">
+        openjdk version "11" 2018-09-25<br>
+        OpenJDK Runtime Environment (build 11+24-Ubuntu-118.04)<br>
+        OpenJDK 64-Bit Server VM (build 11+24-Ubuntu-118.04, mixed mode, sharing)<br>
+    </div>
+
+    <p class="comum">Se n&atilde;o funcionar ou por algum outro motivo desejar instalar o JDK 11</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ sudo apt-get install openjdk-11-jdk<br/>
+    </div>
+
+    <p class="comum">Selecionando o java e javac defaults</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ sudo apt-get install openjdk-11-jdk<br/>
+        $ sudo update-alternatives --config java<br>
+        $ sudo update-alternatives --config javac<br/>
+    </div>
+
+    <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # vim /etc/profile<br/>
+    </div>
+
+    <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
+    <p class="miniatura">Incluir no arquivo</p>
+    <div class="box sombra">
+        JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64<br/>
+        PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
+        export JAVA_HOME<br/>
+        export PATH<br/>
+    </div>
+
+    <p class="comum">Reiniciar e testar</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # reboot<br/>
+        $ java -version<br/>
+        $ javac -version<br/>
+    </div>
+
+    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
+    <br>
+    <br>
+    <br>
+    <!--------------------------------------------------------------------------------------------->
+    <h4 id="jdk10">Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h4>
+    <h5 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h5>
 
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
 
@@ -112,7 +206,10 @@ include("cabecalho.php");
     <br>
 
 
-    <h3>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h3>
+    <h6>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h6>
+    <h7 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h7>
+    <br>
+    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.</a>
 
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
     <p class="comum">O procedimento para o 9 &eacute; o mesmo.</p>

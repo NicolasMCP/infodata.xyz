@@ -101,6 +101,7 @@ echo '<html lang="pt-br">
                     <label for="chk_ide" id="lbl_ide"><span class="icon-lightbulb"></span>Ide,SO,App<i class="icon-select-arrows"></i></label>
                     <ul>
                         <li><a href="phpstorm.php"><span class="icon-lightbulb"></span>PHPStorm</a></li>
+                        <li><a href="intellijIDEA.php"><span class="icon-lightbulb"></span>IntelliJ IDEA</a></li>
                         <li><a href="netbeans.php"><span class="icon-codepen"></span>NetBeans</a></li>
                         <li><a href="android.php"><span class="icon-android"></span>Android</a></li>
                         <li><a href="vim.php"><img src="../img/vim.png" height="20px" width="28px">Vim</a></li>

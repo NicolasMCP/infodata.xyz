@@ -54,7 +54,7 @@ include("cabecalho.php");
     include("pre-rodape.php");
     ?>
     <h5 id="linux-mint">Instalando MariaDB no Linux Mint</h5>
-    <h4 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">18.3</span></h4>
+    <h4 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h4>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">No Linux Mint &eacute; mais molezinha ainda, basta digitar:</p>

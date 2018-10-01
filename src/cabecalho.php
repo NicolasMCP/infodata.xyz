@@ -118,6 +118,7 @@ echo '<html lang="pt-br">
                         <li><a href="https://notabug.org/NicolasMCP/ExportCatalog" target="_blank"><span class="icon-git"></span>C# ExportCatalog</a></li>
                         <li><a href="https://notabug.org/NicolasMCP/SisReenvioGeral" target="_blank"><span class="icon-git"></span>VB e-mail</a></li>
                         <li><a href="https://notabug.org/NicolasMCP/totop" target="_blank"><span class="icon-git"></span>jQuery ToTop</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/0B8C7-DYa7vcUUVRzanFhZENMTFU" target="_blank"><span class="icon-git"></span>Certificados</a></li>
                 </ul>
                 </li>
                 <li><a href="licencas.php"><span class="icon-copyright"></span>Licen&ccedil;as</a></li>

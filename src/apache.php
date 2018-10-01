@@ -16,7 +16,7 @@ include("cabecalho.php");
 
     <h2 class="reduzido">Testado no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch,
         no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster e no<br/>
-        Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">18.3</span> Sylvia</h2>
+        Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h2>
 
     <h3>Instalando o Apache</h3>
     <p class="comum">A instala&ccedil;&atilde;o &eacute; extremamente simples, basta digitar:</p>
@@ -41,7 +41,7 @@ include("cabecalho.php");
     </div>
     <p class="comum">Nota: No Linux Debian 9 Stretch ser&aacute; instalado <strong>Apache &eacute; 2.4.25</strong></p>
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Linux Debian 10 Buster ser&aacute; instalado <strong>Apache 2.4.29</strong></p>
-    <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Linux Mint a vers&atilde;o do <strong>Apache &eacute; 2.4.18</strong></p>
+    <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Linux Mint a vers&atilde;o do <strong>Apache &eacute; 2.4.29</strong></p>
 
 </section>
 

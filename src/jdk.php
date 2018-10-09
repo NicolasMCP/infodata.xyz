@@ -121,8 +121,8 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         # reboot<br/>
-        $ java -version<br/>
         $ javac -version<br/>
+        <p class="miniatura reduzido">javac 11</p>
     </div>
     <br>
     <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>

@@ -30,7 +30,7 @@ include("cabecalho.php");
     <div class="box sombra">
         $ java -version<br>
     </div>
-
+    <br>
     <p class="comum">vai receber como resposta:</p>
 
     <p class="miniatura">Resposta</p>
@@ -39,15 +39,15 @@ include("cabecalho.php");
         OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2)<br>
         OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2, mixed mode)<br>
     </div>
-
-    <p class="comum">Eu tentei Atualizar o Linux Mint, Reinstalar, e não deu certo, então...</p>
-    <p class="comum">Optei pelo seguinte procedimento</p>
+    <br>
+    <p class="comum">Quando tentei Atualizar o Linux Mint, e não deu certo, então, optei pelo seguinte procedimento.</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
         $ sudo add-apt-repository ppa:openjdk-r/ppa<br/>
         $ sudo apt update (pelo escudo)<br/>
     </div>
+    <br>
     <p class="comum">O escudo &eacute; aquele icone em formato de escudo pelo qual voc&ecirc; atualiza o Linux Mint, tamb&eacute;m conhecido como Gerenciador de Atualiza&ccedil;&otilde;es.</p>
     <p class="comum">No Gerenciador de Atualiza&ccedil;&otilde;es, vai aparecer 'openjdk-11' marcado, clique em 'Instalar Atualiza&ccedil;&otilde;es'.</p>
     <p class="comum">Ap&oacute;s o qual vai novamente usar o comando:</p>
@@ -56,7 +56,7 @@ include("cabecalho.php");
     <div class="box sombra">
         $ java -version<br>
     </div>
-
+    <br>
     <p class="comum">vai receber como resposta:</p>
 
     <p class="miniatura">Resposta</p>
@@ -65,27 +65,49 @@ include("cabecalho.php");
         OpenJDK Runtime Environment (build 11+24-Ubuntu-118.04)<br>
         OpenJDK 64-Bit Server VM (build 11+24-Ubuntu-118.04, mixed mode, sharing)<br>
     </div>
-
-    <p class="comum">Se n&atilde;o funcionar ou por algum outro motivo desejar instalar o JDK 11</p>
+    <br>
+    <p class="comum">Isso indica que o (java) JRE 11 esta corretamente instalado, agora vamos verificar o compilador:</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt-get install openjdk-11-jdk<br/>
+        $ javac -version<br>
     </div>
+    <br>
+    <p class="comum">Se você receber uma resposta como esta:</p>
 
-    <p class="comum">Selecionando o java e javac defaults</p>
+    <p class="miniatura">Resposta</p>
+    <div class="box sombra">
+        Command 'javac' not found, but can be installed with:<br>
+        <br>
+        sudo apt install default-jdk<br>
+        sudo apt install openjdk-11-jdk-headless<br>
+        sudo apt install ecj<br>
+        sudo apt install openjdk-8-jdk-headless<br>
+    </div>
+    <br>
+    <p class="comum">Não se preocupe, apenas esta indicando que o JDK (compilador, javac) não esta instalado, então vamos instala-lo</p>
+    <p class="comum">Para instalar o JDK 11...</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt-get install openjdk-11-jdk<br/>
+        $ sudo apt install openjdk-11-jdk<br/>
+        $ sudo apt install openjdk-11-jdk-headless<br>
+    </div>
+    <br>
+    <p class="comum">Caso você tenha versões anteriores do JDK...</p>
+    <p class="comum">Podemos Selecionar o java e javac defaults</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
         $ sudo update-alternatives --config java<br>
         $ sudo update-alternatives --config javac<br/>
     </div>
-
-    <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
+    <br>
+    <p class="comum">Como incluir as vari&aacute;veis de ambiente?</p>
+    <p class="comum">Do seguinte modo...</p>
+    <p class="comum">Primeiro vamos abrir o arquivo profile para edita-lo.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # vim /etc/profile<br/>
+        $ sudo vim /etc/profile<br/>
     </div>
-
+    <br>
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
@@ -94,7 +116,7 @@ include("cabecalho.php");
         export JAVA_HOME<br/>
         export PATH<br/>
     </div>
-
+    <br>
     <p class="comum">Reiniciar e testar</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
@@ -102,7 +124,7 @@ include("cabecalho.php");
         $ java -version<br/>
         $ javac -version<br/>
     </div>
-
+    <br>
     <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
     <br>
     <br>

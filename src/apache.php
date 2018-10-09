@@ -28,7 +28,7 @@ include("cabecalho.php");
     <p class="comum">Verificando a vers&atilde;o instalada</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        sudo apache2 -v
+        $ sudo apache2 -v
 
         <p style="font-size: 12px;"><br>Server version: Apache/2.4.25 (Debian)<br>
             Server built:   2018-03-31T08:47:16</p>

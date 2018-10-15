@@ -239,23 +239,22 @@ include("cabecalho.php");
 	<div class="box sombra">
 		Fa&ccedil;a download do <a href="http://jdk.java.net/8/" target="_blank" class="a">JDK8</a>
 		salvando em:<br/>
-		~/Downloads/dev-linux/jdk-oracle/jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
+		~/Downloads/dev-linux/jdk-oracle/8/jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
 	</div>
 
 
     <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        rm -r /usr/lib/jvm<br/>
+        rm -r /usr/lib/jvm/jdk1.8.0_192<br/>
     </div>
 
 
-    <p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
+    <p class="comum">Extrair o Java Developer Kit (JDK)</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		$ cd ~/Downloads/dev-linux/jdk-oracle/<br/>
-		$ tar xvzf jdk-*.tar.gz<br/>
-		$ mv jdk1*/ jdk-oracle<br/>
+		$ cd ~/Downloads/dev-linux/jdk-oracle/8/<br/>
+		$ tar xvzf jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
 	</div>
 
 	<p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
@@ -269,20 +268,20 @@ include("cabecalho.php");
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-		# cp -rp jdk-oracle /usr/lib/jvm &amp;&amp; rm -r jdk-oracle/<br/>
-		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/bin/java&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/bin/javac&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/bin/jar&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/bin/javaws&quot; 1<br/>
+		# cp -rp jdk1.8.0_192 /usr/lib/jvm/ &amp;&amp; rm -r jdk1.8.0_192/<br/>
+		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/java&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/javac&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/jar&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/javaws&quot; 1<br/>
 	</div>
 
 	<p class="comum">Definir o JDK 8 como padr&atilde;o</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		# update-alternatives --set java /usr/lib/jvm/bin/java<br/>
-		# update-alternatives --set javac /usr/lib/jvm/bin/javac<br/>
-		# update-alternatives --set jar /usr/lib/jvm/bin/jar<br/>
-		# update-alternatives --set javaws /usr/lib/jvm/bin/javaws<br/>
+		# update-alternatives --set java /usr/lib/jvm/jdk1.8.0_192/bin/java<br/>
+		# update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_192/bin/javac<br/>
+		# update-alternatives --set jar /usr/lib/jvm/jdk1.8.0_192/bin/jar<br/>
+		# update-alternatives --set javaws /usr/lib/jvm/jdk1.8.0_192/bin/javaws<br/>
 	</div>
 
 	<p class="comum">Incluir as vari&aacute;veis de ambiente</p>
@@ -294,7 +293,7 @@ include("cabecalho.php");
 	<p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
 	<p class="miniatura">Incluir no arquivo</p>
 	<div class="box sombra">
-		JAVA_HOME=/usr/lib/jvm<br/>
+		JAVA_HOME=/usr/lib/jvm/jdk1.8.0_192<br/>
 		PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
 		export JAVA_HOME<br/>
 		export PATH<br/>

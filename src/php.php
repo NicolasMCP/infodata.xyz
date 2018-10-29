@@ -117,6 +117,9 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>
             $ sudo apt install python-software-properties<br>
+        </code>
+        <p class="miniatura">O pr&oacute;ximo comando n&atilde;o &eacute; necess&aacute;rio para Linux Mint 19<br/></p>
+        <code>
             $ sudo add-apt-repository ppa:ondrej/php<br>
         </code>
         <p class="miniatura">Atualizar pelo 'gerenciador de atualiza&ccedil;&odblac;es'<br/>

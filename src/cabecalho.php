@@ -18,7 +18,7 @@ echo '<html lang="pt-br">
     <!--    <link rel="shortcut icon" href="favicon.ico" />-->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/totop.js"></script>
-
+    <link rel="icon" type="imagem/png" href="../img/favicon.png"/>
     <title>Dicas InfoData</title>
     
 </head>

@@ -9,4 +9,4 @@ AREA DE DESENVOLVIMENTO do Site [infodata.xyz](https://infodata.xyz/src/index.ph
 
 > Tratamento de erros, Licença: GNU GPL 3
 
-> Icones, diversas ![Licenças](http://www.infodata.xyz/src/licencas.php)
+> Icones, diversas ![Licenças](https://www.infodata.xyz/src/licencas.php)

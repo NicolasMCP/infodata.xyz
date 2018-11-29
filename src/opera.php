@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 22/102/2018
     Nota : Organizar as dicas do Opera (agora neste html, antes em OOo)
 -->
 

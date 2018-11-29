@@ -2,7 +2,6 @@
 
 <!--
     Autor: Nicolas Ramos
-    Data : 29/12/2017
     Nota : Detalhes das licenças de icones usados no site.
 -->
 

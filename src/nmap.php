@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 05/02/2018
     Nota : Organizar as dicas do nmap do Linux (agora neste html, antes em OOo)
 -->
 

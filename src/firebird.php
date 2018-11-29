@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 29/8/2018
     Nota : Organizar dicas de instalação do Firebird e FlameRobin (agora neste html)
 -->
 

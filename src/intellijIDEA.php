@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 01/10/2018
     Nota : Organizar as dicas do phpstorm (agora neste html, antes em OOo)
 -->
 

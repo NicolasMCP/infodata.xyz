@@ -2,7 +2,6 @@
 /**
  * Created by PhpStorm.
  * Autor: Nicolas Ramos
- * Date : 3/01/2018
  *
  */
 echo '<html lang="pt-br">
@@ -11,7 +10,7 @@ echo '<html lang="pt-br">
     <meta name="viewport"
           content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
     <meta http-equiv="X-UA-Compatible" content="ie=mozilla">
-    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../fonts/style.css">
     <link rel="stylesheet" href="../css/totop.css">
     <link rel="stylesheet" href="../css/menu.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
@@ -37,7 +36,7 @@ echo '<html lang="pt-br">
         <nav class="menu">
             <ul>
                 <li><a href="index.php"><span class="icon-home3"></span>Home</a></li>
-                <li><a href="google.php"><span class="icon-google3"></span>Google</a></li>
+
                 <li>
                     <input type="checkbox" id="chk_browser">
         
@@ -58,7 +57,7 @@ echo '<html lang="pt-br">
                         <li><a href="buscas.php"><span class="icon-search"></span>Buscas</a></li>
                         <li><a href="idioma.php"><span class="icon-language"></span>Idioma</a></li>
                         <li><a href="samba.php"><span class="icon-folders"></span>Samba</a></li>
-                        <li><a href="usuarios.php"><span class="icon-user"></span>Usu&aacute;rios</a></li>
+                        <li><a href="usuarios.php"><span class="icon-user-tie"></span>Usu&aacute;rios</a></li>
                         <li><a href="conky.php"><img src="../img/conky17.png">Conky</a></li>
                     </ul>
                </li>
@@ -106,23 +105,24 @@ echo '<html lang="pt-br">
                         <li><a href="android.php"><span class="icon-android"></span>Android</a></li>
                         <li><a href="vim.php"><img src="../img/vim.png" height="20px" width="28px">Vim</a></li>
                     </ul>
-                <li><a href="icomoon.php"><span class="icon-IcoMoon"></span>IcoMoon</a></li>
                 
                 <li>
                     <input type="checkbox" id="chk_github">
         
-                <label for="chk_github" id="lbl_github"><span class="icon-github"></span>NotABug<i class="icon-select-arrows"></i></label>
+                <label for="chk_github" id="lbl_github"><span class="icon-github"></span>GitHub<i class="icon-select-arrows"></i></label>
                 <ul>
-                        <li><a href="https://notabug.org/NicolasMCP/infodata.xyz" target="_blank"><span class="icon-git"></span>infodata.xyz</a></li>
-                        <li><a href="https://notabug.org/NicolasMCP/Python" target="_blank"><span class="icon-git"></span>Python</a></li>
-                        <li><a href="https://notabug.org/NicolasMCP/Java" target="_blank"><span class="icon-git"></span>Java</a></li>
-                        <li><a href="https://notabug.org/NicolasMCP/ExportCatalog" target="_blank"><span class="icon-git"></span>C# ExportCatalog</a></li>
-                        <li><a href="https://notabug.org/NicolasMCP/SisReenvioGeral" target="_blank"><span class="icon-git"></span>VB e-mail</a></li>
-                        <li><a href="https://notabug.org/NicolasMCP/totop" target="_blank"><span class="icon-git"></span>jQuery ToTop</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/0B8C7-DYa7vcUUVRzanFhZENMTFU" target="_blank"><span class="icon-git"></span>Certificados</a></li>
+                        <li><a href="https://github.com/NicolasMCP/infodata.xyz" target="_blank"><span class="icon-git"></span>infodata.xyz</a></li>
+                        <li><a href="https://github.com/NicolasMCP/Python" target="_blank"><span class="icon-git"></span>Python</a></li>
+                        <li><a href="https://github.com/NicolasMCP/Java" target="_blank"><span class="icon-git"></span>Java</a></li>
+                        <li><a href="https://github.com/NicolasMCP/ExportCatalog" target="_blank"><span class="icon-git"></span>C# ExportCatalog</a></li>
+                        <li><a href="https://github.com/NicolasMCP/SisReenvioGeral" target="_blank"><span class="icon-git"></span>VB e-mail</a></li>
+                        <li><a href="https://github.com/NicolasMCP/totop" target="_blank"><span class="icon-git"></span>jQuery ToTop</a></li>
                 </ul>
                 </li>
-                <li><a href="licencas.php"><span class="icon-copyright"></span>Licen&ccedil;as</a></li>
+                <li><a href="google.php"><span class="icon-google3"></span>Google</a></li>
+                <li><a href="icomoon.php"><span class="icon-IcoMoon"></span>IcoMoon</a></li>
+                <li><a href="https://drive.google.com/drive/folders/0B8C7-DYa7vcUUVRzanFhZENMTFU" target="_blank"><span class="icon-google-drive"></span>Certificados</a></li>
+                <li><a href="licencas.php"><span class="icon-copyright"></span>Licen&ccedil;as</a></li>                        
             </ul>
         </nav>
     </header>

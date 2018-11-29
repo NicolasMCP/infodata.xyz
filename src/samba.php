@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 08/02/2018
     Nota : Organizar as dicas do Samba (agora neste html, antes em OOo)
 -->
 

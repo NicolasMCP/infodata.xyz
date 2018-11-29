@@ -1,9 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Nicolas Ramos
- * Date: 7/01/18
- * Time: 17:10
+ * Autor: Nicolas Ramos
  */
 include('pre-rodape.php');
 echo '

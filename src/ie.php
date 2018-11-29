@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 07/02/2018
     Nota : Organizar as dicas do ie
 -->
 

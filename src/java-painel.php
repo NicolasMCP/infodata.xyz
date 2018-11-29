@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 20/01/2018
     Nota : Organizar as dicas do Painel do Java (agora neste html, antes em OOo)
 -->
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 21/01/2018
     Nota : Organizar as dicas do acesso SSH do Linux (agora neste html, antes em OOo)
 -->
 

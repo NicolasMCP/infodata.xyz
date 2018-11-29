@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 23/02/2018
     Nota : Organizar as dicas do PHP (agora neste html, antes em OOo)
 -->
 
@@ -104,7 +103,7 @@ include("cabecalho.php");
     ?>
 
     <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.10</span> no Linux Mint</h3>
-    <h4 class="reduzido">Testado em Linux Mint 19</h4>
+    <h4 class="reduzido">Testado em Linux Mint 18.3 e 19</h4>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">Instalando o PHP</p>
@@ -118,7 +117,7 @@ include("cabecalho.php");
         <code>
             $ sudo apt install python-software-properties<br>
         </code>
-        <p class="miniatura">O pr&oacute;ximo comando n&atilde;o &eacute; necess&aacute;rio para Linux Mint 19<br/></p>
+        <p class="miniatura">O pr&oacute;ximo comando n&atilde;o &eacute; necess&aacute;rio para Linux Mint 19, s&oacute; para 18.3 ou anterior<br/></p>
         <code>
             $ sudo add-apt-repository ppa:ondrej/php<br>
         </code>

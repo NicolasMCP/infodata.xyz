@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 29/12/2017
     Nota : Organizar as dicas do JDK (agora neste html, antes em OOo)
 -->
 

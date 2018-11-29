@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 31/12/2017
     Nota : Organizar as dicas do Sudo e SSH do Linux (agora neste html, antes em OOo)
 -->
 

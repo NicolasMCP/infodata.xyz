@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!--
     Autor: Nicolas Ramos
-    Data : 21/01/2018
     Nota : Organizar as dicas de configura&ccedil;&atilde;o da Porta SSH do Linux (agora neste html, antes em OOo)
 -->
 

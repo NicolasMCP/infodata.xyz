@@ -97,7 +97,7 @@ echo '<html lang="pt-br">
                 <li>
                     <input type="checkbox" id="chk_ide">
         
-                    <label for="chk_ide" id="lbl_ide"><span class="icon-lightbulb"></span>Ide,SO,App<i class="icon-select-arrows"></i></label>
+                    <label for="chk_ide" id="lbl_ide"><span class="icon-lightbulb"></span>IDE, SO e App<i class="icon-select-arrows"></i></label>
                     <ul>
                         <li><a href="phpstorm.php"><img src="../img/phpstorm.png" height="20px" width="28px">PHPStorm</a></li>
                         <li><a href="intellijIDEA.php"><img src="../img/intellij.png" height="20px" width="28px">IntelliJ IDEA</a></li>

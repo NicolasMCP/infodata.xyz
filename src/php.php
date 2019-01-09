@@ -55,7 +55,7 @@ include("cabecalho.php");
             apache2-mod-php7.2 php7.2-mysql php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl php-memcached
             php-pear php7.2-opcache php7.2-readline php7.2-gd php7.2-zip php7.2-xml php7.2-cgi<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.2<br/>
-            $ sudo systemctl restart apache2<br/>
+            $ sudo service apache2 restart<br/>
         </code>
     </div>
 

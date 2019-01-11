@@ -12,13 +12,14 @@ include("cabecalho.php");
 <!--php-->
 
     <h1>Instalando o PHP em Linux</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster</h2>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX Linux <span style="font-family: 'Noto Sans', sans-serif;">18</span></h2>
     <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
 
     <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Debian</h2>
     <p class="comum">Instalando o PHP</p>
     <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
-    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO</a><br>
+    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
     <a href="mariaDB.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do MariaDB</a><br>
 
@@ -30,6 +31,7 @@ include("cabecalho.php");
     </div>
     <p class="comum">Agora come&ccedil;aremos a instala&ccedil;&atilde;o do PHP em si.</p>
     <p class="comum">Preparativos, incluindo o reposit&oacute;rio.</p>
+    <p class="comum">(O pr&oacute;ximo quadro de c&oacute;digo &eacute; desnecess&aacute;rio para <b>MX Linux 18</b>)</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
@@ -134,7 +136,7 @@ include("cabecalho.php");
             php7.2-cli apache2-mod-php7.2 php7.2-mysql php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl
             php-memcached  php-pear php7.2-opcache php7.2-readline php7.2-gd php7.2-zip php7.2-xml<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.2<br/>
-            $ sudo systemctl restart apache2<br/>
+            $ sudo service apache2 restart<br/>
         </code>
     </div>
 

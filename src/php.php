@@ -13,10 +13,10 @@ include("cabecalho.php");
 
     <h1>Instalando o PHP em Linux</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no
-        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX Linux <span style="font-family: 'Noto Sans', sans-serif;">18</span></h2>
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
     <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
 
-    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.5</span> no Debian</h2>
+    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.16</span> no Debian</h2>
     <p class="comum">Instalando o PHP</p>
     <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
     <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
@@ -31,7 +31,6 @@ include("cabecalho.php");
     </div>
     <p class="comum">Agora come&ccedil;aremos a instala&ccedil;&atilde;o do PHP em si.</p>
     <p class="comum">Preparativos, incluindo o reposit&oacute;rio.</p>
-    <p class="comum">(O pr&oacute;ximo quadro de c&oacute;digo &eacute; desnecess&aacute;rio para <b>MX Linux 18</b>)</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>

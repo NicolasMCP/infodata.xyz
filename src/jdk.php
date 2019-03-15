@@ -11,7 +11,7 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java Open JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span>,<br/><span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span> e <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span></h1>
+	<h1>Instalando o Java Open JDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span>,<br/><span style="font-family: 'Noto Sans', sans-serif;">JDK 10.0.2</span> e <span style="font-family: 'Noto Sans', sans-serif;">JDK 8</span></h1>
     <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa,<br/>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
@@ -27,9 +27,6 @@ include("cabecalho.php");
 	<br/>
     
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
-    <p class="comum"><b>Nota:</b> Apenas como esclarecimento, resolvi incluir o JRE em uma pasta</p>
-    <p class="comum">em separado para refletir a estructura do jdk anterior (facilitando</p>
-    <p class="comum">assim para programas como Eclipse).</p>
     <p class="comum">Você pode fazer o download de <a href="http://jdk.java.net/11/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>

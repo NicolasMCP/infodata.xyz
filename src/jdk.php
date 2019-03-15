@@ -31,7 +31,7 @@ include("cabecalho.php");
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-		$ cd ~/Downloads/jdk/<br/>
+        $ cd ~/Downloads/jdk/<br/>
         $ wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz<br/>
     </div>
 
@@ -46,7 +46,7 @@ include("cabecalho.php");
     <p class="comum">Extrair o Java Developer Kit (JDK)</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-		$ cd ~/Downloads/jdk/<br/>
+        $ cd ~/Downloads/jdk/<br/>
         $ tar xvzf openjdk-11.*.tar.gz<br/>
     </div>
 

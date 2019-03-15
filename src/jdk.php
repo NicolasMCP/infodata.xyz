@@ -11,118 +11,99 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span>, <span style="font-family: 'Noto Sans', sans-serif;">10</span> e <span style="font-family: 'Noto Sans', sans-serif;">11</span></h1>
-    <h2 class="reduzido">Testado em Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h2>
+	<h1>Instalando o Java Open JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span>,<br/><span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span> e <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span></h1>
+    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa,<br/>
+    sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
-    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11</span></h3>
+    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span></h3>
 
-    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.</a>
+    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a>
     <br>
-    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
+    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a>
     <br>
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
-    <p class="comum">Ao instalar o Linux Mint 19 (nesta data Setembro de 2018) ele j&aacute; vem com o openJDK 11 instalado,
-    no entanto se voc&ecirc; usar o comando:</p>
-
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        $ java -version<br>
-    </div>
-    <br>
-    <p class="comum">vai receber como resposta:</p>
-
-    <p class="miniatura">Resposta</p>
-    <div class="box sombra">
-        openjdk version "10.0.2" 2018-07-17<br>
-        OpenJDK Runtime Environment (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2)<br>
-        OpenJDK 64-Bit Server VM (build 10.0.2+13-Ubuntu-1ubuntu0.18.04.2, mixed mode)<br>
-    </div>
-    <br>
-    <p class="comum">Quando tentei Atualizar o Linux Mint, e não deu certo, então, optei pelo seguinte procedimento.</p>
+	<br/>
+    
+    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
+    <p class="comum"><b>Nota:</b> Apenas como esclarecimento, resolvi incluir o JRE em uma pasta</p>
+    <p class="comum">em separado para refletir a estructura do jdk anterior (facilitando</p>
+    <p class="comum">assim para programas como Eclipse).</p>
+    <p class="comum">Você pode fazer o download de <a href="http://jdk.java.net/11/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        $ sudo add-apt-repository ppa:openjdk-r/ppa<br/>
-        $ sudo apt update (pelo escudo)<br/>
+		$ cd ~/Downloads/jdk/<br/>
+        $ wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz<br/>
     </div>
-    <br>
-    <p class="comum">O escudo &eacute; aquele icone em formato de escudo pelo qual voc&ecirc; atualiza o Linux Mint, tamb&eacute;m conhecido como Gerenciador de Atualiza&ccedil;&otilde;es.</p>
-    <p class="comum">No Gerenciador de Atualiza&ccedil;&otilde;es, vai aparecer 'openjdk-11' marcado, clique em 'Instalar Atualiza&ccedil;&otilde;es'.</p>
-    <p class="comum">Ap&oacute;s o qual vai novamente usar o comando:</p>
 
+
+    <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        rm -r /usr/lib/jvm/LOCAL-INSTALAÇÃO<br/>
+    </div>
+
+
+    <p class="comum">Extrair o Java Developer Kit (JDK)</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ java -version<br>
+		$ cd ~/Downloads/jdk/<br/>
+        $ tar xvzf openjdk-11.*.tar.gz<br/>
     </div>
-    <br>
-    <p class="comum">vai receber como resposta:</p>
 
-    <p class="miniatura">Resposta</p>
-    <div class="box sombra">
-        openjdk version "11" 2018-09-25<br>
-        OpenJDK Runtime Environment (build 11+24-Ubuntu-118.04)<br>
-        OpenJDK 64-Bit Server VM (build 11+24-Ubuntu-118.04, mixed mode, sharing)<br>
-    </div>
-    <br>
-    <p class="comum">Isso indica que o (java) JRE 11 esta corretamente instalado, agora vamos verificar o compilador:</p>
+
+    <p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ javac -version<br>
-    </div>
-    <br>
-    <p class="comum">Se você receber uma resposta como esta:</p>
-
-    <p class="miniatura">Resposta</p>
-    <div class="box sombra">
-        Command 'javac' not found, but can be installed with:<br>
+        <span class="miniatura">O proximo comando no debian &eacute;:</span>
         <br>
-        sudo apt install default-jdk<br>
-        sudo apt install openjdk-11-jdk-headless<br>
-        sudo apt install ecj<br>
-        sudo apt install openjdk-8-jdk-headless<br>
+        $ su<br/>
+        <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
+        <br>
+        $ sudo su<br>
+        <span class="miniatura">O seguinte e comum aos dois SO.</span>
+        <br>
+        # cp -rp jdk-11.0.2 /usr/lib/jvm &amp;&amp; rm -r jdk-11.0.2/<br/>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/java&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/javac&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/jar&quot; 1<br/>
     </div>
-    <br>
-    <p class="comum">Não se preocupe, apenas esta indicando que o JDK (compilador, javac) não esta instalado, então vamos instala-lo</p>
-    <p class="comum">Para instalar o JDK 11...</p>
+
+    <p class="comum">Definir o JDK 11.0.2 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt install openjdk-11-jdk<br/>
-        $ sudo apt install openjdk-11-jdk-headless<br>
+        # update-alternatives --set java /usr/lib/jvm/jdk-11.0.2/bin/java<br/>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-11.0.2/bin/javac<br/>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-11.0.2/bin/jar<br/>
     </div>
-    <br>
-    <p class="comum">Caso você tenha versões anteriores do JDK...</p>
-    <p class="comum">Podemos Selecionar o java e javac defaults</p>
+
+    <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo update-alternatives --config java<br>
-        $ sudo update-alternatives --config javac<br/>
+        # vim /etc/profile<br/>
     </div>
-    <br>
-    <p class="comum">Como incluir as vari&aacute;veis de ambiente?</p>
-    <p class="comum">Do seguinte modo...</p>
-    <p class="comum">Primeiro vamos abrir o arquivo profile para edita-lo.</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        $ sudo vim /etc/profile<br/>
-    </div>
-    <br>
+
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64<br/>
+        JAVA_HOME=/usr/lib/jvm/jdk-11.0.2<br/>
         PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
         export JAVA_HOME<br/>
         export PATH<br/>
     </div>
-    <br>
+
     <p class="comum">Reiniciar e testar</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         # reboot<br/>
+        $ java -version<br/>
         $ javac -version<br/>
-        <p class="miniatura reduzido">javac 11</p>
     </div>
+
+
+
     <br>
     <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
     <br>

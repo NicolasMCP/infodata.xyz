@@ -17,7 +17,8 @@ include("cabecalho.php");
     <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
 
     <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.3</span> no Debian</h2>
-    <p class="comum">Instalando o PHP</p>
+    <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
+    quero esperimenta-la, estou mudando a versão do PHP para esta, que é compatível com o mesmo.</p>
     <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
     <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>

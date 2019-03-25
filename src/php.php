@@ -13,10 +13,10 @@ include("cabecalho.php");
 
     <h1>Instalando o PHP em Linux</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no
-        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
     <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
 
-    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.16</span> no Debian</h2>
+    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.3</span> no Debian</h2>
     <p class="comum">Instalando o PHP</p>
     <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
     <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
@@ -52,10 +52,10 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json php7.2-xsl php7.2-cli
-            apache2-mod-php7.2 php7.2-mysql php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl php-memcached
-            php-pear php7.2-opcache php7.2-readline php7.2-gd php7.2-zip php7.2-xml php7.2-cgi<br/>
-            $ sudo update-alternatives --set php /usr/bin/php7.2<br/>
+            $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
+            apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.2-xml php7.3-cgi<br/>
+            $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
             $ sudo service apache2 restart<br/>
         </code>
     </div>

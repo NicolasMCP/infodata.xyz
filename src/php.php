@@ -22,7 +22,7 @@ include("cabecalho.php");
     <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
     <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
-    <a href="mariaDB.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do MariaDB</a><br>
+    <a href="mariaDB.php" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
 
     <p class="comum">Para que seu PHP possa ser instalado, precisaremos ter o Apache funcionando, portanto
     por favor abra no seu navegador o link abaixo para ter certeza do correto funcionamento do mesmo.</p>
@@ -108,9 +108,10 @@ include("cabecalho.php");
     <h4 class="reduzido">Testado em Linux Mint 18.3 e 19</h4>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
-    <p class="comum">Instalando o PHP</p>
+    <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
+        quero esperimenta-la, estou mudando a versão do PHP para esta, que é compatível com o mesmo.</p>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
-    <a href="mariaDB.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do MariaDB</a><br>
+    <a href="mariaDB.php" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
 
 
     <p class="comum">Instalando o PHP no Linux Mint</p>
@@ -118,9 +119,6 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>
             $ sudo apt install python-software-properties<br>
-        </code>
-        <p class="miniatura">O pr&oacute;ximo comando n&atilde;o &eacute; necess&aacute;rio para Linux Mint 19, s&oacute; para 18.3 ou anterior<br/></p>
-        <code>
             $ sudo add-apt-repository ppa:ondrej/php<br>
         </code>
         <p class="miniatura">Atualizar pelo 'gerenciador de atualiza&ccedil;&odblac;es'<br/>
@@ -132,10 +130,10 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json php7.2-cgi php7.2-xsl
-            php7.2-cli apache2-mod-php7.2 php7.2-mysql php7.2-dev php7.2-sqlite3 php7.2-mbstring php7.2-curl
-            php-memcached  php-pear php7.2-opcache php7.2-readline php7.2-gd php7.2-zip php7.2-xml<br/>
-            $ sudo update-alternatives --set php /usr/bin/php7.2<br/>
+            $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
+            apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.2-xml php7.3-cgi<br/>
+            $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
             $ sudo service apache2 restart<br/>
         </code>
     </div>
@@ -149,10 +147,10 @@ include("cabecalho.php");
         </code>
 
         <p style="font-size: 12px;"><br/>
-            PHP 7.2.10-0ubuntu0.18.04.1 (cli) (built: Sep 13 2018 13:45:02) ( NTS )<br/>
+            PHP 7.3.3-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Mar  7 2019 20:31:49) ( NTS )<br/>
             Copyright (c) 1997-2018 The PHP Group<br/>
-            Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies<br/>
-            with Zend OPcache v7.2.10-0ubuntu0.18.04.1, Copyright (c) 1999-2018, by Zend Technologies<br/>
+            Zend Engine v3.3.3, Copyright (c) 1998-2018 Zend Technologies<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;with Zend OPcache v7.3.3-1+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
         </p>
     </div>
 

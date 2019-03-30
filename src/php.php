@@ -205,7 +205,7 @@ include("cabecalho.php");
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo vim /etc/php/7.2/apache2/php.ini<br/>
+        $ sudo vim /etc/php/7.3/apache2/php.ini<br/>
     </div>
 
     <p class="comum">Procure display_errors (<a href="vim.php" class="a" target="_blank">aprenda o b&aacute;sico do VIM</a>).</p>

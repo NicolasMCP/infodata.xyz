@@ -11,9 +11,27 @@ include("cabecalho.php");
 <section>
 <!--IntelliJ IDEA-->
 
-    <h1 id="jdk11">Dicas de Uso do IntelliJ IDEA</h1>
+    <h1 id="jdk12">Dicas de Uso do IntelliJ IDEA</h1>
 
-    <h2>Usando openJDK <span style="font-family: 'Noto Sans', sans-serif;">11</span></h2>
+    <h2>Usando openJDK <span style="font-family: 'Noto Sans', sans-serif;">12</span></h2>
+    <p class="comum">Antes de abrir qualquer projeto, selecione as op&ccedil;&otilde;es:</p>
+    <p class="comum"></p>
+    <p class="comum"></p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        Configure &gt; Project Defaults &gt; Project Structure<br/>
+        bot&atilde;o &gt; New...<br/>
+        selecione o SDK (Software Developer Kit) que incluiu (no caso o JDK 12)<br/>
+        na pasta: /usr/lib/jvm/java-12.0.1<br/>
+        bot&atilde;o &gt; Apply<br/>
+        bot&atilde;o &gt; Ok<br/>
+    </div>
+
+     <?php
+    include("pre-rodape.php");
+    ?>
+
+    <h3 id="jdk11">Usando openJDK <span style="font-family: 'Noto Sans', sans-serif;">11</span></h3>
     <p class="comum">Antes de abrir qualquer projeto, selecione as op&ccedil;&otilde;es:</p>
     <p class="comum"></p>
     <p class="comum"></p>
@@ -22,7 +40,7 @@ include("cabecalho.php");
         Configure &gt; Project Defaults &gt; Project Structure<br/>
         bot&atilde;o &gt; New...<br/>
         selecione o SDK (Software Developer Kit) que incluiu (no caso o JDK 11)<br/>
-        na pasta: /usr/lib/jvm/java-11-openjdk-amd64<br/>
+        na pasta: /usr/lib/jvm/java-11.0.2<br/>
         bot&atilde;o &gt; Apply<br/>
         bot&atilde;o &gt; Ok<br/>
     </div>

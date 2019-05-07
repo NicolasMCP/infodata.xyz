@@ -11,12 +11,106 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java Open JDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span>,<br/><span style="font-family: 'Noto Sans', sans-serif;">JDK 10.0.2</span> e <span style="font-family: 'Noto Sans', sans-serif;">JDK 8</span></h1>
-    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa,<br/>
+	<h1>Instalando o Java Open JDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.1</span>,<br/>JDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span>,
+        JDK <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span> e <span style="font-family: 'Noto Sans', sans-serif;">JDK 8</span></h1>
+    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa,<br/>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
-    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span></h3>
+    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.1</span></h3>
+
+    <a href="#jdk11.0.2" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 11.0.2</a><br>
+    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a><br>
+    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a><br>
+    <br>
+    <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago
+        os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
+	<br/>
+    
+    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
+    <p class="comum">Voc&ecirc; pode fazer o download de <a href="https://jdk.java.net/12/" target="_blank" class="a">openJDK 12.0.1</a> se quiser. Ou...</p>
+
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        $ cd ~/Downloads/jdk/<br/>
+        $ wget https://download.java.net/java/GA/jdk12.0.1/69cfe15208a647278a19ef0990eea691/12/GPL/openjdk-12.0.1_linux-x64_bin.tar.gz<br/>
+    </div>
+
+
+    <p class="comum">Caso deseje deletar uma instala&ccedil;&atilde;o anterior</p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        rm -r /usr/lib/jvm/LOCAL-INSTALAÇÃO<br/>
+    </div>
+
+
+    <p class="comum">Extrair o Java Developer Kit (JDK)</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ cd ~/Downloads/jdk/<br/>
+        $ tar xvzf openjdk-12.*.tar.gz<br/>
+    </div>
+
+
+    <p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <span class="miniatura">O proximo comando no debian &eacute;:</span>
+        <br>
+        $ su<br/>
+        <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
+        <br>
+        $ sudo su<br>
+        <span class="miniatura">O seguinte e comum aos dois SO.</span>
+        <br>
+        # cp -rp jdk-12.0.1 /usr/lib/jvm<br/>
+        # rm -r jdk-12.0.1/<br/>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-12.0.1/bin/java&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-12.0.1/bin/javac&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-12.0.1/bin/jar&quot; 1<br/>
+    </div>
+
+    <p class="comum">Definir o JDK 12.0.1 como padr&atilde;o</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # update-alternatives --set java /usr/lib/jvm/jdk-12.0.1/bin/java<br/>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-12.0.1/bin/javac<br/>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-12.0.1/bin/jar<br/>
+    </div>
+
+    <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # vim /etc/bash.bashrc<br/>
+    </div>
+
+    <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
+    <p class="miniatura">Incluir no arquivo</p>
+    <div class="box sombra">
+        JAVA_HOME=/usr/lib/jvm/jdk-12.0.1<br/>
+        PATH=$PATH:$JAVA_HOME/bin<br/>
+        export JAVA_HOME<br/>
+        export PATH<br/>
+    </div>
+
+    <p class="comum">Reiniciar e testar</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # reboot<br/>
+        $ java -version<br/>
+        $ javac -version<br/>
+    </div>
+
+
+
+    <br>
+    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 12 no IntelliJ IDEA.</a>
+    <br>
+    <br>
+    <br>
+    <!--------------------------------------------------------------------------------------------->
+    <br id="jdk11.0.2">
+    <h4>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2</span></h4>
 
     <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a>
     <br>
@@ -25,9 +119,9 @@ include("cabecalho.php");
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
 	<br/>
-    
+
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
-    <p class="comum">Você pode fazer o download de <a href="http://jdk.java.net/11/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
+    <p class="comum">Voc&ecirc; pode fazer o download de <a href="http://jdk.java.net/11/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
@@ -79,14 +173,14 @@ include("cabecalho.php");
     <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # vim /etc/profile<br/>
+        # vim /etc/bash.bashrc<br/>
     </div>
 
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         JAVA_HOME=/usr/lib/jvm/jdk-11.0.2<br/>
-        PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
+        PATH=$PATH:$JAVA_HOME/bin<br/>
         export JAVA_HOME<br/>
         export PATH<br/>
     </div>
@@ -102,13 +196,15 @@ include("cabecalho.php");
 
 
     <br>
-    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
+    <a href="intellijIDEA.php#jdk11" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
     <br>
     <br>
     <br>
     <!--------------------------------------------------------------------------------------------->
-    <h4 id="jdk10">Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h4>
-    <h5 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h5>
+
+    <h5 id="jdk10">Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h5>
+    <h6 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10
+        </span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h6>
 
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
 
@@ -176,14 +272,14 @@ include("cabecalho.php");
     <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # vim /etc/profile<br/>
+        # vim /etc/bash.bashrc<br/>
     </div>
 
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         JAVA_HOME=/usr/lib/jvm<br/>
-        PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
+        PATH=$PATH:$JAVA_HOME/bin<br/>
         export JAVA_HOME<br/>
         export PATH<br/>
     </div>
@@ -198,6 +294,7 @@ include("cabecalho.php");
 
 
     <!--------------------------------------------------------------------------------------------->
+
     <br id="jdk8"/>
     <?php
     include("pre-rodape.php");
@@ -205,8 +302,9 @@ include("cabecalho.php");
     <br>
 
 
-    <h6>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h6>
-    <h7 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h7>
+    <h7>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h7>
+    <h8 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10
+        </span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h8>
     <br>
     <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.</a>
 
@@ -264,14 +362,14 @@ include("cabecalho.php");
 	<p class="comum">Incluir as vari&aacute;veis de ambiente</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		# vim /etc/profile<br/>
+		# vim /etc/bash.bashrc<br/>
 	</div>
 
 	<p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
 	<p class="miniatura">Incluir no arquivo</p>
 	<div class="box sombra">
 		JAVA_HOME=/usr/lib/jvm/jdk1.8.0_192<br/>
-		PATH=$PATH:$HOME/bin:$JAVA_HOME/bin<br/>
+		PATH=$PATH:$JAVA_HOME/bin<br/>
 		export JAVA_HOME<br/>
 		export PATH<br/>
 	</div>

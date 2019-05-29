@@ -27,7 +27,16 @@ include("cabecalho.php");
                 podem n&atilde;o ter tanto conhecimento como voc&ecirc;, e voc&ecirc; tamb&eacute;m teve que aprender um dia.
             </p><br/>
             <p class="justify indent">
-                <a class="a" target="_blank" href="https://www.jetbrains.com/">&Agrave; JetBrains</a>: Queriamos aproveitar para
+                <a class="a" target="_blank" href="https://t.me/joinchat/H-e3LRB96Dgfjf-FcP1flg">Grupo do Telegram</a>,
+                se desejar se juntar a n&ocirc;s no grupo para conversar sobre temas como programa&ccedil;&atilde;o,
+                Java, Python, Linux e Web-design... voc&ecirc; esta convidado.
+            </p><br/>
+            <p class="justify indent">
+                <a class="a" target="_blank" href="https://www.youtube.com/channel/UCYI7lWiyTmdY8vU6Ub1LZAw?view_as=subscriber">
+                    Canal Youtube</a>, cont&ecirc;m o que ando fazendo, contribua se inscrevendo e dando seu Like, obrigado.
+            </p><br/>
+            <p class="justify indent">
+                <a class="a" target="_blank" href="https://www.jetbrains.com/?from=infodata.xyz">&Agrave; JetBrains</a>: Queriamos aproveitar para
                 agradecer a JetBrains pelas licen&ccedil;as de suas IDEs pagas cedidas gratuitamente, para o uso de nossos
                 projetos em Software Livre! Muito obrigado!!! Suas IDEs s&atilde;o as melhores!!!
             </p><br/>
@@ -44,14 +53,6 @@ include("cabecalho.php");
                 provavelmente voc&ecirc; j&aacute; ouviu falar, mas se voc&ecirc; n&atilde;o sabe usar, saiba que voc&ecirc;
                 pode baixar os projetos como um zip (no bot&atilde;o verde, Clone ou Download). Sem saber nada sobre
                 Git ou GitHub. Descompactar em seu micro e usar o c&oacute;digo fonte.
-            </p><br/>
-            <p class="justify indent">
-                <a class="a" target="_blank" href="https://t.me/joinchat/H-e3LRB96Dgfjf-FcP1flg">Grupo do Telegram</a>,
-                Linux - Webdesign BR.
-            </p><br/>
-            <p class="justify indent">
-                Se desejar se juntar a n&ocirc;s no grupo para conversar sobre temas como programa&ccedil;&atilde;o,
-                Java, Python, Linux e Web-design... voc&ecirc; esta convidado.
             </p><br/>
             <p class="indent">
                 Desde j&aacute; agradecemos por acessar o nosso Blog.

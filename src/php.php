@@ -55,7 +55,11 @@ include("cabecalho.php");
         <code>
             $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
             apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
-            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.2-xml php7.3-cgi<br/>
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br/>
+            $ sudo apt install dh-php<br/>
+            $ sudo apt install pkg-php-tools<br/>
+            $ sudo apt-get install php-cgi<br/>
+            $ ls --color /usr/bin/php7.3<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
             $ sudo service apache2 restart<br/>
         </code>
@@ -132,7 +136,11 @@ include("cabecalho.php");
         <code>
             $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
             apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
-            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.2-xml php7.3-cgi<br/>
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br/>
+            $ sudo apt install dh-php<br/>
+            $ sudo apt install pkg-php-tools<br/>
+            $ sudo apt-get install php-cgi<br/>
+            $ l /usr/bin/php7.3<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
             $ sudo service apache2 restart<br/>
         </code>

@@ -197,4 +197,9 @@ section {
     background: red;
     position: absolute;
 }
-
+.azul {
+    color: #5858a7;
+}
+.verde {
+    color: #4d735c;
+}

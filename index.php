@@ -1,8 +1,5 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Nicolas Ramos
- * Date: 10/06/18
- * Time: 18:57
+ * Autor: Nicolas Ramos
  */
 header("location: src/index.php");

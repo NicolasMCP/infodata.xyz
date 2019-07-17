@@ -3,3 +3,6 @@ old/
 
 # arquivos do idea
 .idea/
+
+# arquivos do eclipse
+.metadata/

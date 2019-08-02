@@ -11,13 +11,13 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.1</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.3/2</span>,
+	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.3/2</span>,
         JDK <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span> e JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span></h1>
     <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa,<br/>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
-    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.1</span></h3>
+    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span></h3>
 
     <a href="#jdk11.0.2" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.3/2</a><br>
     <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a><br>
@@ -28,13 +28,12 @@ include("cabecalho.php");
 	<br/>
     
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
-    <p class="comum">Voc&ecirc; pode fazer o download de <a href="https://jdk.java.net/12/" target="_blank" class="a">
-            openJDK 12.0.1</a> se quiser. Ou...</p>
+    <p class="comum"><a href="https://jdk.java.net/12/" class="a" target="_blank">JDK 12.0.2</a>. Para voc&ecirc; fazer o download do JDK 12.0.2 se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
         $ cd ~/Downloads/jdk/<br/>
-        $ wget https://download.java.net/java/GA/jdk12.0.1/69cfe15208a647278a19ef0990eea691/12/GPL/openjdk-12.0.1_linux-x64_bin.tar.gz<br/>
+        $ wget https://download.java.net/java/GA/jdk12.0.2/e482c34c86bd4bf8b56c0b35558996b9/10/GPL/openjdk-12.0.2_linux-x64_bin.tar.gz<br/>
     </div>
 
 
@@ -64,19 +63,19 @@ include("cabecalho.php");
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-        # cp -rp jdk-12.0.1 /usr/lib/jvm<br/>
-        # rm -r jdk-12.0.1/<br/>
-        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-12.0.1/bin/java&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-12.0.1/bin/javac&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-12.0.1/bin/jar&quot; 1<br/>
+        # cp -rp jdk-12.0.2 /usr/lib/jvm<br/>
+        # rm -r jdk-12.0.2/<br/>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-12.0.2/bin/java&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-12.0.2/bin/javac&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-12.0.2/bin/jar&quot; 1<br/>
     </div>
 
-    <p class="comum">Definir o JDK 12.0.1 como padr&atilde;o</p>
+    <p class="comum">Definir o JDK 12.0.2 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # update-alternatives --set java /usr/lib/jvm/jdk-12.0.1/bin/java<br/>
-        # update-alternatives --set javac /usr/lib/jvm/jdk-12.0.1/bin/javac<br/>
-        # update-alternatives --set jar /usr/lib/jvm/jdk-12.0.1/bin/jar<br/>
+        # update-alternatives --set java /usr/lib/jvm/jdk-12.0.2/bin/java<br/>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-12.0.2/bin/javac<br/>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-12.0.2/bin/jar<br/>
     </div>
 
     <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
@@ -88,7 +87,7 @@ include("cabecalho.php");
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm/jdk-12.0.1<br/>
+        JAVA_HOME=/usr/lib/jvm/jdk-12.0.2<br/>
         PATH=$PATH:$JAVA_HOME/bin<br/>
         export JAVA_HOME<br/>
         export PATH<br/>

@@ -22,7 +22,7 @@ include("cabecalho.php");
         Configure &gt; Project Defaults &gt; Project Structure<br/>
         bot&atilde;o &gt; New...<br/>
         selecione o SDK (Software Developer Kit) que incluiu (no caso o JDK 12)<br/>
-        na pasta: /usr/lib/jvm/java-12.0.1<br/>
+        na pasta: /usr/lib/jvm/java-12.0.2<br/>
         bot&atilde;o &gt; Apply<br/>
         bot&atilde;o &gt; Ok<br/>
     </div>
@@ -40,7 +40,7 @@ include("cabecalho.php");
         Configure &gt; Project Defaults &gt; Project Structure<br/>
         bot&atilde;o &gt; New...<br/>
         selecione o SDK (Software Developer Kit) que incluiu (no caso o JDK 11)<br/>
-        na pasta: /usr/lib/jvm/java-11.0.2<br/>
+        na pasta: /usr/lib/jvm/java-11.0.4<br/>
         bot&atilde;o &gt; Apply<br/>
         bot&atilde;o &gt; Ok<br/>
     </div>

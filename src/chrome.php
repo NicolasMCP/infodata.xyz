@@ -32,14 +32,19 @@ include("cabecalho.php");
         <p class="comum">Abra o Chrome e fa&ccedil;a o procedimento a seguir...</p>
         <p class="miniatura">Procedimento</p>
         <div class="box sombra">
-            Na barra de endere&ccedil;os digite 'chrome://flags/'<br/>
+            <strike>Na barra de endere&ccedil;os digite 'chrome://flags/'<br/>
             Pesquise por MHTML <br/>
             Na linha de título 'Save Page as MHTML' mude o bot&atilde;o 'disabled' para 'Enabled' <br/>
             Reinicie o Chrome no bot&atilde;o 'REINICIAR AGORA'<br/>
             Navegue at&eacute; um site que voc&ecirc; quiser salvar. <br/>
             Clique nos tres pontinhos do menu &gt; Mais Ferramentas &gt; Salvar p&aacute;gina como<br/>
             Em 'Nome:' modifique o nome do arquivo, deletando as duas ultimas letras, ficando MHT<br/>
-            Pronto, agora &eacute; so clicar em 'Save'
+                Pronto, agora &eacute; so clicar em 'Save'</strike>
+        </div>
+
+        <p class="miniatura">Opção atual, instale o complemento:</p>
+        <div class="box sombra">
+            SingleFile
         </div>
 
     </section>

@@ -108,8 +108,8 @@ include("cabecalho.php");
     include("pre-rodape.php");
     ?>
 
-    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.2.10</span> no Linux Mint</h3>
-    <h4 class="reduzido">Testado em Linux Mint 18.3 e 19</h4>
+    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3</span> no Linux Mint</h3>
+    <h4 class="reduzido">Testado em Linux Mint 18.3 e 19.2</h4>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem

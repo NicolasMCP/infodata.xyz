@@ -100,6 +100,7 @@ echo '<html lang="pt-br">
                     <ul>
                         <li><a href="phpstorm.php"><img src="../img/phpstorm.png" height="20px" width="28px">PHPStorm</a></li>
                         <li><a href="intellijIDEA.php"><img src="../img/intellij.png" height="20px" width="28px">IntelliJ IDEA</a></li>
+                        <li><a href="eclipse.php"><img src="icon-eclipse" height="20px" width="28px">Eclipse</a></li>
                         <li><a href="netbeans.php"><span class="icon-codepen"></span>NetBeans</a></li>
                         <li><a href="android.php"><span class="icon-android"></span>Android</a></li>
                         <li><a href="vim.php"><img src="../img/vim.png" height="20px" width="28px">Vim</a></li>

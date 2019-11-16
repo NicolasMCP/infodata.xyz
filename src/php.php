@@ -14,7 +14,7 @@ include("cabecalho.php");
     <h1>Instalando o PHP em Linux</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
-    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
+    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o do PHP 7.3.11 no Linux Mint.</a>
 
     <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.3</span> no Debian</h2>
     <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
@@ -108,7 +108,7 @@ include("cabecalho.php");
     include("pre-rodape.php");
     ?>
 
-    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3</span> no Linux Mint</h3>
+    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.11</span> no Linux Mint</h3>
     <h4 class="reduzido">Testado em Linux Mint 18.3 e 19.2</h4>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
@@ -155,10 +155,10 @@ include("cabecalho.php");
         </code>
 
         <p style="font-size: 12px;"><br/>
-            PHP 7.3.3-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Mar  7 2019 20:31:49) ( NTS )<br/>
+            PHP 7.3.11-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 18:23:23) ( NTS )<br/>
             Copyright (c) 1997-2018 The PHP Group<br/>
-            Zend Engine v3.3.3, Copyright (c) 1998-2018 Zend Technologies<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;with Zend OPcache v7.3.3-1+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
+            Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;with Zend OPcache v7.3.11-1+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
         </p>
     </div>
 

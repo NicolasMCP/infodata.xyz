@@ -27,10 +27,11 @@ include("cabecalho.php");
 	<br/>
     
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
-    <p class="comum"><a href="https://jdk.java.net/13/" class="a" target="_blank">JDK 13.0.1</a>. Para voc&ecirc; fazer o download do JDK 13.0.1 se quiser. Ou...</p>
+    <p class="comum"><a href="https://jdk.java.net/13/" class="a" target="_blank">openJDK 13.0.1</a>. Para voc&ecirc; fazer o download do openJDK 13.0.1 se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
+        mkdir ~/Downloads/jdk<br/>
         $ cd ~/Downloads/jdk/<br/>
         $ wget https://download.java.net/java/GA/jdk13.0.1/cec27d702aa74d5a8630c65ae61e4305/9/GPL/openjdk-13.0.1_linux-x64_bin.tar.gz<br/>
     </div>
@@ -103,9 +104,9 @@ include("cabecalho.php");
 
 
     <br>
-    <p class="comum">Se voc&ecirc; instalar o JDK 13.0.1 antes do IntelliJ IDEA ele vai encontra-lo automaticamente</p>
+    <p class="comum">Se voc&ecirc; instalar o openJDK 13.0.1 antes do IntelliJ IDEA ele vai encontra-lo automaticamente</p>
     <br>
-    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 13.0.1 no IntelliJ IDEA.</a>
+    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o openJDK 13.0.1 no IntelliJ IDEA.</a>
     <br>
     <br>
     <br>
@@ -214,7 +215,7 @@ include("cabecalho.php");
         </p>
     </div>
     <br>
-    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
+    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o openJDK 11 no IntelliJ IDEA.</a>
     <br>
     <br>
     <!--------------------------------------------------------------------------------------------->
@@ -234,6 +235,7 @@ include("cabecalho.php");
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
+        mkdir ~/Downloads/jdk<br/>
         $ cd ~/Downloads/jdk/<br/>
         $ wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz<br/>
     </div>
@@ -242,7 +244,7 @@ include("cabecalho.php");
     <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        rm -r /usr/lib/jvm/LOCAL-INSTALAÇÃO<br/>
+        rm -r /usr/lib/jvm/LOCAL-INSTALA&Ccedil;&Atilde;O<br/>
     </div>
 
 
@@ -271,7 +273,7 @@ include("cabecalho.php");
         # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/jar&quot; 1<br/>
     </div>
 
-    <p class="comum">Definir o JDK 11.0.2 como padr&atilde;o</p>
+    <p class="comum">Definir o openJDK 11.0.2 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         # update-alternatives --set java /usr/lib/jvm/jdk-11.0.2/bin/java<br/>
@@ -305,7 +307,7 @@ include("cabecalho.php");
 
 
     <br>
-    <a href="intellijIDEA.php#jdk11" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
+    <a href="intellijIDEA.php#jdk11" class="a" target="_parent">Configurar o openJDK 11 no IntelliJ IDEA.</a>
     <br>
     <br>
     <br>
@@ -318,37 +320,40 @@ include("cabecalho.php");
     <br>
 
 
-    <h6>Instala&ccedil;&atilde;o do JDK Oracle 8 update 192</h6>
+    <h6>Instala&ccedil;&atilde;o do openJDK Oracle 8 update 232</h6>
     <h8 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10
-        </span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h8>
+        </span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina</h8>
     <br>
-    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.</a>
 
+    <p class="comum">
+        <a href="https://jp.azul.com/downloads/zulu-community/?&architecture=x86-64-bit&package=jdk" class="a" target="_blank">openJDK 8.0.232</a>.
+        Para voc&ecirc; fazer o download do openJDK 8.0.232 se quiser. Ou...
+    </p>
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
-    <p class="comum">O procedimento para o 9 &eacute; o mesmo.</p>
-	<p class="miniatura">Procedimento</p>
+	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		Fa&ccedil;a download do <a href="http://jdk.java.net/8/" target="_blank" class="a">JDK8</a>
-		salvando em:<br/>
-		~/Downloads/dev-linux/jdk-oracle/8/jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
+		mkdir ~/Downloads/jdk<br/>
+		cd ~/Downloads/jdk<br/>
+        wget https://cdn.azul.com/zulu/bin/zulu8.42.0.23-ca-jdk8.0.232-linux_x64.tar.gz<br>
 	</div>
 
 
     <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
-    <p class="miniatura">Procedimento</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        rm -r /usr/lib/jvm/jdk1.8.0_192<br/>
+        rm -r /usr/lib/jvm/LOCAL-INSTALA&Ccedil;&Atilde;O<br/>
     </div>
 
 
     <p class="comum">Extrair o Java Developer Kit (JDK)</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		$ cd ~/Downloads/dev-linux/jdk-oracle/8/<br/>
-		$ tar xvzf jdk-8u192-ea-bin-b04-linux-x64-01_aug_2018.tar.gz<br/>
+		$ cd ~/Downloads/jdk<br/>
+		$ tar xvzf zulu8.*.tar.gz<br/>
+        $ mv zulu8.42.0.23-ca-jdk8.0.232-linux_x64 jdk8.0.232<br>
 	</div>
 
-	<p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
+	<p class="comum">Copiar o openJDK 8.0.232 ao local definitivo e informar ao linux as pastas de trabalho</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <span class="miniatura">O proximo comando no debian &eacute;:</span>
@@ -359,20 +364,20 @@ include("cabecalho.php");
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-		# cp -rp jdk1.8.0_192 /usr/lib/jvm/ &amp;&amp; rm -r jdk1.8.0_192/<br/>
-		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/java&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/javac&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/jar&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/jdk1.8.0_192/bin/javaws&quot; 1<br/>
+		# cp -rp jdk8.0.232 /usr/lib/jvm/ &amp;&amp; rm -r jdk8.0.232/<br/>
+		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/java&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/javac&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/jar&quot; 1<br/>
+		# update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/javaws&quot; 1<br/>
 	</div>
 
-	<p class="comum">Definir o JDK 8 como padr&atilde;o</p>
+	<p class="comum">Definir o openJDK 8.0.232 como padr&atilde;o</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		# update-alternatives --set java /usr/lib/jvm/jdk1.8.0_192/bin/java<br/>
-		# update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_192/bin/javac<br/>
-		# update-alternatives --set jar /usr/lib/jvm/jdk1.8.0_192/bin/jar<br/>
-		# update-alternatives --set javaws /usr/lib/jvm/jdk1.8.0_192/bin/javaws<br/>
+		# update-alternatives --set java /usr/lib/jvm/jdk8.0.232/bin/java<br/>
+		# update-alternatives --set javac /usr/lib/jvm/jdk8.0.232/bin/javac<br/>
+		# update-alternatives --set jar /usr/lib/jvm/jdk8.0.232/bin/jar<br/>
+		# update-alternatives --set javaws /usr/lib/jvm/jdk8.0.232/bin/javaws<br/>
 	</div>
 
 	<p class="comum">Incluir as vari&aacute;veis de ambiente</p>
@@ -384,7 +389,7 @@ include("cabecalho.php");
 	<p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
 	<p class="miniatura">Incluir no arquivo</p>
 	<div class="box sombra">
-		JAVA_HOME=/usr/lib/jvm/jdk1.8.0_192<br/>
+		JAVA_HOME=/usr/lib/jvm/jdk8.0.232<br/>
 		PATH=$PATH:$JAVA_HOME/bin<br/>
 		export JAVA_HOME<br/>
 		export PATH<br/>

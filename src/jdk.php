@@ -11,15 +11,15 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.3/2</span>,
+	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
         JDK <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span> e JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span></h1>
-    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa,<br/>
+    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina,<br/>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
     <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span></h3>
 
-    <a href="#jdk11.0.2" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.3/2</a><br>
+    <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>
     <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a><br>
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a><br>
     <br>
@@ -114,8 +114,8 @@ include("cabecalho.php");
     ?>
     <br>
 
-    <br id="jdk11.0.2">
-    <h4>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.3 reposit&oacute;rios Linux Mint 19.1, ou openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2 Manual.</span></h4>
+    <br id="jdk11">
+    <h4>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4 reposit&oacute;rios Linux Mint 19.2, ou openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2 Manual.</span></h4>
 
     <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a>
     <br>
@@ -125,13 +125,13 @@ include("cabecalho.php");
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
 	<br/>
 
-    <p class="comum reduzido">openJDK 11.0.3 reposit&oacute;rios Linux Mint 19.1</p>
+    <p class="comum reduzido">openJDK 11.0.4 reposit&oacute;rios Linux Mint 19.2</p>
     <br>
 
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
     <br/>
 
-    <p class="comum">Ao instalar o Linux Mint 19.1 (nesta data Maio de 2019) ele j&aacute; vem com o JRE 11 instalado, se voc&ecirc; usar o comando:</p>
+    <p class="comum">Ao instalar o Linux Mint 19.2 (nesta data Novembro de 2019) ele j&aacute; vem com o runtime do JDK 11 instalado, se voc&ecirc; usar o comando:</p>
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
@@ -143,18 +143,18 @@ include("cabecalho.php");
 
     <p class="miniatura">Resposta</p>
     <div class="box sombra">
-        openjdk version "11.0.3" 2019-04-16<br>
-        OpenJDK Runtime Environment (build 11.0.3+7-Ubuntu-1ubuntu218.04.1)<br>
-        OpenJDK 64-Bit Server VM (build 11.0.3+7-Ubuntu-1ubuntu218.04.1, mixed mode, sharing)<br>
+        openjdk version &quot;11.0.4&quot; 2019-07-16<br>
+        OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3)<br>
+        OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mode, sharing)<br>
     </div>
     <br>
-    <p class="comum">Isso indica que o (java) JRE 11 esta corretamente instalado, agora vamos verificar o compilador:</p>
+    <p class="comum">Isso indica que o runtime do JDK 11 esta corretamente instalado, agora vamos verificar o compilador:</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ javac -version<br>
     </div>
     <br>
-    <p class="comum">Se você receber uma resposta como esta:</p>
+    <p class="comum">Se voc&ecirc; receber uma resposta como esta:</p>
     <p class="miniatura">Resposta</p>
     <div class="box sombra">
         Command 'javac' not found, but can be installed with:<br>
@@ -167,11 +167,10 @@ include("cabecalho.php");
     <br>
     <p class="comum">N&atilde;o se preocupe, apenas esta indicando que o openJDK (Kit de Desenvolvimento do Java o que
         inclui o java compiler ou javac, e outras ferramentas) n&atilde;o esta instalado, ent&atilde;o vamos instala-lo</p>
-    <p class="comum">Para instalar o openJDK 11...</p>
+    <p class="comum">Para instalar o openJDK 11... vamos seguir a primeira sugest&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt install openjdk-11-jdk<br/>
-        $ sudo apt install openjdk-11-jdk-headless<br>
+        $ sudo apt install default-jdk<br/>
     </div>
     <br>
     <p class="comum">Caso voc&ecirc; tenha vers&otilde;es anteriores do JDK...</p>
@@ -183,6 +182,14 @@ include("cabecalho.php");
     </div>
     <br>
     <p class="comum">Como incluir as vari&aacute;veis de ambiente?</p>
+    <p class="comum">Primeiro, vamos verificar em que pasta o jdk foi instalado usando o seguinte comando</p>
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ sudo vim /etc/bash.bashrc<br/>
+    </div>
+    <br>
+
     <p class="comum">Do seguinte modo...</p>
     <p class="comum">Primeiro vamos abrir o arquivo /etc/bash.bashrc para edita-lo.</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -204,7 +211,7 @@ include("cabecalho.php");
     <div class="box sombra">
         # reboot<br/>
         $ javac -version<br/>
-        <p class="miniatura reduzido">javac 11</p>
+        <p class="miniatura reduzido">java 11.0.4</p>
     </div>
     <br>
     <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
@@ -223,7 +230,7 @@ include("cabecalho.php");
     <br/>
 
 
-    <p class="comum">Voc&ecirc; pode fazer o download de <a href="http://jdk.java.net/11/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
+    <p class="comum">Voc&ecirc; pode fazer o download de <a href="http://jdk.java.net/archive/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">

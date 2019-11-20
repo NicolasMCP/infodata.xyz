@@ -11,16 +11,15 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
-        JDK <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span> e JDK <span style="font-family: 'Noto Sans', sans-serif;">8</span></h1>
+	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
+        e openJDK <span style="font-family: 'Noto Sans', sans-serif;">8</span></h1>
     <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina,<br/>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
-    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">12.0.2</span></h3>
+    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span></h3>
 
     <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>
-    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a><br>
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a><br>
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago
@@ -28,12 +27,12 @@ include("cabecalho.php");
 	<br/>
     
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
-    <p class="comum"><a href="https://jdk.java.net/12/" class="a" target="_blank">JDK 12.0.2</a>. Para voc&ecirc; fazer o download do JDK 12.0.2 se quiser. Ou...</p>
+    <p class="comum"><a href="https://jdk.java.net/13/" class="a" target="_blank">JDK 13.0.1</a>. Para voc&ecirc; fazer o download do JDK 13.0.1 se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
         $ cd ~/Downloads/jdk/<br/>
-        $ wget https://download.java.net/java/GA/jdk12.0.2/e482c34c86bd4bf8b56c0b35558996b9/10/GPL/openjdk-12.0.2_linux-x64_bin.tar.gz<br/>
+        $ wget https://download.java.net/java/GA/jdk13.0.1/cec27d702aa74d5a8630c65ae61e4305/9/GPL/openjdk-13.0.1_linux-x64_bin.tar.gz<br/>
     </div>
 
 
@@ -48,7 +47,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ cd ~/Downloads/jdk/<br/>
-        $ tar xvzf openjdk-12.*.tar.gz<br/>
+        $ tar xvzf openjdk-13.*.tar.gz<br/>
     </div>
 
 
@@ -63,19 +62,19 @@ include("cabecalho.php");
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-        # cp -rp jdk-12.0.2 /usr/lib/jvm<br/>
-        # rm -r jdk-12.0.2/<br/>
-        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-12.0.2/bin/java&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-12.0.2/bin/javac&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-12.0.2/bin/jar&quot; 1<br/>
+        # cp -rp jdk-13.0.1 /usr/lib/jvm<br/>
+        # rm -r jdk-13.0.1/<br/>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/java&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/javac&quot; 1<br/>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/jar&quot; 1<br/>
     </div>
 
     <p class="comum">Definir o JDK 12.0.2 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # update-alternatives --set java /usr/lib/jvm/jdk-12.0.2/bin/java<br/>
-        # update-alternatives --set javac /usr/lib/jvm/jdk-12.0.2/bin/javac<br/>
-        # update-alternatives --set jar /usr/lib/jvm/jdk-12.0.2/bin/jar<br/>
+        # update-alternatives --set java /usr/lib/jvm/jdk-13.0.1/bin/java<br/>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-13.0.1/bin/javac<br/>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-13.0.1/bin/jar<br/>
     </div>
 
     <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
@@ -87,7 +86,7 @@ include("cabecalho.php");
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm/jdk-12.0.2<br/>
+        JAVA_HOME=/usr/lib/jvm/jdk-13.0.1<br/>
         PATH=$PATH:$JAVA_HOME/bin<br/>
         export JAVA_HOME<br/>
         export PATH<br/>
@@ -104,7 +103,9 @@ include("cabecalho.php");
 
 
     <br>
-    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 12 no IntelliJ IDEA.</a>
+    <p class="comum">Se voc&ecirc; instalar o JDK 13.0.1 antes do IntelliJ IDEA ele vai encontra-lo automaticamente</p>
+    <br>
+    <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 13.0.1 no IntelliJ IDEA.</a>
     <br>
     <br>
     <br>
@@ -117,9 +118,7 @@ include("cabecalho.php");
     <br id="jdk11">
     <h4>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4 reposit&oacute;rios Linux Mint 19.2, ou openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2 Manual.</span></h4>
 
-    <a href="#jdk10" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 10.0.2</a>
-    <br>
-    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a>
+     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a>
     <br>
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
@@ -211,7 +210,8 @@ include("cabecalho.php");
     <div class="box sombra">
         # reboot<br/>
         $ javac -version<br/>
-        <p class="miniatura reduzido">java 11.0.4</p>
+        <p class="miniatura reduzido">java 11.0.4
+        </p>
     </div>
     <br>
     <a href="intellijIDEA.php" class="a" target="_parent">Configurar o JDK 11 no IntelliJ IDEA.</a>
@@ -309,103 +309,6 @@ include("cabecalho.php");
     <br>
     <br>
     <br>
-    <!--------------------------------------------------------------------------------------------->
-    <?php
-    include("pre-rodape.php");
-    ?>
-    <br>
-
-    <h5 id="jdk10">Instala&ccedil;&atilde;o do JDK Oracle <span style="font-family: 'Noto Sans', sans-serif;">10.0.2</span></h5>
-    <h6 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.5</span> Stretch, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10
-        </span> Buster<br>e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19</span> Tara</h6>
-
-    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8.</a>
-
-    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
-    <p class="comum"><b>Nota:</b> Apenas como esclarecimento, resolvi incluir o JRE em uma pasta</p>
-    <p class="comum">em separado para refletir a estructura do jdk anterior (facilitando</p>
-    <p class="comum">assim para programas como Eclipse).</p>
-
-    <p class="miniatura">Procedimento</p>
-    <div class="box sombra">
-        Fa&ccedil;a download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html" target="_blank" class="a">JDK 10</a>
-        salvando em:<br/>
-        ~/Downloads/dev-linux/jdk-oracle/jdk-10.0.2_linux-x64_bin.tar.gz<br/>
-
-        Fa&ccedil;a download do <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre10-downloads-4417026.html" target="_blank" class="a">JRE 10</a>
-        salvando em:<br/>
-        ~/Downloads/dev-linux/jdk-oracle/jre-10.0.2_linux-x64_bin.tar.gz<br>
-    </div>
-
-
-    <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
-    <p class="miniatura">Procedimento</p>
-    <div class="box sombra">
-        rm -r /usr/lib/jvm<br/>
-    </div>
-
-
-    <p class="comum">Extrair o Java Developer Kit (JDK) e renomear</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        $ cd ~/Downloads/dev-linux/jdk-oracle/<br/>
-        $ tar xvzf jdk-*.tar.gz<br/>
-        $ mv jdk-10.0.2/ jdk-oracle<br/>
-        $ tar xvzf jre-*.tar.gz<br/>
-        $ mv jre-10.0.2/ jdk-oracle/jre<br/>
-    </div>
-
-    <p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <span class="miniatura">O proximo comando no debian &eacute;:</span>
-        <br>
-        $ su<br/>
-        <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
-        <br>
-        $ sudo su<br>
-        <span class="miniatura">O seguinte e comum aos dois SO.</span>
-        <br>
-        # cp -rp jdk-oracle /usr/lib/jvm &amp;&amp; rm -r jdk-oracle/<br/>
-        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/bin/java&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/bin/javac&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/bin/jar&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/bin/javaws&quot; 1<br/>
-    </div>
-
-    <p class="comum">Definir o JDK 10 como padr&atilde;o</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        # update-alternatives --set java /usr/lib/jvm/bin/java<br/>
-        # update-alternatives --set javac /usr/lib/jvm/bin/javac<br/>
-        # update-alternatives --set jar /usr/lib/jvm/bin/jar<br/>
-        # update-alternatives --set javaws /usr/lib/jvm/bin/javaws<br/>
-    </div>
-
-    <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        # vim /etc/bash.bashrc<br/>
-    </div>
-
-    <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
-    <p class="miniatura">Incluir no arquivo</p>
-    <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm<br/>
-        PATH=$PATH:$JAVA_HOME/bin<br/>
-        export JAVA_HOME<br/>
-        export PATH<br/>
-    </div>
-
-    <p class="comum">Reiniciar e testar</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        # reboot<br/>
-        $ java -version<br/>
-        $ javac -version<br/>
-    </div>
-
-
     <!--------------------------------------------------------------------------------------------->
 
     <br id="jdk8"/>

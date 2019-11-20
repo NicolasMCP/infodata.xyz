@@ -14,7 +14,7 @@ include("cabecalho.php");
     <h1>Instalando o PHP em Linux</h1>
     <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
-    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o do PHP 7.3.11 no Linux Mint.</a>
+    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o do PHP 7.3.11 no Linux Mint 19.2 Tina.</a>
 
     <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.3</span> no Debian</h2>
     <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
@@ -116,8 +116,10 @@ include("cabecalho.php");
         quero esperimenta-la, estou mudando a versão do PHP para esta, que é compatível com o mesmo.</p>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
     <a href="mariaDB.php" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
-
-
+    <br>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/YS7O316Ycxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
     <p class="comum">Instalando o PHP no Linux Mint</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
@@ -140,7 +142,7 @@ include("cabecalho.php");
             $ sudo apt install dh-php<br/>
             $ sudo apt install pkg-php-tools<br/>
             $ sudo apt-get install php-cgi<br/>
-            $ l /usr/bin/php7.3<br/>
+            $ ls -la /usr/bin/php7.3<br/>
             $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
             $ sudo service apache2 restart<br/>
         </code>

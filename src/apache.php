@@ -15,10 +15,13 @@ include("cabecalho.php");
 
     <h2 class="reduzido">Testado no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch,
         no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster,<br/>no
-        Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.1</span> Tessa e no
+        Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina e no
         MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
-
     <h3>Instalando o Apache</h3>
+    <br>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/F39XPAKIf-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
     <p class="comum">A instala&ccedil;&atilde;o &eacute; extremamente simples, basta digitar:</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">

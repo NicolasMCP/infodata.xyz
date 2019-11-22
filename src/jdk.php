@@ -12,7 +12,7 @@ include("cabecalho.php");
 <!--InstalarJDK-->
 
 	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
-        e openJDK <span style="font-family: 'Noto Sans', sans-serif;">8</span></h1>
+        e openJDK <span style="font-family: 'Noto Sans', sans-serif;">8.0.232</span></h1>
     <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina,<br/>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
@@ -20,7 +20,7 @@ include("cabecalho.php");
     <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span></h3>
 
     <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>
-    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a><br>
+    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 8.0.232</a><br>
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago
         os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
@@ -119,7 +119,7 @@ include("cabecalho.php");
     <br id="jdk11">
     <h4>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4 reposit&oacute;rios Linux Mint 19.2, ou openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.2 Manual.</span></h4>
 
-     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do JDK 8</a>
+     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 8.0.232</a>
     <br>
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
@@ -368,7 +368,6 @@ include("cabecalho.php");
 		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/java&quot; 1<br/>
 		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/javac&quot; 1<br/>
 		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/jar&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/javaws&quot; &quot;javaws&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/javaws&quot; 1<br/>
 	</div>
 
 	<p class="comum">Definir o openJDK 8.0.232 como padr&atilde;o</p>
@@ -377,7 +376,6 @@ include("cabecalho.php");
 		# update-alternatives --set java /usr/lib/jvm/jdk8.0.232/bin/java<br/>
 		# update-alternatives --set javac /usr/lib/jvm/jdk8.0.232/bin/javac<br/>
 		# update-alternatives --set jar /usr/lib/jvm/jdk8.0.232/bin/jar<br/>
-		# update-alternatives --set javaws /usr/lib/jvm/jdk8.0.232/bin/javaws<br/>
 	</div>
 
 	<p class="comum">Incluir as vari&aacute;veis de ambiente</p>

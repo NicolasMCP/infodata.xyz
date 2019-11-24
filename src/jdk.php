@@ -70,7 +70,7 @@ include("cabecalho.php");
         # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/jar&quot; 1<br/>
     </div>
 
-    <p class="comum">Definir o JDK 12.0.2 como padr&atilde;o</p>
+    <p class="comum">Definir o JDK 13.0.1 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         # update-alternatives --set java /usr/lib/jvm/jdk-13.0.1/bin/java<br/>
@@ -179,6 +179,7 @@ include("cabecalho.php");
     <div class="box sombra">
         $ sudo update-alternatives --config java<br>
         $ sudo update-alternatives --config javac<br/>
+        $ sudo update-alternatives --config jar<br/>
     </div>
     <br>
     <p class="comum">Como incluir as vari&aacute;veis de ambiente?</p>

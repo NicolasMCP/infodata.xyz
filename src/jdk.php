@@ -22,6 +22,13 @@ include("cabecalho.php");
     <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 8.0.232</a><br>
     <br>
+
+    <br>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/7Qw-mPyDklM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p class="comum">V&iacute;deo contendo a instala&ccedil;&atilde;o dos openjdk8.0.232, openjdk11.0.4 e openjdk13.0.1 no Linux Mint 19.2.</p>
+    <br>
+
+
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago
         os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
 	<br/>
@@ -187,7 +194,7 @@ include("cabecalho.php");
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo vim /etc/bash.bashrc<br/>
+        $ sudo ls -la /usr/lib/jvm/<br/>
     </div>
     <br>
 

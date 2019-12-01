@@ -18,13 +18,13 @@ include("cabecalho.php");
         <p class="comum">Interessante para ver margens, padding e outros detalhes dos objetos da p&aacute;gina</p>
         <p class="miniatura">Procedimento</p>
         <div class="box sombra">
-            Pressione simultaneamente:<br/>
-            Ctrl + Shift + i<br/>
+            Pressione simultaneamente:<br>
+            Ctrl + Shift + i<br>
             Voc&ecirc; tamb&eacute;m pode usar a tecla &lt;F12&gt;
         </div>
     </section>
 
 <?php
-for($i=0; $i<32; $i++) {echo'<br/>';}
+for($i=0; $i<32; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

@@ -5,7 +5,7 @@
  */
 include('pre-rodape.php');
 echo '
-        <br/>
+        <br>
     </div>
     <script>
         $(document).ready( function() {

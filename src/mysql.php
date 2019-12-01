@@ -21,16 +21,16 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-        $ sudo su<br/>
-        # echo &quot;# MySQL colocar os reposit&oacute;rios escolher entre 5.6, 5.7, 8.0&quot; &gt;&gt; /etc/apt/sources.list<br/>
-        <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br/>-->
-        # echo &quot;deb [trusted=yes] http://repo.mysql.com/apt/debian/ <strong>stretch</strong> mysql-8.0&quot; &gt;&gt; /etc/apt/sources.list<br/>
-        # echo &quot;deb-src [trusted=yes] http://repo.mysql.com/apt/debian/ <strong>stretch</strong> mysql-8.0&quot; &gt;&gt; /etc/apt/sources.list<br/>
+        $ sudo su<br>
+        # echo &quot;# MySQL colocar os reposit&oacute;rios escolher entre 5.6, 5.7, 8.0&quot; &gt;&gt; /etc/apt/sources.list<br>
+        <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br>-->
+        # echo &quot;deb [trusted=yes] http://repo.mysql.com/apt/debian/ <strong>stretch</strong> mysql-8.0&quot; &gt;&gt; /etc/apt/sources.list<br>
+        # echo &quot;deb-src [trusted=yes] http://repo.mysql.com/apt/debian/ <strong>stretch</strong> mysql-8.0&quot; &gt;&gt; /etc/apt/sources.list<br>
         </code>
-        <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br/><br/></p>
+        <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br><br></p>
         <code>
-        # exit<br/>
-        $ sudo apt update<br/>
+        # exit<br>
+        $ sudo apt update<br>
         </code>
     </div>
 
@@ -38,7 +38,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-        $ sudo apt install mysql-server<br/>
+        $ sudo apt install mysql-server<br>
         </code>
     </div>
 
@@ -47,7 +47,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-        $ sudo systemctl status mysql<br/>
+        $ sudo systemctl status mysql<br>
         </code>
     </div>
 
@@ -55,7 +55,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-        $ sudo apt install mysql-workbench<br/>
+        $ sudo apt install mysql-workbench<br>
         </code>
     </div>
 
@@ -67,6 +67,6 @@ include("cabecalho.php");
 </section>
 
 <?php
-for($i=0; $i<3; $i++) {echo'<br/>';}
+for($i=0; $i<3; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

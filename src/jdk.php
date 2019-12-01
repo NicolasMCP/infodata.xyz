@@ -11,9 +11,9 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span>,<br/>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
+	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span>,<br>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
         e openJDK <span style="font-family: 'Noto Sans', sans-serif;">8.0.232</span></h1>
-    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina,<br/>
+    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina,<br>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
@@ -31,31 +31,31 @@ include("cabecalho.php");
 
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago
         os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
-	<br/>
+	<br>
     
-    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br/>
+    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br>
     <p class="comum"><a href="https://jdk.java.net/13/" class="a" target="_blank">openJDK 13.0.1</a>. Para voc&ecirc; fazer o download do openJDK 13.0.1 se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        mkdir ~/Downloads/jdk<br/>
-        $ cd ~/Downloads/jdk/<br/>
-        $ wget https://download.java.net/java/GA/jdk13.0.1/cec27d702aa74d5a8630c65ae61e4305/9/GPL/openjdk-13.0.1_linux-x64_bin.tar.gz<br/>
+        mkdir ~/Downloads/jdk<br>
+        $ cd ~/Downloads/jdk/<br>
+        $ wget https://download.java.net/java/GA/jdk13.0.1/cec27d702aa74d5a8630c65ae61e4305/9/GPL/openjdk-13.0.1_linux-x64_bin.tar.gz<br>
     </div>
 
 
     <p class="comum">Caso deseje deletar uma instala&ccedil;&atilde;o anterior</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        rm -r /usr/lib/jvm/LOCAL-INSTALAÇÃO<br/>
+        rm -r /usr/lib/jvm/LOCAL-INSTALAÇÃO<br>
     </div>
 
 
     <p class="comum">Extrair o Java Developer Kit Aberto (openJDK)</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ cd ~/Downloads/jdk/<br/>
-        $ tar xvzf openjdk-13.*.tar.gz<br/>
+        $ cd ~/Downloads/jdk/<br>
+        $ tar xvzf openjdk-13.*.tar.gz<br>
     </div>
 
 
@@ -64,48 +64,48 @@ include("cabecalho.php");
     <div class="box sombra">
         <span class="miniatura">O proximo comando no debian &eacute;:</span>
         <br>
-        $ su<br/>
+        $ su<br>
         <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
         <br>
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-        # cp -rp jdk-13.0.1 /usr/lib/jvm<br/>
-        # rm -r jdk-13.0.1/<br/>
-        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/java&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/javac&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/jar&quot; 1<br/>
+        # cp -rp jdk-13.0.1 /usr/lib/jvm<br>
+        # rm -r jdk-13.0.1/<br>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/java&quot; 1<br>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/javac&quot; 1<br>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-13.0.1/bin/jar&quot; 1<br>
     </div>
 
     <p class="comum">Definir o JDK 13.0.1 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # update-alternatives --set java /usr/lib/jvm/jdk-13.0.1/bin/java<br/>
-        # update-alternatives --set javac /usr/lib/jvm/jdk-13.0.1/bin/javac<br/>
-        # update-alternatives --set jar /usr/lib/jvm/jdk-13.0.1/bin/jar<br/>
+        # update-alternatives --set java /usr/lib/jvm/jdk-13.0.1/bin/java<br>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-13.0.1/bin/javac<br>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-13.0.1/bin/jar<br>
     </div>
 
     <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # vim /etc/bash.bashrc<br/>
+        # vim /etc/bash.bashrc<br>
     </div>
 
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm/jdk-13.0.1<br/>
-        PATH=$PATH:$JAVA_HOME/bin<br/>
-        export JAVA_HOME<br/>
-        export PATH<br/>
+        JAVA_HOME=/usr/lib/jvm/jdk-13.0.1<br>
+        PATH=$PATH:$JAVA_HOME/bin<br>
+        export JAVA_HOME<br>
+        export PATH<br>
     </div>
 
     <p class="comum">Reiniciar e testar</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # reboot<br/>
-        $ java -version<br/>
-        $ javac -version<br/>
+        # reboot<br>
+        $ java -version<br>
+        $ javac -version<br>
     </div>
 
 
@@ -130,13 +130,13 @@ include("cabecalho.php");
     <br>
     <br>
     <p class="comum">Resolvi como muitos mudar para os openJDK devido a licen&ccedil;a da Oracle que mudou, fazendo ser pago os aplicativos de produ&ccedil;&atilde;o. Alem do m&aacute;is faz mais sentido o uso de Software Livre para Produ&ccedil;&atilde;o de Software Livre.</p>
-	<br/>
+	<br>
 
     <p class="comum reduzido">openJDK 11.0.4 reposit&oacute;rios Linux Mint 19.2</p>
     <br>
 
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
-    <br/>
+    <br>
 
     <p class="comum">Ao instalar o Linux Mint 19.2 (nesta data Novembro de 2019) ele j&aacute; vem com o runtime do JDK 11 instalado, se voc&ecirc; usar o comando:</p>
 
@@ -177,7 +177,7 @@ include("cabecalho.php");
     <p class="comum">Para instalar o openJDK 11... vamos seguir a primeira sugest&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt install default-jdk<br/>
+        $ sudo apt install default-jdk<br>
     </div>
     <br>
     <p class="comum">Caso voc&ecirc; tenha vers&otilde;es anteriores do JDK...</p>
@@ -185,8 +185,8 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ sudo update-alternatives --config java<br>
-        $ sudo update-alternatives --config javac<br/>
-        $ sudo update-alternatives --config jar<br/>
+        $ sudo update-alternatives --config javac<br>
+        $ sudo update-alternatives --config jar<br>
     </div>
     <br>
     <p class="comum">Como incluir as vari&aacute;veis de ambiente?</p>
@@ -194,7 +194,7 @@ include("cabecalho.php");
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo ls -la /usr/lib/jvm/<br/>
+        $ sudo ls -la /usr/lib/jvm/<br>
     </div>
     <br>
 
@@ -202,23 +202,23 @@ include("cabecalho.php");
     <p class="comum">Primeiro vamos abrir o arquivo /etc/bash.bashrc para edita-lo.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo vim /etc/bash.bashrc<br/>
+        $ sudo vim /etc/bash.bashrc<br>
     </div>
     <br>
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64<br/>
-        PATH=$PATH:$JAVA_HOME/bin<br/>
-        export JAVA_HOME<br/>
-        export PATH<br/>
+        JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64<br>
+        PATH=$PATH:$JAVA_HOME/bin<br>
+        export JAVA_HOME<br>
+        export PATH<br>
     </div>
     <br>
     <p class="comum">Reiniciar e testar</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # reboot<br/>
-        $ javac -version<br/>
+        # reboot<br>
+        $ javac -version<br>
         <p class="miniatura reduzido">java 11.0.4
         </p>
     </div>
@@ -236,31 +236,31 @@ include("cabecalho.php");
     <p class="comum reduzido">openJDK 11.0.2 Manual</p>
     <br>
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
-    <br/>
+    <br>
 
 
     <p class="comum">Voc&ecirc; pode fazer o download de <a href="http://jdk.java.net/archive/" target="_blank" class="a">openJDK 11.0.2</a> se quiser. Ou...</p>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        mkdir ~/Downloads/jdk<br/>
-        $ cd ~/Downloads/jdk/<br/>
-        $ wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz<br/>
+        mkdir ~/Downloads/jdk<br>
+        $ cd ~/Downloads/jdk/<br>
+        $ wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz<br>
     </div>
 
 
     <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        rm -r /usr/lib/jvm/LOCAL-INSTALA&Ccedil;&Atilde;O<br/>
+        rm -r /usr/lib/jvm/LOCAL-INSTALA&Ccedil;&Atilde;O<br>
     </div>
 
 
     <p class="comum">Extrair o Java Developer Kit (JDK)</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ cd ~/Downloads/jdk/<br/>
-        $ tar xvzf openjdk-11.*.tar.gz<br/>
+        $ cd ~/Downloads/jdk/<br>
+        $ tar xvzf openjdk-11.*.tar.gz<br>
     </div>
 
 
@@ -269,47 +269,47 @@ include("cabecalho.php");
     <div class="box sombra">
         <span class="miniatura">O proximo comando no debian &eacute;:</span>
         <br>
-        $ su<br/>
+        $ su<br>
         <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
         <br>
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-        # cp -rp jdk-11.0.2 /usr/lib/jvm &amp;&amp; rm -r jdk-11.0.2/<br/>
-        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/java&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/javac&quot; 1<br/>
-        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/jar&quot; 1<br/>
+        # cp -rp jdk-11.0.2 /usr/lib/jvm &amp;&amp; rm -r jdk-11.0.2/<br>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/java&quot; 1<br>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/javac&quot; 1<br>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-11.0.2/bin/jar&quot; 1<br>
     </div>
 
     <p class="comum">Definir o openJDK 11.0.2 como padr&atilde;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # update-alternatives --set java /usr/lib/jvm/jdk-11.0.2/bin/java<br/>
-        # update-alternatives --set javac /usr/lib/jvm/jdk-11.0.2/bin/javac<br/>
-        # update-alternatives --set jar /usr/lib/jvm/jdk-11.0.2/bin/jar<br/>
+        # update-alternatives --set java /usr/lib/jvm/jdk-11.0.2/bin/java<br>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-11.0.2/bin/javac<br>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-11.0.2/bin/jar<br>
     </div>
 
     <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # vim /etc/bash.bashrc<br/>
+        # vim /etc/bash.bashrc<br>
     </div>
 
     <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        JAVA_HOME=/usr/lib/jvm/jdk-11.0.2<br/>
-        PATH=$PATH:$JAVA_HOME/bin<br/>
-        export JAVA_HOME<br/>
-        export PATH<br/>
+        JAVA_HOME=/usr/lib/jvm/jdk-11.0.2<br>
+        PATH=$PATH:$JAVA_HOME/bin<br>
+        export JAVA_HOME<br>
+        export PATH<br>
     </div>
 
     <p class="comum">Reiniciar e testar</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        # reboot<br/>
-        $ java -version<br/>
-        $ javac -version<br/>
+        # reboot<br>
+        $ java -version<br>
+        $ javac -version<br>
     </div>
 
 
@@ -340,8 +340,8 @@ include("cabecalho.php");
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		mkdir ~/Downloads/jdk<br/>
-		cd ~/Downloads/jdk<br/>
+		mkdir ~/Downloads/jdk<br>
+		cd ~/Downloads/jdk<br>
         wget https://cdn.azul.com/zulu/bin/zulu8.42.0.23-ca-jdk8.0.232-linux_x64.tar.gz<br>
 	</div>
 
@@ -349,15 +349,15 @@ include("cabecalho.php");
     <p class="comum">Caso precise apagar uma instala&ccedil;&atilde;o anterior</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        rm -r /usr/lib/jvm/LOCAL-INSTALA&Ccedil;&Atilde;O<br/>
+        rm -r /usr/lib/jvm/LOCAL-INSTALA&Ccedil;&Atilde;O<br>
     </div>
 
 
     <p class="comum">Extrair o Java Developer Kit (JDK)</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		$ cd ~/Downloads/jdk<br/>
-		$ tar xvzf zulu8.*.tar.gz<br/>
+		$ cd ~/Downloads/jdk<br>
+		$ tar xvzf zulu8.*.tar.gz<br>
         $ mv zulu8.42.0.23-ca-jdk8.0.232-linux_x64 jdk8.0.232<br>
 	</div>
 
@@ -366,47 +366,47 @@ include("cabecalho.php");
 	<div class="box sombra">
         <span class="miniatura">O proximo comando no debian &eacute;:</span>
         <br>
-        $ su<br/>
+        $ su<br>
         <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
         <br>
         $ sudo su<br>
         <span class="miniatura">O seguinte e comum aos dois SO.</span>
         <br>
-		# cp -rp jdk8.0.232 /usr/lib/jvm/ &amp;&amp; rm -r jdk8.0.232/<br/>
-		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/java&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/javac&quot; 1<br/>
-		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/jar&quot; 1<br/>
+		# cp -rp jdk8.0.232 /usr/lib/jvm/ &amp;&amp; rm -r jdk8.0.232/<br>
+		# update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/java&quot; 1<br>
+		# update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/javac&quot; 1<br>
+		# update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk8.0.232/bin/jar&quot; 1<br>
 	</div>
 
 	<p class="comum">Definir o openJDK 8.0.232 como padr&atilde;o</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		# update-alternatives --set java /usr/lib/jvm/jdk8.0.232/bin/java<br/>
-		# update-alternatives --set javac /usr/lib/jvm/jdk8.0.232/bin/javac<br/>
-		# update-alternatives --set jar /usr/lib/jvm/jdk8.0.232/bin/jar<br/>
+		# update-alternatives --set java /usr/lib/jvm/jdk8.0.232/bin/java<br>
+		# update-alternatives --set javac /usr/lib/jvm/jdk8.0.232/bin/javac<br>
+		# update-alternatives --set jar /usr/lib/jvm/jdk8.0.232/bin/jar<br>
 	</div>
 
 	<p class="comum">Incluir as vari&aacute;veis de ambiente</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		# vim /etc/bash.bashrc<br/>
+		# vim /etc/bash.bashrc<br>
 	</div>
 
 	<p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
 	<p class="miniatura">Incluir no arquivo</p>
 	<div class="box sombra">
-		JAVA_HOME=/usr/lib/jvm/jdk8.0.232<br/>
-		PATH=$PATH:$JAVA_HOME/bin<br/>
-		export JAVA_HOME<br/>
-		export PATH<br/>
+		JAVA_HOME=/usr/lib/jvm/jdk8.0.232<br>
+		PATH=$PATH:$JAVA_HOME/bin<br>
+		export JAVA_HOME<br>
+		export PATH<br>
 	</div>
 
 	<p class="comum">Reiniciar e testar</p>
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
-		# reboot<br/>
-		$ java -version<br/>
-		$ javac -version<br/>
+		# reboot<br>
+		$ java -version<br>
+		$ javac -version<br>
 	</div>
 
     <!--------------------------------------------------------------------------------------------->
@@ -415,11 +415,11 @@ include("cabecalho.php");
     <p class="comum">Algumas refer&ecirc;ncias</p>
     <p class="miniatura">Links</p>
     <div class="quadro">
-        <a href="https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux" class="a" target="_blank">https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux</a><br/><br/>
-        <a href="http://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users" class="a" target="_blank">http://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users</a><br/><br/>
-        <a href="https://devjava.wordpress.com/2014/01/21/env-002-instalacao-e-configuracao-da-jvm-e-jdk/" class="a" target="_blank">https://devjava.wordpress.com/2014/01/21/env-002-instalacao-e-configuracao-da-jvm-e-jdk/</a><br/><br/>
-        <a href="https://devjava.wordpress.com/2014/01/16/variaveis-de-ambiente-em-linux/" class="a" target="_blank">https://devjava.wordpress.com/2014/01/16/variaveis-de-ambiente-em-linux/</a><br/><br/>
-        <a href="http://askubuntu.com/questions/20953/sudo-source-command-not-found" class="a" target="_blank">http://askubuntu.com/questions/20953/sudo-source-command-not-found</a><br/>
+        <a href="https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux" class="a" target="_blank">https://stackoverflow.com/questions/14788345/how-to-install-jdk-on-ubuntu-linux</a><br><br>
+        <a href="http://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users" class="a" target="_blank">http://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users</a><br><br>
+        <a href="https://devjava.wordpress.com/2014/01/21/env-002-instalacao-e-configuracao-da-jvm-e-jdk/" class="a" target="_blank">https://devjava.wordpress.com/2014/01/21/env-002-instalacao-e-configuracao-da-jvm-e-jdk/</a><br><br>
+        <a href="https://devjava.wordpress.com/2014/01/16/variaveis-de-ambiente-em-linux/" class="a" target="_blank">https://devjava.wordpress.com/2014/01/16/variaveis-de-ambiente-em-linux/</a><br><br>
+        <a href="http://askubuntu.com/questions/20953/sudo-source-command-not-found" class="a" target="_blank">http://askubuntu.com/questions/20953/sudo-source-command-not-found</a><br>
     </div>
 
 </section>

@@ -20,29 +20,29 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo vim /etc/ssh/sshd_config<br/>
+            $ sudo vim /etc/ssh/sshd_config<br>
         </code>
     </div>
 
     <p class="miniatura">C&oacute;digo dentro do arquivo</p>
     <div class="box sombra">
-        #-------------------------------------------------<br/>
-        # MUDAR A PORTA NA PR&Oacute;XIMA LINHA:<br/>
-        Port 22<br/>
-       <br/>
-        #-------------------------------------------------<br/>
+        #-------------------------------------------------<br>
+        # MUDAR A PORTA NA PR&Oacute;XIMA LINHA:<br>
+        Port 22<br>
+       <br>
+        #-------------------------------------------------<br>
     </div>
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo /etc/init.d/ssh restart<br/>
+            $ sudo /etc/init.d/ssh restart<br>
         </code>
     </div>
 
 </section>
 
 <?php
-for($i=0; $i<21; $i++) {echo'<br/>';}
+for($i=0; $i<21; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

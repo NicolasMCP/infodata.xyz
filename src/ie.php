@@ -22,6 +22,6 @@ include("cabecalho.php");
     </section>
 
 <?php
-for($i=0; $i<34; $i++) {echo'<br/>';}
+for($i=0; $i<34; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

@@ -19,11 +19,11 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo de exemplo</p>
     <div class="box sombra">
         <code>
-            $ sudo nmap localhost<br/>
+            $ sudo nmap localhost<br>
         </code>
-        <p class="miniatura">ou<br/></p>
+        <p class="miniatura">ou<br></p>
         <code>
-            $ sudo nmap 127.0.0.1<br/>
+            $ sudo nmap 127.0.0.1<br>
         </code>
     </div>
 
@@ -31,7 +31,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install nmap<br/>
+            $ sudo apt install nmap<br>
         </code>
     </div>
 
@@ -40,6 +40,6 @@ include("cabecalho.php");
 </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<23; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

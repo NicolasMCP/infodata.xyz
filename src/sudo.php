@@ -20,7 +20,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            # visudo<br/>
+            # visudo<br>
         </code>
     </div>
 
@@ -28,21 +28,21 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            # apt install sudo<br/>
+            # apt install sudo<br>
         </code>
     </div>
 
     <p class="comum">dentro do arquivo (ap&oacute;s a linha do root) inclua a linha com seu usuario</p>
     <p class="miniatura">Incluir no arquivo (2&ordm; linha)</p>
     <div class="box sombra">
-        root    ALL=(ALL:ALL) ALL<br/>
-        my      ALL=(ALL:ALL) ALL<br/>
+        root    ALL=(ALL:ALL) ALL<br>
+        my      ALL=(ALL:ALL) ALL<br>
     </div>
     <p class="comum">Reinicie o computador</p>
 
 </section>
 
 <?php
-for($i=0; $i<20; $i++) {echo'<br/>';}
+for($i=0; $i<20; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

@@ -18,18 +18,18 @@ include("cabecalho.php");
     <p class="comum">Localizar onde esta instalado um programa</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ which nome_programa<br/>
+        $ which nome_programa<br>
     </div>
 
     <p class="comum">Buscar um arquivo na pasta</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ locate nome_arquivo<br/>
+        $ locate nome_arquivo<br>
     </div>
 
 </section>
 
 <?php
-for($i=0; $i<27; $i++) {echo'<br/>';}
+for($i=0; $i<27; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

@@ -17,7 +17,7 @@ include("cabecalho.php");
     <p class="comum">Mudando os cabe&ccedil;alhos padr&atilde;o (com os dados que quiser como default)</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        Ferramentas &gt; Modelos &gt; Licen&ccedil;as &gt; Licen&ccedil;a Default<br/>
+        Ferramentas &gt; Modelos &gt; Licen&ccedil;as &gt; Licen&ccedil;a Default<br>
         Use o bot&atilde;o &gt;&gt;--&gt; Abrir no Editor
     </div>
 
@@ -25,14 +25,14 @@ include("cabecalho.php");
     <p class="comum">Seu pr&oacute;pio c&oacute;digo como voc&ecirc; quiser ao criar nova p&aacute;gina HTML5</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        Ferramentas &gt; Modelos &gt; HTML5/JavaScript &gt; Arquivo HTML<br/>
-        Use o bot&atilde;o &gt;&gt;--&gt; Abrir no Editor<br/>
+        Ferramentas &gt; Modelos &gt; HTML5/JavaScript &gt; Arquivo HTML<br>
+        Use o bot&atilde;o &gt;&gt;--&gt; Abrir no Editor<br>
     </div>
 
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        Ferramentas &gt; Modelos &gt; Outro &gt; Arquivo HTML<br/>
-        Use o bot&atilde;o &gt;&gt;--&gt; Abrir no Editor<br/>
+        Ferramentas &gt; Modelos &gt; Outro &gt; Arquivo HTML<br>
+        Use o bot&atilde;o &gt;&gt;--&gt; Abrir no Editor<br>
     </div>
 
     <h4>Reindentar C&oacute;digo</h4>
@@ -46,8 +46,8 @@ include("cabecalho.php");
     <p class="comum">Configura&ccedil;&atilde;o</p>
     <p class="miniatura">Procedimento</p>
     <div class="box sombra">
-        Ferramentas &gt; Op&ccedil;&odblac;es &gt; Editor &gt; formata&ccedil;&atilde;o<br/>
-        Desmarque &gt;&gt;--&gt; Utilizar todas as defini&ccedil;&odblac;es de Idiomas<br/>
+        Ferramentas &gt; Op&ccedil;&odblac;es &gt; Editor &gt; formata&ccedil;&atilde;o<br>
+        Desmarque &gt;&gt;--&gt; Utilizar todas as defini&ccedil;&odblac;es de Idiomas<br>
         Quebra de Linha &gt;&gt;--&gt; Ap&oacute;s palavras
     </div>
 

@@ -17,7 +17,7 @@ include("cabecalho.php");
         <p class="comum">Visualize os fontes de letra a incluir na sua aplica&ccedil;&atilde;o</p>
         <p class="miniatura">Procedimento</p>
         <div class="box sombra">
-            <a href="https://fonts.google.com/" target="_blank" class="a">https://fonts.google.com/</a><br/>
+            <a href="https://fonts.google.com/" target="_blank" class="a">https://fonts.google.com/</a><br>
         </div>
 
         <p class="comum">dentro da p&aacute;gina escolha um fonte</p>
@@ -28,18 +28,18 @@ include("cabecalho.php");
         <p class="comum">(clique em @IMPORT), e copie (ctrl + c) a(s) linha(s) dentro dos 'styles'</p>
         <p class="miniatura">C&oacute;digo</p>
         <div class="box sombra">
-            @import url('https://fonts.googleapis.com/css?family=Arvo:400,700');<br/>
+            @import url('https://fonts.googleapis.com/css?family=Arvo:400,700');<br>
         </div>
 
         <p class="comum">No inicio do seu CSS voc&ecirc; pode incluir essa linha (quadro anterior)</p>
         <p class="comum">para usar o fonte basta</p>
         <p class="miniatura">C&oacute;digo</p>
         <div class="box sombra">
-            font-family: Arvo, serif;<br/>
+            font-family: Arvo, serif;<br>
         </div>
     </section>
 
 <?php
-for($i=0; $i<16; $i++) {echo'<br/>';}
+for($i=0; $i<16; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

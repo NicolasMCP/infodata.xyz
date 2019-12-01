@@ -19,30 +19,30 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo vim /etc/ssh/sshd_config<br/>
+            $ sudo vim /etc/ssh/sshd_config<br>
         </code>
     </div>
 
     <p class="comum">Agora vamos modificar o arquivo</p>
     <p class="miniatura">Par&acirc;metro dentro do arquivo</p>
     <div class="box sombra">
-        #-------------------------------------------------<br/>
-        # INCLUIR A PR&Oacute;XIMA LINHA:<br/>
-        ServerAliveInterval 30<br/>
-       <br/>
-        #-------------------------------------------------<br/>
+        #-------------------------------------------------<br>
+        # INCLUIR A PR&Oacute;XIMA LINHA:<br>
+        ServerAliveInterval 30<br>
+       <br>
+        #-------------------------------------------------<br>
     </div>
 
     <p class="comum">e reiniciamos o servi&ccedil;o ssh</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo /etc/init.d/ssh restart<br/>
+            $ sudo /etc/init.d/ssh restart<br>
         </code>
     </div>
 </section>
 
 <?php
-for($i=0; $i<21; $i++) {echo'<br/>';}
+for($i=0; $i<21; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

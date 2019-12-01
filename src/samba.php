@@ -18,13 +18,13 @@ include("cabecalho.php");
     <p class="comum">Abra seu browser (navegador) e digite o seguinte endere&ccedil;o</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <a href="http://localhost:901" class="a" target="_blank">http://localhost:901</a><br/>
+        <a href="http://localhost:901" class="a" target="_blank">http://localhost:901</a><br>
     </div>
     <p class="comum">Logicamente s&oacute; ir&aacute; funcionar com o SAMBA instalado...</p>
 
 </section>
 
 <?php
-for($i=0; $i<32; $i++) {echo'<br/>';}
+for($i=0; $i<32; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

@@ -19,22 +19,22 @@ include("cabecalho.php");
     <p class="comum">Copie o c&oacute;digo a seguir e cole no seu Terminal</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <span class="b">$ sudo tee /usr/share/applications/java-control.desktop &lt;&lt;</span><span class="b">ATALHO<br/>
-        [Desktop Entry]<br/>
-        Encoding=UTF-8<br/>
-        Name=Java<br/>
-        Comment=Java Control Panel<br/>
-        Exec=sh '/usr/lib/jvm/bin/jcontrol'<br/>
-        Icon=/usr/lib/jvm/jre/lib/desktop/icons/hicolor/48x48/apps/sun-jcontrol.png<br/>
-        Terminal=false<br/>
-        Type=Application<br/>
-        Categories=Development;Settings;Java;<br/>
+        <span class="b">$ sudo tee /usr/share/applications/java-control.desktop &lt;&lt;</span><span class="b">ATALHO<br>
+        [Desktop Entry]<br>
+        Encoding=UTF-8<br>
+        Name=Java<br>
+        Comment=Java Control Panel<br>
+        Exec=sh '/usr/lib/jvm/bin/jcontrol'<br>
+        Icon=/usr/lib/jvm/jre/lib/desktop/icons/hicolor/48x48/apps/sun-jcontrol.png<br>
+        Terminal=false<br>
+        Type=Application<br>
+        Categories=Development;Settings;Java;<br>
         ATALHO</span>
     </div>
 
 </section>
 
 <?php
-for($i=0; $i<26; $i++) {echo'<br/>';}
+for($i=0; $i<26; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

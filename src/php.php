@@ -35,17 +35,17 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install apt-transport-https lsb-release ca-certificates<br/>
-            $ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg<br/>
-            $ sudo su<br/>
-            # echo &quot;## 7.2 &quot; &gt;&gt; /etc/apt/sources.list<br/>
-            <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br/>-->
-            # echo &quot;deb https://packages.sury.org/php/ <strong>stretch</strong> main&quot; &gt;&gt; /etc/apt/sources.list<br/>
+            $ sudo apt install apt-transport-https lsb-release ca-certificates<br>
+            $ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg<br>
+            $ sudo su<br>
+            # echo &quot;## 7.2 &quot; &gt;&gt; /etc/apt/sources.list<br>
+            <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br>-->
+            # echo &quot;deb https://packages.sury.org/php/ <strong>stretch</strong> main&quot; &gt;&gt; /etc/apt/sources.list<br>
         </code>
-        <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br/><br/></p>
+        <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br><br></p>
         <code>
-            # exit<br/>
-            $ sudo apt update<br/>
+            # exit<br>
+            $ sudo apt update<br>
         </code>
     </div>
 
@@ -55,13 +55,13 @@ include("cabecalho.php");
         <code>
             $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
             apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
-            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br/>
-            $ sudo apt install dh-php<br/>
-            $ sudo apt install pkg-php-tools<br/>
-            $ sudo apt-get install php-cgi<br/>
-            $ ls --color /usr/bin/php7.3<br/>
-            $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
-            $ sudo service apache2 restart<br/>
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br>
+            $ sudo apt install dh-php<br>
+            $ sudo apt install pkg-php-tools<br>
+            $ sudo apt-get install php-cgi<br>
+            $ ls --color /usr/bin/php7.3<br>
+            $ sudo update-alternatives --set php /usr/bin/php7.3<br>
+            $ sudo service apache2 restart<br>
         </code>
     </div>
 
@@ -69,14 +69,14 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ php -v<br/>
+            $ php -v<br>
         </code>
 
-         <p style="font-size: 12px;"><br/>
-             PHP 7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6 (cli) (built: May  5 2018 04:57:44) ( NTS )<br/>
-             Copyright (c) 1997-2018 The PHP Group<br/>
-             Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies<br/>
-             with Zend OPcache v7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6, Copyright (c) 1999-2018, by Zend Technologies<br/>
+         <p style="font-size: 12px;"><br>
+             PHP 7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6 (cli) (built: May  5 2018 04:57:44) ( NTS )<br>
+             Copyright (c) 1997-2018 The PHP Group<br>
+             Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies<br>
+             with Zend OPcache v7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6, Copyright (c) 1999-2018, by Zend Technologies<br>
         </p>
     </div>
 
@@ -84,17 +84,17 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ cd /var/www/html<br/>
-            $ sudo vim phpinfo.php<br/>
+            $ cd /var/www/html<br>
+            $ sudo vim phpinfo.php<br>
         </code>
     </div>
 
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         <code>
-            <span style="color: orange">&lt;?</span><span style="color: red">php</span><br/>
-            <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br/>
-            <span style="color: orange">?&gt;</span><br/>
+            <span style="color: orange">&lt;?</span><span style="color: red">php</span><br>
+            <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br>
+            <span style="color: orange">?&gt;</span><br>
         </code>
     </div>
 
@@ -127,8 +127,8 @@ include("cabecalho.php");
             $ sudo apt install python-software-properties<br>
             $ sudo add-apt-repository ppa:ondrej/php<br>
         </code>
-        <p class="miniatura">Atualizar pelo 'gerenciador de atualiza&ccedil;&odblac;es'<br/>
-            Atualizar &gt; Instalar Atualiza&ccedil;&odblac;es<br/><br/></p>
+        <p class="miniatura">Atualizar pelo 'gerenciador de atualiza&ccedil;&odblac;es'<br>
+            Atualizar &gt; Instalar Atualiza&ccedil;&odblac;es<br><br></p>
     </div>
 
 
@@ -138,13 +138,13 @@ include("cabecalho.php");
         <code>
             $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
             apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
-            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br/>
-            $ sudo apt install dh-php<br/>
-            $ sudo apt install pkg-php-tools<br/>
-            $ sudo apt-get install php-cgi<br/>
-            $ ls -la /usr/bin/php7.3<br/>
-            $ sudo update-alternatives --set php /usr/bin/php7.3<br/>
-            $ sudo service apache2 restart<br/>
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br>
+            $ sudo apt install dh-php<br>
+            $ sudo apt install pkg-php-tools<br>
+            $ sudo apt-get install php-cgi<br>
+            $ ls -la /usr/bin/php7.3<br>
+            $ sudo update-alternatives --set php /usr/bin/php7.3<br>
+            $ sudo service apache2 restart<br>
         </code>
     </div>
 
@@ -153,14 +153,14 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ php -v<br/>
+            $ php -v<br>
         </code>
 
-        <p style="font-size: 12px;"><br/>
-            PHP 7.3.11-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 18:23:23) ( NTS )<br/>
-            Copyright (c) 1997-2018 The PHP Group<br/>
-            Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;with Zend OPcache v7.3.11-1+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br/>
+        <p style="font-size: 12px;"><br>
+            PHP 7.3.11-1+ubuntu18.04.1+deb.sury.org+1 (cli) (built: Oct 24 2019 18:23:23) ( NTS )<br>
+            Copyright (c) 1997-2018 The PHP Group<br>
+            Zend Engine v3.3.11, Copyright (c) 1998-2018 Zend Technologies<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;with Zend OPcache v7.3.11-1+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2018, by Zend Technologies<br>
         </p>
     </div>
 
@@ -169,17 +169,17 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ cd /var/www/html<br/>
-            $ sudo vim phpinfo.php<br/>
+            $ cd /var/www/html<br>
+            $ sudo vim phpinfo.php<br>
         </code>
     </div>
 
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         <code>
-            <span style="color: orange">&lt;?</span><span style="color: red">php</span><br/>
-            <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br/>
-            <span style="color: orange">?&gt;</span><br/>
+            <span style="color: orange">&lt;?</span><span style="color: red">php</span><br>
+            <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br>
+            <span style="color: orange">?&gt;</span><br>
         </code>
     </div>
 
@@ -197,16 +197,16 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         $ php -a<br>
-        <p style="font-size: 12px;"><br/>
-            Interactive mode enabled<br/>
-            php &gt;<br/>
+        <p style="font-size: 12px;"><br>
+            Interactive mode enabled<br>
+            php &gt;<br>
         </p>
     </div>
 
     <p class="comum">ent&atilde;o digitamos</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        php &gt; phpinfo();<br/>
+        php &gt; phpinfo();<br>
     </div>
 
     <p class="comum">E o programa respondeu com as informa&ccedil;&odblac;es do phpinfo(); em modo texto,</p>
@@ -215,7 +215,7 @@ include("cabecalho.php");
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo vim /etc/php/7.3/apache2/php.ini<br/>
+        $ sudo vim /etc/php/7.3/apache2/php.ini<br>
     </div>
 
     <p class="comum">Procure display_errors (<a href="vim.php" class="a" target="_blank">aprenda o b&aacute;sico do VIM</a>).</p>
@@ -223,7 +223,7 @@ include("cabecalho.php");
     <p class="comum">Se ela n&atilde;o existir, inclua conforme a seguir:</p>
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
-        display_errors = On<br/>
+        display_errors = On<br>
     </div>
 
     <p class="comum">Abra no seu Navegador novamente, e verifique os erros</p>

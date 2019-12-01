@@ -20,11 +20,11 @@ include("cabecalho.php");
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
-            $ su<br/>
-            # apt install curl<br/>
-            # curl -sL https://deb.nodesource.com/setup_9.x | bash -<br/>
-            # apt install nodejs<br/>
-            # exit<br/>
+            $ su<br>
+            # apt install curl<br>
+            # curl -sL https://deb.nodesource.com/setup_9.x | bash -<br>
+            # apt install nodejs<br>
+            # exit<br>
         </code>
 	</div>
 
@@ -32,16 +32,16 @@ include("cabecalho.php");
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
-            $ node -v<br/>
+            $ node -v<br>
         </code>
         <samp>
-            v9.5.0<br/><br/>
+            v9.5.0<br><br>
         </samp>
         <code>
-            $ npm -v<br/>
+            $ npm -v<br>
         </code>
 		<samp>
-            5.6.0<br/>
+            5.6.0<br>
         </samp>
 	</div>
 
@@ -50,7 +50,7 @@ include("cabecalho.php");
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
-            $ sudo npm install -g typescript<br/>
+            $ sudo npm install -g typescript<br>
         </code>
 		<samp>
             + typescript@2.7.2
@@ -62,8 +62,8 @@ include("cabecalho.php");
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
-            $ su -<br/>
-            npm install -g @angular/cli<br/>
+            $ su -<br>
+            npm install -g @angular/cli<br>
         </code>
 		<samp>
             + @angular/cli@1.7.0
@@ -74,7 +74,7 @@ include("cabecalho.php");
 	<p class="miniatura">C&oacute;digo</p>
 	<div class="box sombra">
         <code>
-            $ ng -v<br/>
+            $ ng -v<br>
         </code>
         <pre>
     _                      _                 ____ _     ___

@@ -20,7 +20,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo apt install openssh-server<br/>
+            $ sudo apt install openssh-server<br>
         </code>
     </div>
 
@@ -28,7 +28,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo vim /etc/ssh/sshd_config<br/>
+            $ sudo vim /etc/ssh/sshd_config<br>
         </code>
     </div>
 
@@ -41,22 +41,22 @@ include("cabecalho.php");
     <p class="comum justify">Nota: &eacute; considerada uma m&aacute; pratica liberar o uso do 'root' pelo ssh, m&aacute;s as vezes &eacute; necess&aacute;rio.</p>
     <p class="miniatura">Verify and Add In File</p>
     <div class="box sombra">
-        PermitRootLogin yes<br/>
-        PasswordAuthentication yes<br/>
-        PermitEmptyPasswords no<br/>
-        AllowUsers root nome-usuario nome-usuario2<br/>
+        PermitRootLogin yes<br>
+        PasswordAuthentication yes<br>
+        PermitEmptyPasswords no<br>
+        AllowUsers root nome-usuario nome-usuario2<br>
     </div>
 
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>
-            $ sudo /etc/init.d/ssh restart<br/>
+            $ sudo /etc/init.d/ssh restart<br>
         </code>
     </div>
 
 </section>
 
 <?php
-for($i=0; $i<13; $i++) {echo'<br/>';}
+for($i=0; $i<13; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

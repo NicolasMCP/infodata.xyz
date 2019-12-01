@@ -19,13 +19,13 @@ include("cabecalho.php");
     <p class="comum">Trocar o mapa do teclado para portugu&ecirc;s brasileiro</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo setxkbmap br<br/>
+        $ sudo setxkbmap br<br>
     </div>
 
     <p class="comum">Trocar o mapa do teclado para espanhol</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo setxkbmap es<br/>
+        $ sudo setxkbmap es<br>
     </div>
 
     <?php
@@ -36,7 +36,7 @@ include("cabecalho.php");
     <p class="comum">Instalar mais manuais do comando 'man' em espanhol</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt install manpages-es manpages-es-extra<br/>
+        $ sudo apt install manpages-es manpages-es-extra<br>
     </div>
 
     <h5 class="reduzido">N&atilde;o Testado</h5>
@@ -44,12 +44,12 @@ include("cabecalho.php");
     <p class="comum">Instalar mais manuais do comando 'man' em portugu&ecirc;s</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt install manpages-pt manpages-pt-extra<br/>
+        $ sudo apt install manpages-pt manpages-pt-extra<br>
     </div>
 
 </section>
 
 <?php
-for($i=0; $i<22; $i++) {echo'<br/>';}
+for($i=0; $i<22; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

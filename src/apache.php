@@ -14,7 +14,7 @@ include("cabecalho.php");
     <h1>Instala&ccedil;&atilde;o do Apache no Linux</h1>
 
     <h2 class="reduzido">Testado no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch,
-        no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster,<br/>no
+        no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster,<br>no
         Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina e no
         MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
     <h3>Instalando o Apache</h3>
@@ -25,7 +25,7 @@ include("cabecalho.php");
     <p class="comum">A instala&ccedil;&atilde;o &eacute; extremamente simples, basta digitar:</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        $ sudo apt install apache2<br/>
+        $ sudo apt install apache2<br>
     </div>
 
     <p class="comum">Verificando a vers&atilde;o instalada</p>
@@ -48,14 +48,14 @@ include("cabecalho.php");
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No MX-Linux 18.1 a vers&atilde;o do <strong>Apache &eacute; 2.4.25</strong>
      e embora nele tenha a op&ccedil;&atilde;o de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instalar automaticamente o Apache, MariaDB e PHP
         7.0, se voc&ecirc; optar por essa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abordagem (instalar tudo em alguns clicks), <strong>n&atilde;o fa&ccedil;a esta instala&ccedil;&atilde;o
-        manual.</strong><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em vez disso va em: Configura&ccedil;&otilde;es &gt; MX Ferramentas &gt; MX-Instalador de Pacotes 
-        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt; Servidores.
-        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selecione 'Local Web Server - apache2, php7, mariaDB' e clique no bot&atilde;o<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Instalar'<br/>
-        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pessoalmente prefiro a instalação manual, não somente por ter mais controle,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mas porque precisso usar versões mais atuais do PHP.</p>
+        manual.</strong><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em vez disso va em: Configura&ccedil;&otilde;es &gt; MX Ferramentas &gt; MX-Instalador de Pacotes
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt; Servidores.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selecione 'Local Web Server - apache2, php7, mariaDB' e clique no bot&atilde;o<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Instalar'<br>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pessoalmente prefiro a instalação manual, não somente por ter mais controle,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mas porque precisso usar versões mais atuais do PHP.</p>
 
 </section>
 
 <?php
-for($i=0; $i<23; $i++) {echo'<br/>';}
+for($i=0; $i<23; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

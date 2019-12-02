@@ -159,8 +159,8 @@ include("cabecalho.php");
     <p class="comum">Como Iniciar o mariaDB ?</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>$ sudo service mysql start</code>
-        <code>$sudo service mysql status</code><br>
+        <code>$ sudo service mysql start</code><br>
+        <code>$ sudo service mysql status</code><br>
         <p style="font-size: 11px" class="verde">
             ● mariadb.service - MariaDB 10.1.43 database server<br>
             &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: ena<br>
@@ -211,7 +211,6 @@ include("cabecalho.php");
         programas como o mysql-workbeanch, phpadmin, e outros, se quiser.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>$ sudo mysql -u root</code><br>
         <span class="azul">MariaDB [(none)]&gt;</span> USE mysql;<br>
         <p style="font-size: 11px" class="verde">
         Reading table information for completion of table and column names<br>
@@ -256,7 +255,6 @@ include("cabecalho.php");
     <p class="comum"><b>Nota:</b> A partir deste ponto, substituirei '<span class="azul">MariaDB [(none)]&gt;</span>' simplesmente por '&gt;'.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>$ mysql -u root -p</code><br>
         <span class="azul">Enter password:</span>
         <p style="font-size: 11px" class="verde">
             Welcome to the MariaDB monitor.  Commands end with ; or \g.<br>

@@ -101,7 +101,7 @@ include("cabecalho.php");
     <p class="comum">Para sair voc&ecirc; pressionar a tecla 'q' (de quit).</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>$sudo service mysql status</code><br>
+        <code>$ sudo service mysql status</code><br>
         <p style="font-size: 11px" class="verde">
             ● mariadb.service - MariaDB 10.1.43 database server<br>
             &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: ena<br>
@@ -327,7 +327,7 @@ include("cabecalho.php");
     <p class="comum">Deletar uma base de dados, chamada 'testes'.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>&gt; DROP DATABASE test;</code>
+        <code>&gt; DROP DATABASE test;</code><br>
         <code>&gt; SHOW DATABASES;</code>
         <p class="miniatura verde">
             +--------------------+<br>
@@ -338,19 +338,27 @@ include("cabecalho.php");
             | performance_schema |<br>
             +--------------------+<br>
             <span class="reduzido miniatura verde">3 rows in set (0.00 sec)</span><br>
+            <code>&gt; exit;</code><br>
+            $
         </p>
     </div>
 
     <p class="comum">Criar uma nova base de dados, <b>direto da consola</b>, vamos dar o nome de 'testes2'.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>$ mysqladmin -u user -p create testes2;</code>
+        <code>$ mysqladmin -u user -p create testes2;</code><br>
+        <code>$ mysql -u root -p</code><br>
+        <code>&gt; SHOW DATABASES;</code><br>
+        <code>&gt; exit;</code><br>
+        $
     </div>
 
     <p class="comum">Deletar a base de dados, 'testes2' <b>direto da consola</b>.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
-        <code>$ mysqladmin -u root -p drop testes2;</code>
+        <code>$ mysqladmin -u root -p drop testes2;</code><br>
+        <code>$ mysql -u root -p</code><br>
+        <code>&gt; SHOW DATABASES;</code><br>
     </div>
 
     <p class="comum">Criar um novo usu&aacute;rio 'my' do localhost.</p>

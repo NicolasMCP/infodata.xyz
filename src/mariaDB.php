@@ -218,7 +218,7 @@ include("cabecalho.php");
             <br>
             <span class="reduzido miniatura verde">Database changed</span><br>
         </p>
-        <span class="azul">MariaDB [(none)]&gt;</span> <code>UPDATE USER SET PLUGIN='' WHERE USER=root;</code><br>
+        <span class="azul">MariaDB [(none)]&gt;</span> <code>UPDATE user SET PLUGIN='' WHERE user='root';</code><br>
         <p class="reduzido miniatura verde">
             Query OK, 1 row affected (0.03 sec)<br>
             Rows matched: 1  Changed: 1  Warnings: 0<br>

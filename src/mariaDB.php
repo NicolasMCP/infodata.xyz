@@ -443,6 +443,5 @@ include("cabecalho.php");
 </section>
 
 <?php
-for($i=0; $i<13; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

@@ -323,6 +323,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Para saber mais detalhes da vers&atilde;o voc&ecirc; pode usar:</p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@3+2=5</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysqladmin -u root -p version</code><br>
@@ -344,6 +345,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Criar uma nova base de dados, <b>direto da consola</b>, vamos dar o nome de 'testes2'.</p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@3+2=5</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysqladmin -u root -p create testes2</code><br>
@@ -354,6 +356,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Deletar a base de dados, 'testes2' <b>direto da consola</b>.</p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@3+2=5</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysqladmin -u root -p drop testes2</code><br>
@@ -392,6 +395,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Agora vamos testar com o novo usu&aacute;rio.</p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysql -u my -p</code><br>

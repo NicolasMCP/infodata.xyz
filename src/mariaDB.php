@@ -88,27 +88,6 @@ include("cabecalho.php");
         </p>
     </div>
 
-    <p class="comum">Para saber mais detalhes da vers&atilde;o voc&ecirc; pode usar:</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>$ mysqladmin -u root -p version</code><br>
-        <span class="azul">Enter password:</span>
-        <p style="font-size: 11px" class="verde">
-            mysqladmin  Ver 9.1 Distrib 10.1.43-MariaDB, for debian-linux-gnu on x86_64<br>
-            Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
-            <br>
-            Server version &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.1.43-MariaDB-0ubuntu0.18.04.1<br>
-            Protocol version &nbsp;&nbsp; 10<br>
-            Connection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Localhost via UNIX socket<br>
-            UNIX socket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /var/run/mysqld/mysqld.sock<br>
-            Uptime: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13 min 19 sec<br>
-            <br>
-            Threads: 1 &nbsp;Questions: 121 &nbsp;Slow queries: 0 &nbsp;Opens: 36 &nbsp;Flush tables:
-            1 &nbsp;Open tables: 30 &nbsp;Queries per second avg: 0.151<br>
-        </p>
-        &gt;
-    </div>
-
     <p class="comum">Para iniciar o MariaDB</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
@@ -341,6 +320,27 @@ include("cabecalho.php");
             <code>&gt; exit;</code><br>
             $
         </p>
+    </div>
+
+    <p class="comum">Para saber mais detalhes da vers&atilde;o voc&ecirc; pode usar:</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>$ mysqladmin -u root -p version</code><br>
+        <span class="azul">Enter password:</span>
+        <p style="font-size: 11px" class="verde">
+            mysqladmin  Ver 9.1 Distrib 10.1.43-MariaDB, for debian-linux-gnu on x86_64<br>
+            Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
+            <br>
+            Server version &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.1.43-MariaDB-0ubuntu0.18.04.1<br>
+            Protocol version &nbsp;&nbsp; 10<br>
+            Connection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Localhost via UNIX socket<br>
+            UNIX socket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /var/run/mysqld/mysqld.sock<br>
+            Uptime: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13 min 19 sec<br>
+            <br>
+            Threads: 1 &nbsp;Questions: 121 &nbsp;Slow queries: 0 &nbsp;Opens: 36 &nbsp;Flush tables:
+            1 &nbsp;Open tables: 30 &nbsp;Queries per second avg: 0.151<br>
+        </p>
+        &gt;
     </div>
 
     <p class="comum">Criar uma nova base de dados, <b>direto da consola</b>, vamos dar o nome de 'testes2'.</p>

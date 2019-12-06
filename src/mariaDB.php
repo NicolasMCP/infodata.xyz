@@ -230,7 +230,7 @@ include("cabecalho.php");
             <br>
             <br>
         </p>
-        <span class="azul">MariaDB [(none)]&gt;</span> <code>SET PASSWORD FOR root@localhost = PASSWORD('Senha@3+2=5');</code><br>
+        <span class="azul">MariaDB [(none)]&gt;</span> <code>SET PASSWORD FOR root@localhost = PASSWORD('Senh@3+2=5');</code><br>
         <p class="reduzido miniatura verde">
             Query OK, 0 rows affected (0.00 sec)
             <br>
@@ -249,7 +249,7 @@ include("cabecalho.php");
         <span class="azul">Enter password:</span>
     </div>
 
-    <p class="comum">Digite a senha que voc&ecirc; escolheu e colocou em lugar de <b>Senha@3+2=5</b> no comando
+    <p class="comum">Digite a senha que voc&ecirc; escolheu e colocou em lugar de <b>Senh@3+2=5</b> no comando
         SET PASSWORD logo acima, quando voc&ecirc; definiu a sua senha.</p>
     <p class="comum">Se voc&ecirc; n&atilde;o cometeu erros deve aparecer a seguinte mensagem.</p>
     <p class="comum"><b>Nota:</b> A partir deste ponto, substituirei '<span class="azul">MariaDB [(none)]&gt;</span>' simplesmente por '&gt;'.</p>
@@ -323,7 +323,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Para saber mais detalhes da vers&atilde;o voc&ecirc; pode usar:</p>
-    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@3+2=5</b></p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senh@3+2=5</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysqladmin -u root -p version</code><br>
@@ -345,7 +345,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Criar uma nova base de dados, <b>direto da consola</b>, vamos dar o nome de 'testes2'.</p>
-    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@3+2=5</b></p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senh@3+2=5</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysqladmin -u root -p create testes2</code><br>
@@ -356,7 +356,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Deletar a base de dados, 'testes2' <b>direto da consola</b>.</p>
-    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@3+2=5</b></p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senh@3+2=5</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysqladmin -u root -p drop testes2</code><br>
@@ -395,7 +395,7 @@ include("cabecalho.php");
     </div>
 
     <p class="comum">Agora vamos testar com o novo usu&aacute;rio.</p>
-    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senha@</b></p>
+    <p class="comum">Digite a senha que voc&ecirc; escolheu em lugar de <b>Senh@</b></p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>$ mysql -u my -p</code><br>

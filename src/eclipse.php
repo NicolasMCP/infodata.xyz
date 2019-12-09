@@ -18,11 +18,14 @@ include("cabecalho.php");
     <p class="comum">V&iacute;deo de como fazer...</p>
     <br>
     <iframe width="800" height="450" src="https://www.youtube.com/embed/6gniT7jDLf0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <br>
+    <br>
+    <br>
+    <a href="../files/eclipse-pt_BR.zip" download="files/eclipse-pt_BR.zip" class="a">Arquivo zip contendo: icone eclipse, dicionario pt_BR, e .sh para criar o &iacute;cone</a>
 
 </section>
 
 <?php
-for($i=0; $i<17; $i++) {echo'<br>';}
+for($i=0; $i<4; $i++) {echo'<br>';}
 include("rodape.php");
 ?>

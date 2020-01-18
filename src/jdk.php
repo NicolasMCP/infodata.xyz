@@ -11,12 +11,111 @@ include("cabecalho.php");
 <section>
 <!--InstalarJDK-->
 
-	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span>,<br>openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
-        e openJDK <span style="font-family: 'Noto Sans', sans-serif;">8.0.232</span></h1>
-    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina,<br>
+	<h1>Instalando o Java openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.2</span>,<br>
+        openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span>, openJDK <span style="font-family: 'Noto Sans', sans-serif;">11.0.4</span>,
+        <br>e openJDK <span style="font-family: 'Noto Sans', sans-serif;">8.0.232</span></h1>
+    <h2 class="reduzido">Testado em MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.2</span> e Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.3</span> Tricia,<br>
     sendo compativel com Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch, e
         Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span>.</br></h2>
 
+    <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.2</span></h3>
+    <a href="#jdk13.0.1" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 13.0.1</a><br>
+    <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>
+    <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 8.0.232</a><br>
+    <br>
+
+    <br>
+    <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br>
+    <p class="comum"><a href="https://jdk.java.net/13/" class="a" target="_blank">openJDK 13.0.2</a>.
+        Para voc&ecirc; fazer o download do openJDK 13.0.2 se quiser. Ou...</p>
+
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        mkdir ~/Downloads/jdk<br>
+        $ cd ~/Downloads/jdk/<br>
+        $ wget https://download.java.net/java/GA/jdk13.0.2/d4173c853231432d94f001e99d882ca7/8/GPL/openjdk-13.0.2_linux-x64_bin.tar.gz<br>
+    </div>
+
+
+    <p class="comum">Caso deseje deletar uma instala&ccedil;&atilde;o anterior</p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        rm -r /usr/lib/jvm/LOCAL-INSTALAÇÃO<br>
+    </div>
+
+
+    <p class="comum">Extrair o Java Developer Kit Aberto (openJDK)</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        $ cd ~/Downloads/jdk/<br>
+        $ tar xvzf openjdk-13.0.2*.tar.gz<br>
+    </div>
+
+
+    <p class="comum">Copiar o JDK ao local definitivo e informar ao linux as pastas de trabalho</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <span class="miniatura">O proximo comando no debian &eacute;:</span>
+        <br>
+        $ su<br>
+        <span class="miniatura">O proximo comando no Linux Mint &eacute;:</span>
+        <br>
+        $ sudo su<br>
+        <span class="miniatura">O seguinte e comum aos dois SO.</span>
+        <br>
+        # mv jdk-13.0.2 /usr/lib/jvm<br>
+        # update-alternatives --install &quot;/usr/bin/java&quot; &quot;java&quot; &quot;/usr/lib/jvm/jdk-13.0.2/bin/java&quot; 1<br>
+        # update-alternatives --install &quot;/usr/bin/javac&quot; &quot;javac&quot; &quot;/usr/lib/jvm/jdk-13.0.2/bin/javac&quot; 1<br>
+        # update-alternatives --install &quot;/usr/bin/jar&quot; &quot;jar&quot; &quot;/usr/lib/jvm/jdk-13.0.2/bin/jar&quot; 1<br>
+    </div>
+
+    <p class="comum">Definir o JDK 13.0.2 como padr&atilde;o</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # update-alternatives --set java /usr/lib/jvm/jdk-13.0.2/bin/java<br>
+        # update-alternatives --set javac /usr/lib/jvm/jdk-13.0.2/bin/javac<br>
+        # update-alternatives --set jar /usr/lib/jvm/jdk-13.0.2/bin/jar<br>
+    </div>
+
+    <p class="comum">Incluir as vari&aacute;veis de ambiente</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # vim /etc/bash.bashrc<br>
+    </div>
+
+    <p class="comum">Va at&eacute; o final do arquivo e inclua as seguintes linhas</p>
+    <p class="miniatura">Incluir no arquivo</p>
+    <div class="box sombra">
+        JAVA_HOME=/usr/lib/jvm/jdk-13.0.2<br>
+        PATH=$PATH:$JAVA_HOME/bin<br>
+        export JAVA_HOME<br>
+        export PATH<br>
+    </div>
+
+    <p class="comum">Reiniciar e testar</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        # reboot<br>
+        $ java -version<br>
+        $ javac -version<br>
+    </div>
+
+
+
+    <br>
+    <p class="comum">Se voc&ecirc; instalar o openJDK 13.0.2 antes do IntelliJ IDEA ele vai encontra-lo automaticamente</p>
+
+    <br>
+    <br>
+    <br>
+
+    <!--------------------------------------------------------------------------------------------->
+    <?php
+    include("pre-rodape.php");
+    ?>
+    <br>
+
+    <br id="jdk13.0.1">
     <h3>Instala&ccedil;&atilde;o do openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.1</span></h3>
 
     <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>

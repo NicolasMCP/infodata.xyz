@@ -11,6 +11,33 @@ include("cabecalho.php");
 <section>
 <!--IntelliJ IDEA-->
 
+    <h1 id="jdk13.0.2">Dicas de Uso do IntelliJ IDEA</h1>
+
+    <h2>Usando openJDK <span style="font-family: 'Noto Sans', sans-serif;">13.0.2</span></h2>
+
+    <br>
+    <br>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/8OuGrZAvcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+
+    <p class="comum">Antes de abrir qualquer projeto, selecione as op&ccedil;&otilde;es:</p>
+    <p class="comum"></p>
+    <p class="comum"></p>
+    <p class="miniatura">Procedimento</p>
+    <div class="box sombra">
+        Configure &gt; Structure for New Project<br>
+        bot&atilde;o &gt; New...<br>
+        selecione o SDK (Software Developer Kit) que incluiu (no caso o JDK 13)<br>
+        na pasta: /usr/lib/jvm/java-13.0.2<br>
+        bot&atilde;o &gt; Apply<br>
+        bot&atilde;o &gt; Ok<br>
+    </div>
+
+     <?php
+    include("pre-rodape.php");
+    ?>
+
     <h1 id="jdk12">Dicas de Uso do IntelliJ IDEA</h1>
 
     <h2>Usando openJDK <span style="font-family: 'Noto Sans', sans-serif;">12</span></h2>

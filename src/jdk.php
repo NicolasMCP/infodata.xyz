@@ -23,7 +23,9 @@ include("cabecalho.php");
     <a href="#jdk11" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 11.0.4</a><br>
     <a href="#jdk8" class="a" target="_parent">Clique aqui para Instala&ccedil;&atilde;o do openJDK 8.0.232</a><br>
     <br>
-
+    <br>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/1hy45uvqBO8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
     <br>
     <p class="comum">Acompanhe passo a passo a instala&ccedil;&atilde;o...</p><br>
     <p class="comum"><a href="https://jdk.java.net/13/" class="a" target="_blank">openJDK 13.0.2</a>.
@@ -106,6 +108,10 @@ include("cabecalho.php");
     <p class="comum">Se voc&ecirc; instalar o openJDK 13.0.2 antes do IntelliJ IDEA ele vai encontra-lo automaticamente</p>
 
     <br>
+    <br>
+    <a href="intellijIDEA.php#jdk13.0.2" class="a" target="_parent">Configurar o openJDK 13.0.2 no IntelliJ IDEA.</a>
+    <br>
+
     <br>
     <br>
 

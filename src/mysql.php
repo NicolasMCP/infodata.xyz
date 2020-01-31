@@ -69,6 +69,9 @@ include("cabecalho.php");
     <br id="mysql-linux-mint">
     <h4 class="reduzido">Instala&ccedil;&atilde;o do MySQL 8 e do MySQL Workbench no Linux Mint 19.3</h4>
     <br>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/BgHZAlZt7P8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
     <p class="comum">Primeiro, para instalar o MySQL vamos ver qual a &uacute;ltima vers&atilde;o do MySQL neste link</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">

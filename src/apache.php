@@ -14,7 +14,7 @@ include("cabecalho.php");
     <h1>Instala&ccedil;&atilde;o do Apache no Linux</h1>
 
     <h2 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">20</span> Ulyana, <span style="font-family: 'Noto Sans', sans-serif;">19.3</span> Tricia,
-        <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina, no MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span>, no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster e 
+        <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina, no MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span><br>no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster e
         no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch
         </h2>
     <h3>Instalando o Apache</h3>

@@ -10,110 +10,14 @@ include("cabecalho.php");
 
 <section>
 <!--php-->
-
     <h1>Instalando o PHP em Linux</h1>
-    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch, no
-        Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span></br>e MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
-    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o do PHP 7.3.11 no Linux Mint 19.2 Tina.</a>
-
-    <h2>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.3</span> no Debian</h2>
-    <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
-    quero esperimenta-la, estou mudando a versão do PHP para esta, que é compatível com o mesmo.</p>
-    <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
-    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
-    <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
-    <a href="mariaDB.php" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
-
-    <p class="comum">Para que seu PHP possa ser instalado, precisaremos ter o Apache funcionando, portanto
-    por favor abra no seu navegador o link abaixo para ter certeza do correto funcionamento do mesmo.</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <a href="http://localhost" class="a" target="_blank">http://localhost</a>
-    </div>
-    <p class="comum">Agora come&ccedil;aremos a instala&ccedil;&atilde;o do PHP em si.</p>
-    <p class="comum">Preparativos, incluindo o reposit&oacute;rio.</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>
-            $ sudo apt install apt-transport-https lsb-release ca-certificates<br>
-            $ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg<br>
-            $ sudo su<br>
-            # echo &quot;## 7.2 &quot; &gt;&gt; /etc/apt/sources.list<br>
-            <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br>-->
-            # echo &quot;deb https://packages.sury.org/php/ <strong>stretch</strong> main&quot; &gt;&gt; /etc/apt/sources.list<br>
-        </code>
-        <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br><br></p>
-        <code>
-            # exit<br>
-            $ sudo apt update<br>
-        </code>
-    </div>
-
-    <p class="comum">Instala&ccedil;&atilde;o dos pacotes necess&aacute;rios</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>
-            $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
-            apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
-            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br>
-            $ sudo apt install dh-php<br>
-            $ sudo apt install pkg-php-tools<br>
-            $ sudo apt-get install php-cgi<br>
-            $ ls --color /usr/bin/php7.3<br>
-            $ sudo update-alternatives --set php /usr/bin/php7.3<br>
-            $ sudo service apache2 restart<br>
-        </code>
-    </div>
-
-    <p class="comum">Teste a instala&ccedil;&atilde;o</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>
-            $ php -v<br>
-        </code>
-
-         <p style="font-size: 12px;"><br>
-             PHP 7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6 (cli) (built: May  5 2018 04:57:44) ( NTS )<br>
-             Copyright (c) 1997-2018 The PHP Group<br>
-             Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies<br>
-             with Zend OPcache v7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6, Copyright (c) 1999-2018, by Zend Technologies<br>
-        </p>
-    </div>
-
-    <p class="comum">Crie um arquivo php de informa&ccedil;&odblac;es</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>
-            $ cd /var/www/html<br>
-            $ sudo vim phpinfo.php<br>
-        </code>
-    </div>
-
-    <p class="miniatura">Incluir no arquivo</p>
-    <div class="box sombra">
-        <code>
-            <span style="color: orange">&lt;?</span><span style="color: red">php</span><br>
-            <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br>
-            <span style="color: orange">?&gt;</span><br>
-        </code>
-    </div>
-
-    <p class="comum">Abra no seu Navegador</p>
-    <p class="miniatura">Web</p>
-    <div class="box sombra">
-        <a href="http://localhost/phpinfo.php" class="a" target="_blank">http://localhost/phpinfo.php</a>
-    </div>
-
-    <?php
-    include("pre-rodape.php");
-    ?>
-
-    <h3 id="linux-mint">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.11</span> no Linux Mint</h3>
-    <h4 class="reduzido">Testado em Linux Mint 18.3 e 19.2</h4>
-    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
+<!----------------------------------------------------------------------------------------------------------------->
+    <h3>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.11</span> no Linux Mint</h3>
+    <h4 class="reduzido">Testado em Linux Mint 19.3, 19.2 e 18.3</h4>
+    <a href="#linux-debian" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
-        quero esperimenta-la, estou mudando a versão do PHP para esta, que é compatível com o mesmo.</p>
+        quero esperimenta-la, estou mudando a versão do PHP para 7.3, que é compatível com o mesmo.</p>
     <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
     <a href="mariaDB.php" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
     <br>
@@ -238,6 +142,105 @@ include("cabecalho.php");
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Juliano S S, e Igor de Paula. do PHP Brasil (telegram),</p>
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pela sua ajuda na solu&ccedil;&atilde;o deste problema.</p>
 
+    <?php
+    include("pre-rodape.php");
+    ?>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <h2 id="linux-debian">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.3</span> no Debian</h2>
+    <h2 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster, no
+        Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch</br>e MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
+    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o do PHP no Linux Mint</a>
+
+    <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
+    quero esperimenta-la, estou mudando a versão do PHP para esta, que é compatível com o mesmo.</p>
+    <a href="vim.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do VIM. (Opcional)</a><br>
+    <a href="sudo.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do SUDO (no debian)</a><br>
+    <a href="apache.php" class="a" target="_blank">Pre-requisito, instala&ccedil;&atilde;o do Servidor Apache</a><br>
+    <a href="mariaDB.php#linux-debian" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
+
+    <p class="comum">Para que seu PHP possa ser instalado, precisaremos ter o Apache funcionando, portanto
+    por favor abra no seu navegador o link abaixo para ter certeza do correto funcionamento do mesmo.</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <a href="http://localhost" class="a" target="_blank">http://localhost</a>
+    </div>
+    <p class="comum">Agora come&ccedil;aremos a instala&ccedil;&atilde;o do PHP em si.</p>
+    <p class="comum">Preparativos, incluindo o reposit&oacute;rio.</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>
+            $ sudo apt install apt-transport-https lsb-release ca-certificates<br>
+            $ sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg<br>
+            $ sudo su<br>
+            # echo &quot;## PHP 7.3.3 &quot; &gt;&gt; /etc/apt/sources.list<br>
+            <!--# echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list<br>-->
+            # echo &quot;deb https://packages.sury.org/php/ <strong>stretch</strong> main&quot; &gt;&gt; /etc/apt/sources.list<br>
+        </code>
+        <p class="miniatura">Tanto para 'debian stretch' como para 'debian buster' coloque stretch na linha logo acima<br><br></p>
+        <code>
+            # exit<br>
+            $ sudo apt update<br>
+        </code>
+    </div>
+
+    <p class="comum">Instala&ccedil;&atilde;o dos pacotes necess&aacute;rios</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>
+            $ sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql php7.3-curl php7.3-json php7.3-xsl php7.3-cli
+            apache2-mod-php7.3 php7.3-mysql php7.3-dev php7.3-sqlite3 php7.3-mbstring php7.3-curl php-memcached
+            php-pear php7.3-opcache php7.3-readline php7.3-gd php7.3-zip php7.3-xml php7.3-cgi<br>
+            $ sudo apt install dh-php<br>
+            $ sudo apt install pkg-php-tools<br>
+            $ sudo apt-get install php-cgi<br>
+            $ ls --color /usr/bin/php7.3<br>
+            $ sudo update-alternatives --set php /usr/bin/php7.3<br>
+            $ sudo service apache2 restart<br>
+        </code>
+    </div>
+
+    <p class="comum">Teste a instala&ccedil;&atilde;o</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>
+            $ php -v<br>
+        </code>
+
+         <p style="font-size: 12px;"><br>
+             PHP 7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6 (cli) (built: May  5 2018 04:57:44) ( NTS )<br>
+             Copyright (c) 1997-2018 The PHP Group<br>
+             Zend Engine v3.2.0, Copyright (c) 1998-2018 Zend Technologies<br>
+             with Zend OPcache v7.2.5-1+0~20180505045740.21+stretch~1.gbpca2fa6, Copyright (c) 1999-2018, by Zend Technologies<br>
+        </p>
+    </div>
+
+    <p class="comum">Crie um arquivo php de informa&ccedil;&odblac;es</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>
+            $ cd /var/www/html<br>
+            $ sudo vim phpinfo.php<br>
+        </code>
+    </div>
+
+    <p class="miniatura">Incluir no arquivo</p>
+    <div class="box sombra">
+        <code>
+            <span style="color: orange">&lt;?</span><span style="color: red">php</span><br>
+            <span style="color: darkviolet">phpinfo</span><span style="color: darkred">();</span><br>
+            <span style="color: orange">?&gt;</span><br>
+        </code>
+    </div>
+
+    <p class="comum">Abra no seu Navegador</p>
+    <p class="miniatura">Web</p>
+    <div class="box sombra">
+        <a href="http://localhost/phpinfo.php" class="a" target="_blank">http://localhost/phpinfo.php</a>
+    </div>
+
+<!----------------------------------------------------------------------------------------------------------------->
 
 </section>
 

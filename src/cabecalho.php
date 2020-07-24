@@ -78,8 +78,8 @@ echo '<html lang="pt-br">
                         <li><a href="mariaDB.php"><img src="../img/mariadb.png" height="20px" width="28px">MariaDB</a></li>
                         <li><a href="firebird.php"><img src="../img/firebird-logo-32pb.png" height="20px" width="28px">Firebird</a></li>
                         <li><a href="firebird.php#FlameRobin"><img src="../img/flamerobin-logo24pb.png" height="20px" width="28px">FlameRobin</a></li>
-                        <li><a href="php.php"><img src="../img/php.svg" height="22px" width="34px">PHP Debian</a></li>
-                        <li><a href="php.php#linux-mint"><img src="../img/php.svg" height="22px" width="34px">PHP Mint</a></li>
+                        <li><a href="php.php#linux-debian"><img src="../img/php.svg" height="22px" width="34px">PHP Debian</a></li>
+                        <li><a href="php.php"><img src="../img/php.svg" height="22px" width="34px">PHP Mint</a></li>
                         <li><a href="node.php"><img src="../img/nodejs.png" height="20px" width="28px">Node.js</a></li>
                     </ul>
                 <li>

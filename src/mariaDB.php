@@ -61,6 +61,8 @@ include("cabecalho.php");
 <!-- ------------------------------------------------------------------------------------------------------------>
 
     <h5 id="linux-mint">Instalando MariaDB no Linux Mint.</h5>
+    <h6 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">20</span> Ulyana.</h6>
+    <h6 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.3</span> Tricia.</h6>
     <h6 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina.</h6>
     <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
@@ -84,7 +86,7 @@ include("cabecalho.php");
         <code>$ mysql --version</code>
         <br><br>
         <p style="font-size: 11px" class="verde">
-            mysql &nbsp;Ver 15.1 Distrib 10.1.43-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+            mysql  Ver 15.1 Distrib 10.3.22-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
         </p>
     </div>
 
@@ -103,28 +105,29 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>$ sudo service mysql status</code><br>
         <p style="font-size: 11px" class="verde">
-            ● mariadb.service - MariaDB 10.1.43 database server<br>
-            &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: ena<br>
-            &nbsp;&nbsp;&nbsp;Active: <b>active (running)</b> since Sun 2019-12-01 10:19:50 -03; 56s ago<br>
+            ● mariadb.service - MariaDB 10.3.22 database server<br>
+            &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)<br>
+            &nbsp;&nbsp;&nbsp;Active: <b>active (running)</b> since Fri 2020-07-24 10:16:36 -03; 27min ago<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Docs: man:mysqld(8)<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://mariadb.com/kb/en/library/systemd/<br>
-            &nbsp;Main PID: 5372 (mysqld)<br>
+            &nbsp;Main PID: 11787 (mysqld)<br>
             &nbsp;&nbsp;&nbsp;Status: &quot;Taking your SQL requests now...&quot;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Tasks: 27 (limit: 4915)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Tasks: 30 (limit: 9312)<br>
+               Memory: 68.5M<br>
             &nbsp;&nbsp;&nbsp;CGroup: /system.slice/mariadb.service<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─5372 /usr/sbin/mysqld<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─11787 /usr/sbin/mysqld<br>
             <br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Processing databases</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>information_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>mysql</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>performance_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Phase 6/7: Checking and upgrading</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Processing databases</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>information_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>performance_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Phase 7/7: Running 'FLUSH PRIVILE</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>OK</b></p>
-        <p class="reduzido miniatura verde">lines 1-23/23 (END)</p>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Processing databases</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>information_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>mysql</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>performance_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Phase 6/7: Checking and upgrading tables</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Processing databases</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>information_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>performance_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Phase 7/7: Running 'FLUSH PRIVILEGES'</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>OK</b></p>
+        <p class="reduzido miniatura verde">lines 1-22/22 (END)</p>
     </div>
 
     <p class="comum">Como Parar o mariaDB ?</p>
@@ -133,27 +136,27 @@ include("cabecalho.php");
         <code>$ sudo service mysql stop</code><br>
         <code>$ sudo service mysql status</code><br>
         <p style="font-size: 11px" class="verde">
-            ● mariadb.service - MariaDB 10.1.43 database server<br>
-            &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: ena<br>
-            &nbsp;&nbsp;&nbsp;Active: <b>inactive (dead)</b> since Sun 2019-12-01 10:20:14 -03; 5s ago<br>
+            ● mariadb.service - MariaDB 10.3.22 database server<br>
+            &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)<br>
+            &nbsp;&nbsp;&nbsp;Active: <b>inactive (dead)</b> since Fri 2020-07-24 11:17:03 -03; 1min 22s ago<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Docs: man:mysqld(8)<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://mariadb.com/kb/en/library/systemd/<br>
-            &nbsp;&nbsp;Process: 5372 ExecStart=/usr/sbin/mysqld $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP<br>
-            &nbsp;Main PID: 5372 (code=exited, status=0/SUCCESS)<br>
+            &nbsp;&nbsp;Process: 11787 ExecStart=/usr/sbin/mysqld $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION (code=exited, status=0/SUCCESS)<br>
+            &nbsp;Main PID: 11787 (code=exited, status=0/SUCCESS)<br>
             &nbsp;&nbsp;&nbsp;Status: &quot;<b>MariaDB server is down</b>&quot;<br>
             <br>
 
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>mysql</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>performance_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Phase 6/7: Checking and upgrading</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Processing databases</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>information_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>performance_schema</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>Phase 7/7: Running 'FLUSH PRIVILE</b><br>
-            dez 01 10:19:50 lm /etc/mysql/debian-start[5405]: <b>OK</b><br>
-            dez 01 10:21:12 lm systemd[1]: Stopping MariaDB 10.1.43 database server...<br>
-            dez 01 10:21:14 lm systemd[1]: Stopped MariaDB 10.1.43 database server.</p>
-        <p class="reduzido miniatura verde">lines 1-23/23 (END)</p>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>performance_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Phase 6/7: Checking and upgrading tables</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Processing databases</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>information_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>performance_schema</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>Phase 7/7: Running 'FLUSH PRIVILEGES'</b><br>
+            jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>OK</b><br>
+            jul 24 11:17:01 Mint-20 systemd[1]: Stopping MariaDB 10.3.22 database server...<br>
+            jul 24 11:17:03 Mint-20 systemd[1]: mariadb.service: Succeeded.</p>
+            jul 24 11:17:03 Mint-20 systemd[1]: Stopped MariaDB 10.3.22 database server.</p>
+        <p class="reduzido miniatura verde">lines 1-20/20 (END)</p>
     </div>
 
     <p class="comum">Como Iniciar o mariaDB ?</p>
@@ -161,31 +164,28 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>$ sudo service mysql start</code><br>
         <code>$ sudo service mysql status</code><br>
-        <p style="font-size: 11px" class="verde">
-            ● mariadb.service - MariaDB 10.1.43 database server<br>
-            &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: ena<br>
-            &nbsp;&nbsp;&nbsp;Active: <b>active (running)</b> since Sun 2019-12-01 10:21:48 -03; 56s ago<br>
+        <p style="font-size: 11px" class="verde">mariadb.service - MariaDB 10.1.43 database server
+            ● mariadb.service - MariaDB 10.3.22 database server<br>
+            &nbsp;&nbsp;&nbsp;Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)<br>
+            &nbsp;&nbsp;&nbsp;Active: <b>active (running)</b> since Fri 2020-07-24 11:33:46 -03; 10s ago<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Docs: man:mysqld(8)<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://mariadb.com/kb/en/library/systemd/<br>
-            &nbsp;&nbsp;Process: 8409 ExecStartPost=/bin/sh -c systemctl unset-environment _WSREP_START_P<br>
-            &nbsp;&nbsp;Process: 8406 ExecStartPost=/etc/mysql/debian-start (code=exited, status=0/SUCCES<br>
-            &nbsp;&nbsp;Process: 8304 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= |<br>
-            &nbsp;&nbsp;Process: 8302 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_PO<br>
-            &nbsp;&nbsp;Process: 8301 ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/m<br>
-            &nbsp;Main PID: 8379 (mysqld)<br>
+            &nbsp;&nbsp;Process: 19128 ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld (code=exited, status=0/SUCCESS)<br>
+            &nbsp;&nbsp;Process: 19139 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)<br>
+            &nbsp;&nbsp;Process: 19141 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= ||   VAR=`/usr/bin/galera_recovery`; [ $? -eq 0 ]   && systemctl set-environment _WSREP&gt;<br>
+            &nbsp;&nbsp;Process: 19220 ExecStartPost=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)<br>
+            &nbsp;&nbsp;Process: 19222 ExecStartPost=/etc/mysql/debian-start (code=exited, status=0/SUCCESS)<br>
+            &nbsp;Main PID: 19189 (mysqld)<br>
             &nbsp;&nbsp;&nbsp;Status: &quot;Taking your SQL requests now...&quot;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Tasks: 27 (limit: 4915)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Tasks: 31 (limit: 9312)<br>
+               Memory: 70.8M<br>
             &nbsp;&nbsp;&nbsp;CGroup: /system.slice/mariadb.service<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─8379 /usr/sbin/mysqld<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─19189 /usr/sbin/mysqld<br>
             <br>
-            dez 01 10:21:47 lm systemd[1]: Starting MariaDB 10.1.43 database server...<br>
-            dez 01 10:21:48 lm mysqld[8379]: 2019-12-01 10:21:48 140118477102208 [Note] /usr/sb<br>
-            dez 01 10:21:48 lm /etc/mysql/debian-start[8412]: <b>/usr/bin/mysql_upgrade: the '--ba</b><br>
-            dez 01 10:21:48 lm /etc/mysql/debian-start[8412]: <b>Looking for 'mysql' as: /usr/bin/</b><br>
-            dez 01 10:21:48 lm /etc/mysql/debian-start[8412]: <b>Looking for 'mysqlcheck' as: /usr</b><br>
-            dez 01 10:21:48 lm /etc/mysql/debian-start[8412]: <b>This installation of MySQL is alr</b><br>
-            dez 01 10:21:48 lm systemd[1]: Started MariaDB 10.1.43 database server.</p>
-        <p class="reduzido miniatura verde">lines 1-23/23 (END)</p>
+            jul 24 11:33:46 Mint-20 systemd[1]: Starting MariaDB 10.3.22 database server...<br>
+            jul 24 11:33:46 Mint-20 mysqld[19189]: 2020-07-24 11:33:46 0 [Note] /usr/sbin/mysqld (mysqld 10.3.22-MariaDB-1ubuntu1) starting as process 19189 ...<br>
+            jul 24 11:33:46 Mint-20 systemd[1]: Started MariaDB 10.3.22 database server.</b><br>
+        <p class="reduzido miniatura verde">lines 1-20/20 (END)</p>
     </div>
 
     <p class="comum">Vamos entrar no MariaDB pela primeira vez... e ver o que tem dentro</p>
@@ -220,8 +220,8 @@ include("cabecalho.php");
         </p>
         <span class="azul">MariaDB [(none)]&gt;</span> <code>UPDATE user SET PLUGIN='' WHERE user='root';</code><br>
         <p class="reduzido miniatura verde">
-            Query OK, 1 row affected (0.03 sec)<br>
-            Rows matched: 1  Changed: 1  Warnings: 0<br>
+            Query OK, 1 row affected (0.001 sec)<br>
+            Rows matched: 1 &nbsp;&nbsp;Changed: 1 &nbsp;&nbsp;Warnings: 0<br>
             <br>
         </p>
         <span class="azul">MariaDB [(none)]&gt;</span> <code>FLUSH PRIVILEGES;</code><br>
@@ -258,12 +258,12 @@ include("cabecalho.php");
         <span class="azul">Enter password:</span>
         <p style="font-size: 11px" class="verde">
             Welcome to the MariaDB monitor.  Commands end with ; or \g.<br>
-                Your MariaDB connection id is 31<br>
-                Server version: 10.1.38-MariaDB-0ubuntu0.18.04.1 Ubuntu 18.04<br>
+            Your MariaDB connection id is 37<br>
+            Server version: 10.3.22-MariaDB-1ubuntu1 Ubuntu 20.04<br>
             <br>
-                Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
+            Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
             <br>
-                Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.<br>
+            Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.<br>
             <br>
         </p>
         &gt;
@@ -308,7 +308,7 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>&gt; DROP DATABASE test;</code><br>
         <code>&gt; SHOW DATABASES;</code>
-        <p class="miniatura verde">
+        <p><span class="reduzido miniatura verde">
             +--------------------+<br>
             | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
@@ -316,7 +316,7 @@ include("cabecalho.php");
             | mysql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             | performance_schema |<br>
             +--------------------+<br>
-            <span class="reduzido miniatura verde">3 rows in set (0.00 sec)</span><br>
+            3 rows in set (0.00 sec)</span><br>
             <code>&gt; exit;</code><br>
             $
         </p>

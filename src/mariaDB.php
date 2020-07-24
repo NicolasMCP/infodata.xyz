@@ -11,60 +11,12 @@ include("cabecalho.php");
 <section>
 
     <h1>MariaDB no Linux.</h1>
-    <h2>Instalando MariaDB no Debian.</h2>
-    <h3 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster.</h3>
-    <a href="#linux-mint" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
-    <!--MariaDB-->
-    <p class="comum">S&oacute; precisa descomentar os reposit&oacute;rios oficiais principais.</p>
-    <p class="comum">Verifique se tem estes reposit&oacute;rios.</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>$ sudo cat /etc/apt/sources.list</code><br>
-        <br>
-        <p style="font-size: 12px">
-            # verificar se temos estes reposit&oacute;rios, em especial o non-free (no final)<br>
-            <br>
-            ## Debian - stretch<br>
-            deb http://ftp.us.debian.org/debian/ stretch main contrib non-free<br>
-            deb-src http://ftp.us.debian.org/debian/ stretch main contrib non-free<br>
-            ## Atualiza&ccedil;&otilde;es de seguran&ccedil;a<br>
-            deb http://security.debian.org/ stretch/updates main contrib non-free<br>
-            deb-src http://security.debian.org/ stretch/updates main contrib non-free<br>
-        </p>
-    </div>
 
-
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>$ sudo apt install mariadb-server</code>
-    </div>
-
-    <p class="comum">Vamos verificar a vers&atilde;o instalada.</p>
-    <p class="miniatura">C&oacute;digo</p>
-    <div class="box sombra">
-        <code>$ mysql --version</code>
-        <br><br>
-        <p style="font-size: 12px">
-            mysql  Ver 15.1 Distrib 10.1.26-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
-        </p>
-    </div>
-
-    <br>
-    <a href="#Conferir" class="a">Conferir se o mariaDB esta rodando...</a><span class="comum"> E outros comandos &uacute;teis...</span>
-    <br>
-    <br>
-
-    <?php
-    include("pre-rodape.php");
-    ?>
-
-<!-- ------------------------------------------------------------------------------------------------------------>
-
-    <h5 id="linux-mint">Instalando MariaDB no Linux Mint.</h5>
+    <h5>Instalando MariaDB no Linux Mint.</h5>
     <h6 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">20</span> Ulyana.</h6>
     <h6 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.3</span> Tricia.</h6>
     <h6 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina.</h6>
-    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
+    <a href="#linux-debian" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
     <p class="comum">Vamos ver primeiro se esta rodando MariaDB ou MySQL...</p>
     <p class="miniatura">C&oacute;digo</p>
@@ -113,7 +65,7 @@ include("cabecalho.php");
             &nbsp;Main PID: 11787 (mysqld)<br>
             &nbsp;&nbsp;&nbsp;Status: &quot;Taking your SQL requests now...&quot;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;Tasks: 30 (limit: 9312)<br>
-               Memory: 68.5M<br>
+            Memory: 68.5M<br>
             &nbsp;&nbsp;&nbsp;CGroup: /system.slice/mariadb.service<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─11787 /usr/sbin/mysqld<br>
             <br>
@@ -155,7 +107,7 @@ include("cabecalho.php");
             jul 24 10:16:38 Mint-20 /etc/mysql/debian-start[11825]: <b>OK</b><br>
             jul 24 11:17:01 Mint-20 systemd[1]: Stopping MariaDB 10.3.22 database server...<br>
             jul 24 11:17:03 Mint-20 systemd[1]: mariadb.service: Succeeded.</p>
-            jul 24 11:17:03 Mint-20 systemd[1]: Stopped MariaDB 10.3.22 database server.</p>
+        jul 24 11:17:03 Mint-20 systemd[1]: Stopped MariaDB 10.3.22 database server.</p>
         <p class="reduzido miniatura verde">lines 1-20/20 (END)</p>
     </div>
 
@@ -178,7 +130,7 @@ include("cabecalho.php");
             &nbsp;Main PID: 19189 (mysqld)<br>
             &nbsp;&nbsp;&nbsp;Status: &quot;Taking your SQL requests now...&quot;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;Tasks: 31 (limit: 9312)<br>
-               Memory: 70.8M<br>
+            Memory: 70.8M<br>
             &nbsp;&nbsp;&nbsp;CGroup: /system.slice/mariadb.service<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─19189 /usr/sbin/mysqld<br>
             <br>
@@ -193,7 +145,7 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>$ sudo mysql -u root</code><br>
         <span class="azul">MariaDB [(none)]&gt;</span> SHOW DATABASES;<br>
-        <p class="miniatura verde">
+        <p><span class="reduzido miniatura verde">
             +--------------------+<br>
             | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
@@ -201,7 +153,7 @@ include("cabecalho.php");
             | mysql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             | performance_schema |<br>
             +--------------------+<br>
-            <span class="reduzido miniatura verde">3 rows in set (0.00 sec)</span><br>
+            3 rows in set (0.001 sec)</span><br>
         </p>
         <p class="azul">MariaDB [(none)]&gt;</p>
     </div>
@@ -213,8 +165,8 @@ include("cabecalho.php");
     <div class="box sombra">
         <span class="azul">MariaDB [(none)]&gt;</span> USE mysql;<br>
         <p style="font-size: 11px" class="verde">
-        Reading table information for completion of table and column names<br>
-        You can turn off this feature to get a quicker startup with -A<br>
+            Reading table information for completion of table and column names<br>
+            You can turn off this feature to get a quicker startup with -A<br>
             <br>
             <span class="reduzido miniatura verde">Database changed</span><br>
         </p>
@@ -226,13 +178,13 @@ include("cabecalho.php");
         </p>
         <span class="azul">MariaDB [(none)]&gt;</span> <code>FLUSH PRIVILEGES;</code><br>
         <p class="reduzido miniatura verde">
-            Query OK, 0 rows affected (0.00 sec)
+            Query OK, 0 rows affected (0.001 sec)
             <br>
             <br>
         </p>
         <span class="azul">MariaDB [(none)]&gt;</span> <code>SET PASSWORD FOR root@localhost = PASSWORD('Senh@3+2=5');</code><br>
         <p class="reduzido miniatura verde">
-            Query OK, 0 rows affected (0.00 sec)
+            Query OK, 0 rows affected (0.001 sec)
             <br>
             <br>
         </p>
@@ -273,7 +225,7 @@ include("cabecalho.php");
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>&gt; SHOW DATABASES;</code>
-        <p class="miniatura verde">
+        <p><span class="reduzido miniatura verde">
             +--------------------+<br>
             | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
@@ -281,7 +233,7 @@ include("cabecalho.php");
             | mysql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             | performance_schema |<br>
             +--------------------+<br>
-            <span class="reduzido miniatura verde">3 rows in set (0.00 sec)</span><br>
+            3 rows in set (0.001 sec)</span><br>
         </p>
     </div>
 
@@ -290,7 +242,7 @@ include("cabecalho.php");
     <div class="box sombra">
         <code>&gt; CREATE DATABASE test;</code><br>
         <code>&gt; SHOW DATABASES;</code>
-        <p class="miniatura verde">
+        <p><span class="reduzido miniatura verde">
             +--------------------+<br>
             | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
@@ -299,7 +251,7 @@ include("cabecalho.php");
             | performance_schema |<br>
             | test &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
-            <span class="reduzido miniatura verde">4 rows in set (0.00 sec)</span><br>
+            4 rows in set (0.001 sec)</span><br>
         </p>
     </div>
 
@@ -316,7 +268,7 @@ include("cabecalho.php");
             | mysql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             | performance_schema |<br>
             +--------------------+<br>
-            3 rows in set (0.00 sec)</span><br>
+            3 rows in set (0.001 sec)</span><br>
             <code>&gt; exit;</code><br>
             $
         </p>
@@ -329,19 +281,18 @@ include("cabecalho.php");
         <code>$ mysqladmin -u root -p version</code><br>
         <span class="azul">Enter password:</span>
         <p style="font-size: 11px" class="verde">
-            mysqladmin  Ver 9.1 Distrib 10.1.43-MariaDB, for debian-linux-gnu on x86_64<br>
+            mysqladmin  Ver 9.1 Distrib 10.3.22-MariaDB, for debian-linux-gnu on x86_64<br>
             Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
             <br>
-            Server version &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.1.43-MariaDB-0ubuntu0.18.04.1<br>
+            Server version &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.3.22-MariaDB-1ubuntu1<br>
             Protocol version &nbsp;&nbsp; 10<br>
             Connection &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Localhost via UNIX socket<br>
             UNIX socket &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /var/run/mysqld/mysqld.sock<br>
-            Uptime: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13 min 19 sec<br>
+            Uptime: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 hour 15 min 13 sec<br>
             <br>
-            Threads: 1 &nbsp;Questions: 121 &nbsp;Slow queries: 0 &nbsp;Opens: 36 &nbsp;Flush tables:
-            1 &nbsp;Open tables: 30 &nbsp;Queries per second avg: 0.151<br>
+            Threads: 7 &nbsp;Questions: 107 &nbsp;Slow queries: 0 &nbsp;Opens: 37 &nbsp;Flush tables: 1 &nbsp;Open tables: 31 &nbsp;Queries per second avg: 0.023<br>
         </p>
-        &gt;
+        $
     </div>
 
     <p class="comum">Criar uma nova base de dados, <b>direto da consola</b>, vamos dar o nome de 'testes2'.</p>
@@ -351,6 +302,16 @@ include("cabecalho.php");
         <code>$ mysqladmin -u root -p create testes2</code><br>
         <code>$ mysql -u root -p</code><br>
         <code>&gt; SHOW DATABASES;</code><br>
+        <span class="reduzido miniatura verde">
+            +--------------------+<br>
+            | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            +--------------------+<br>
+            | information_schema |<br>
+            | mysql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            | performance_schema |<br>
+            | testes2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            +--------------------+<br>
+            4 rows in set (0.001 sec)</span><br>
         <code>&gt; exit;</code><br>
         $
     </div>
@@ -443,6 +404,58 @@ include("cabecalho.php");
         <code># apt clean</code><br>
         <code># reboot</code><br>
     </div>
+
+    <?php
+    include("pre-rodape.php");
+    ?>
+
+    <!-- ------------------------------------------------------------------------------------------------------------>
+
+
+    <h2 id="linux-debian">Instalando MariaDB no Debian.</h2>
+    <h3 class="reduzido">Testado em Linux Debian <span style="font-family: 'Noto Sans', sans-serif;">9.4</span> Stretch e no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster.</h3>
+    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint.</a>
+    <!--MariaDB-->
+    <p class="comum">S&oacute; precisa descomentar os reposit&oacute;rios oficiais principais.</p>
+    <p class="comum">Verifique se tem estes reposit&oacute;rios.</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>$ sudo cat /etc/apt/sources.list</code><br>
+        <br>
+        <p style="font-size: 12px">
+            # verificar se temos estes reposit&oacute;rios, em especial o non-free (no final)<br>
+            <br>
+            ## Debian - stretch<br>
+            deb http://ftp.us.debian.org/debian/ stretch main contrib non-free<br>
+            deb-src http://ftp.us.debian.org/debian/ stretch main contrib non-free<br>
+            ## Atualiza&ccedil;&otilde;es de seguran&ccedil;a<br>
+            deb http://security.debian.org/ stretch/updates main contrib non-free<br>
+            deb-src http://security.debian.org/ stretch/updates main contrib non-free<br>
+        </p>
+    </div>
+
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>$ sudo apt install mariadb-server</code>
+    </div>
+
+    <p class="comum">Vamos verificar a vers&atilde;o instalada.</p>
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        <code>$ mysql --version</code>
+        <br><br>
+        <p style="font-size: 12px">
+            mysql  Ver 15.1 Distrib 10.1.26-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+        </p>
+    </div>
+
+    <br>
+    <a href="#Conferir" class="a">Conferir se o mariaDB esta rodando...</a><span class="comum"> E outros comandos &uacute;teis...</span>
+    <br>
+    <br>
+
+<!-- ------------------------------------------------------------------------------------------------------------>
 
 </section>
 

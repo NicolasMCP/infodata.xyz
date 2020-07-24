@@ -13,10 +13,10 @@ include("cabecalho.php");
 
     <h1>Instala&ccedil;&atilde;o do Apache no Linux</h1>
 
-    <h2 class="reduzido">Testado no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch,
-        no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster,<br>no
-        Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina e no
-        MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span></h2>
+    <h2 class="reduzido">Testado no Linux Mint <span style="font-family: 'Noto Sans', sans-serif;">20</span> Ulyana, <span style="font-family: 'Noto Sans', sans-serif;">19.3</span> Tricia, <span style="font-family: 'Noto Sans', sans-serif;">19.2</span> Tina e no
+        MX-Linux <span style="font-family: 'Noto Sans', sans-serif;">18.1</span>no Debian <span style="font-family: 'Noto Sans', sans-serif;">10</span> Buster,
+        no Debian <span style="font-family: 'Noto Sans', sans-serif;">9.8</span> Stretch
+        </h2>
     <h3>Instalando o Apache</h3>
     <br>
     <iframe width="800" height="450" src="https://www.youtube.com/embed/F39XPAKIf-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -33,8 +33,8 @@ include("cabecalho.php");
     <div class="box sombra">
         $ sudo apache2 -v
 
-        <p style="font-size: 12px;"><br>Server version: Apache/2.4.25 (Debian)<br>
-            Server built:   2018-03-31T08:47:16</p>
+        <p style="font-size: 12px;"><br>Server version: Apache/2.4.41 (Ubuntu)<br>
+            Server built:   2020-04-13T17:19:17</p>
     </div>
 
     <p class="comum">Teste a instala&ccedil;&atilde;o</p>
@@ -42,8 +42,9 @@ include("cabecalho.php");
     <div class="box sombra">
         <a href="http://localhost/" class="a" target="_blank">http://localhost/</a>
     </div>
-    <p class="comum"><strong>Nota:</strong> No Linux Debian 9.8 Stretch ser&aacute; instalado <strong>Apache &eacute; 2.4.25</strong></p>
+    <p class="comum"><strong>Nota:</strong> No Linux Mint 20 Ulyana ser&aacute; instalado <strong>Apache &eacute; 2.4.41</strong></p>
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Linux Debian 10 Buster ser&aacute; instalado <strong>Apache 2.4.29</strong></p>
+    <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Linux Debian 9.8 Stretch ser&aacute; instalado <strong>Apache &eacute; 2.4.25</strong></p>
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No Linux Mint 19.1 a vers&atilde;o do <strong>Apache &eacute; 2.4.29</strong></p>
     <p class="comum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No MX-Linux 18.1 a vers&atilde;o do <strong>Apache &eacute; 2.4.25</strong>
      e embora nele tenha a op&ccedil;&atilde;o de &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instalar automaticamente o Apache, MariaDB e PHP

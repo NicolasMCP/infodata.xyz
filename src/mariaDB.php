@@ -323,22 +323,32 @@ include("cabecalho.php");
         <code>$ mysqladmin -u root -p drop testes2</code><br>
         <code>$ mysql -u root -p</code><br>
         <code>&gt; SHOW DATABASES;</code><br>
+        <span class="reduzido miniatura verde">
+            +--------------------+<br>
+            | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            +--------------------+<br>
+            | information_schema |<br>
+            | mysql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            | performance_schema |<br>
+            +--------------------+<br>
+            3 rows in set (0.041 sec)</span>
+        <code>&gt;</code><br>
     </div>
 
     <p class="comum">Criar um novo usu&aacute;rio 'my' do localhost.</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>&gt; CREATE USER my@localhost IDENTIFIED BY 'Senh@';</code>
-        <p class="reduzido miniatura verde">Query OK, 0 rows affected (0.00 sec)</p>
+        <p class="reduzido miniatura verde">Query OK, 0 rows affected (0.001 sec)</p>
     </div>
 
     <p class="comum">Dar a 'my' do localhost todo acesso a uma DB chamada 'maromba' (que ainda n&atilde;o criamos).</p>
     <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         <code>&gt; GRANT ALL ON maromba.* TO my@localhost;</code>
-        <p class="reduzido miniatura verde">Query OK, 0 rows affected (0.00 sec)</p>
+        <p class="reduzido miniatura verde">Query OK, 0 rows affected (0.001 sec)</p>
         <code>&gt; FLUSH PRIVILEGES;</code>
-        <p class="reduzido miniatura verde">Query OK, 0 rows affected (0.00 sec)</p>
+        <p class="reduzido miniatura verde">Query OK, 0 rows affected (0.001 sec)</p>
         <code>&gt; SELECT host, user FROM mysql.user;</code>
         <p class="miniatura verde">
             +------------------+<br>
@@ -347,7 +357,7 @@ include("cabecalho.php");
             | localhost | my &nbsp;&nbsp;|<br>
             | localhost | host |<br>
             +------------------+<br>
-            <span class="reduzido miniatura verde">2 rows in set (0.00 sec)</span><br>
+            <span class="reduzido miniatura verde">2 rows in set (0.001 sec)</span><br>
         </p>
         <code>&gt; exit;</code><br>
         <p class="reduzido miniatura verde">Bye<br>
@@ -363,8 +373,8 @@ include("cabecalho.php");
         <span class="azul">Enter password:</span>
         <p style="font-size: 11px" class="verde">
             Welcome to the MariaDB monitor.  Commands end with ; or \g.<br>
-            Your MariaDB connection id is 31<br>
-            Server version: 10.1.38-MariaDB-0ubuntu0.18.04.1 Ubuntu 18.04<br>
+            Your MariaDB connection id is 14<br>
+            Server version: 10.3.22-MariaDB-1ubuntu1 Ubuntu 20.04<br>
             <br>
             Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.<br>
             <br>
@@ -377,9 +387,25 @@ include("cabecalho.php");
             | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
             | information_schema |<br>
+            +--------------------+<br>
+            <span class="reduzido miniatura verde">1 rows in set (0.001 sec)</span><br>
+        </p>
+
+        <p><br><code>&gt; CREATE DATABASE maromba;</code></p>
+
+        <p><span class="reduzido miniatura verde">Query OK, 1 row affected (0.001 sec)</span><br>
+        </p>
+
+        <p><br><code>&gt; SHOW DATABASES;</code></p>
+
+        <p class="miniatura verde">
+            +--------------------+<br>
+            | Database &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+            +--------------------+<br>
+            | information_schema |<br>
             | maromba &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
             +--------------------+<br>
-            <span class="reduzido miniatura verde">2 rows in set (0.00 sec)</span><br>
+            <span class="reduzido miniatura verde">2 rows in set (0.001 sec)</span><br>
         </p>
         <code>&gt; exit;</code><br>
         <p class="reduzido miniatura verde">Bye<br>

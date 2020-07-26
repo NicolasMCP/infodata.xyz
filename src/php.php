@@ -12,7 +12,7 @@ include("cabecalho.php");
 <!--php-->
     <h1>Instalando o PHP em Linux</h1>
 <!----------------------------------------------------------------------------------------------------------------->
-    <h3>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.4</span> no Linux Mint</h3>
+    <h3>Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.4.8</span> no Linux Mint</h3>
     <h4 class="reduzido">Testado em Linux Mint 20 Ulyana.</h4>
     <a href="#linux-debian" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
 
@@ -21,7 +21,7 @@ include("cabecalho.php");
     <a href="mariaDB.php" class="a" target="_blank">Opcional, instala&ccedil;&atilde;o do MariaDB</a><br>
     <br>
     <p class="comum"><b>Nota:</b> a vers&atilde;o da instala&ccedil;&atilde;o do v&iacute;deo &eacute; 7.3.11 e os comandos logo abaixo s&atilde;o para a vers&atilde;o
-        7.4</p><br>
+        7.4.8</p><br>
     <a href="#PHP7.3.11" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint do PHP 7.3.11</a><br><br>
     <iframe width="800" height="450" src="https://www.youtube.com/embed/YS7O316Ycxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
@@ -79,6 +79,8 @@ include("cabecalho.php");
         </code>
     </div>
 
+    <p class="comum">Se voc&ecirc; n&atilde;o sabe ainda usar o vim: (<a href="vim.php" class="a" target="_blank">aprenda o b&aacute;sico do VIM</a>).</p>
+
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         <code>
@@ -94,7 +96,7 @@ include("cabecalho.php");
         <a href="http://localhost/phpinfo.php" class="a" target="_blank">http://localhost/phpinfo.php</a>
     </div>
     <br>
-    <a href="#caso-de-erro" class="a" target="_parent">Caso de erro na instalação do PHP.</a>
+    <a href="#caso-de-erro" class="a" target="_parent">Caso de erro na instalação do PHP.</a><br>
 
     <?php
     include("pre-rodape.php");
@@ -105,7 +107,7 @@ include("cabecalho.php");
     <h3 id="PHP7.3.11">Instalar PHP <span style="font-family: 'Noto Sans', sans-serif;">7.3.11</span> no Linux Mint</h3>
     <h4 class="reduzido">Testado em Linux Mint 19.3 Tricia, 19.2 Tina e 18.3 Sylvia</h4>
     <a href="#linux-debian" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Debian.</a>
-    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint do PHP 7.4</a>
+    <a href="#top" class="a" target="_parent">Instala&ccedil;&atilde;o no Linux Mint do PHP 7.4.8</a>
 
     <p class="comum">Instalando o PHP. Visto que muitos estão usando a nova versão do wordpress, e eu mesmo tambem
         quero esperimenta-la, estou mudando a versão do PHP para 7.3, que é compatível com o mesmo.</p>
@@ -169,6 +171,8 @@ include("cabecalho.php");
         </code>
     </div>
 
+    <p class="comum">Se voc&ecirc; n&atilde;o sabe ainda usar o vim: (<a href="vim.php" class="a" target="_blank">aprenda o b&aacute;sico do VIM</a>).</p>
+
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">
         <code>
@@ -184,7 +188,7 @@ include("cabecalho.php");
         <a href="http://localhost/phpinfo.php" class="a" target="_blank">http://localhost/phpinfo.php</a>
     </div>
     <br>
-    <a href="#caso-de-erro" class="a" target="_parent">Caso de erro na instalação do PHP.</a>
+    <a href="#caso-de-erro" class="a" target="_parent">Caso de erro na instalação do PHP.</a><br>
 
     <?php
     include("pre-rodape.php");
@@ -325,6 +329,8 @@ include("cabecalho.php");
             $ sudo vim phpinfo.php<br>
         </code>
     </div>
+
+    <p class="comum">Se voc&ecirc; n&atilde;o sabe ainda usar o vim: (<a href="vim.php" class="a" target="_blank">aprenda o b&aacute;sico do VIM</a>).</p>
 
     <p class="miniatura">Incluir no arquivo</p>
     <div class="box sombra">

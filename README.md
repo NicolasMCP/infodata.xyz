@@ -12,7 +12,8 @@ AREA DE DESENVOLVIMENTO do Site [infodata.xyz](https://infodata.xyz/src/index.ph
 > Icones, diversas [Licenças](https://www.infodata.xyz/src/licencas.php)
 
 <br/>
+<br/>
 
 **Projeto de Nícolas Ramos**
-* nicolas@infodata.xyz
-* nicolas.mcp@gmail.com
+@@nicolas@infodata.xyz@@
+@@nicolas.mcp@gmail.com@@

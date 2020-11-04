@@ -16,6 +16,6 @@ AREA DE DESENVOLVIMENTO do Site [infodata.xyz](https://infodata.xyz/src/index.ph
 
 **Projeto de Nícolas Ramos**
 ```diff
-+ nicolas@infodata.xyz
-+ nicolas.mcp@gmail.com
+!     nicolas@infodata.xyz
+!     nicolas.mcp@gmail.com
 ```

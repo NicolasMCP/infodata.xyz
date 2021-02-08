@@ -73,7 +73,7 @@ include("cabecalho.php");
             <p class="right">
                 Equipe infodata<br>
                 Nicolas Ramos<br>
-                nicolas@infodata.xyz<br>
+                nicolas.mcp@gmail.com<br>
             </p><br><br>
         </div>
     </section>

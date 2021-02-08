@@ -43,7 +43,7 @@ include("cabecalho.php");
 
     <p class="comum">Depois de autenticar, abra o terminal e use:</p>
 
-    <p class="miniatura">Procedimento</p>
+    <p class="miniatura">C&oacute;digo</p>
     <div class="box sombra">
         java -version<br>
         javac -version
@@ -54,6 +54,59 @@ include("cabecalho.php");
     <!-- Estou ciente de que a imagem é maior do que o determinado, no entanto o objetivo é que a pessoa se desejar
     possa ver a imagem em outra aba no tamanho e resolução total, para ter uma melhor visualização-->
     <img src="../img/jdk-amazon-correto-04.png" width="800" height="377">
+
+
+    <p class="comum">Depois instale o git assim:</p>
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        sudo apt install git
+    </div>
+
+    <p class="comum">O resultado dever&aacute; ser semelhante a este</p><br>
+
+    <!-- Estou ciente de que a imagem é maior do que o determinado, no entanto o objetivo é que a pessoa se desejar
+    possa ver a imagem em outra aba no tamanho e resolução total, para ter uma melhor visualização-->
+    <img src="../img/jdk-amazon-correto-05.png" width="800" height="602">
+
+
+    <p class="comum">Verifique a vers&atilde;o do git</p>
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        git --version
+    </div>
+
+    <p class="comum">O resultado dever&aacute; ser semelhante a este</p><br>
+
+    <img src="../img/jdk-amazon-correto-06.png" width="800" height="452">
+
+
+    <p class="comum">Se voc&ecirc; j&aacute; &eacute; usu&aacute;rio do github, notabug, ou gitlab, etc.,
+        vamos configura-lo usando um exemplo de algu&eacute;m que tem um e-mail do gmail (evidentemente
+        voc&ecirc; deve alterar 'SeuEmail' para o nome no seu e-mail). Foi usado o gmail.com somente por
+        ser um dos mais comuns, o seu provedor de e-mail pode ser outro sem sombra de d&uacute;vidas. <br>
+        ssh-keygen &eacute; usado para gerar uma chave ssh e termos acesso diretamente ao GitHub.
+    </p>
+
+    <p class="miniatura">C&oacute;digo</p>
+    <div class="box sombra">
+        git config --global user.email &quot;SeuEmail@gmail.com&quot;<br>
+        git config --global user.name &quot;SeuUserGitHub&quot;<br>
+        ssh-keygen
+    </div>
+
+    <p class="comum">O resultado dever&aacute; ser semelhante a este</p><br>
+
+    <img src="../img/git-01.png" width="800" height="274">
+
+
+    <p class="comum">Para configurar o acesso ssh, entre no seu github e v&aacute; em Settings</p>
+    <br>
+
+    <!-- Estou ciente de que a imagem é maior do que o determinado, no entanto o objetivo é que a pessoa se desejar
+    possa ver a imagem em outra aba no tamanho e resolução total, para ter uma melhor visualização-->
+    <img src="../img/git-02.png" width="800" height="900">
 
 
     <br><br><br>

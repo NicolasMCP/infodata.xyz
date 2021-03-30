@@ -16,6 +16,8 @@ AREA DE DESENVOLVIMENTO do Site [infodata.xyz](https://infodata.xyz/src/index.ph
 
 #### [código infodata.xyz](https://github.com/NicolasMCP/infodata.xyz/)
 
+#### [projeto migrado para infodata](https://github.com/NicolasMCP/infodata/)
+
 <br/>
 <br/>
 

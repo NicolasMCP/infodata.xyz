@@ -12,14 +12,20 @@ AREA DE DESENVOLVIMENTO do Site [infodata.xyz](https://infodata.xyz/src/index.ph
 > Icones, diversas [Licenças](https://www.infodata.xyz/src/licencas.php)
 
 <br/>
-<br/>
+#### [infodata](https://nicolasmcp.github.io/infodata/)
 
-#### [código infodata.xyz](https://github.com/NicolasMCP/infodata.xyz/)
 
-#### [projeto migrado para infodata](https://github.com/NicolasMCP/infodata/)
+#### [código infodata atualizando](https://github.com/NicolasMCP/infodata/blob/main/README.md)
 
-<br/>
-<br/>
+
+#### [google drive](https://drive.google.com/drive/folders/0B8C7-DYa7vcUUVRzanFhZENMTFU)
+
+
+#### [youtube](https://www.youtube.com/channel/UCYI7lWiyTmdY8vU6Ub1LZAw)
+
+
+#### [anteriormente infodata.xyz](https://github.com/NicolasMCP/infodata.xyz/blob/master/README.md)
+
 
 **Projeto de Nícolas Ramos**
 <br/>

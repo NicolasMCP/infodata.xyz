@@ -25,7 +25,7 @@ AREA DE DESENVOLVIMENTO do Site [infodata.xyz](https://infodata.xyz/src/index.ph
 #### [youtube](https://www.youtube.com/channel/UCYI7lWiyTmdY8vU6Ub1LZAw)
 
 
-#### [anteriormente infodata.xyz](https://github.com/NicolasMCP/infodata.xyz/blob/master/README.md)
+#### [código de infodata.xyz](https://github.com/NicolasMCP/infodata.xyz)
 
 
 **Projeto de Nícolas Ramos**
